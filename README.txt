@@ -19,3 +19,5 @@ Credicrea case: credicrea-case.html (+ credicrea-*.jpg) loads inside index.html.
 
 
 FOLDERS: index.html at the root; case-study pages in pages/; images in assets/. Paths inside pages/ use ../assets/ and ../index.html.
+
+Friendly case: pages/friendly-case.html loads inside index.html (#case-friendly). Translations: PAIRS inside friendly-case.html. Its images are hosted links (lh3.googleusercontent.com); to self-host them, save them in assets/ and replace the src values.

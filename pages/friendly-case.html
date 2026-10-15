@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"error":"#ba1a1a","surface-variant":"#e1e0fb","surface-container-lowest":"#ffffff","on-primary":"#ffffff","surface":"#fbf8ff","surface-container-highest":"#e1e0fb","on-surface":"#191a2d","surface-tint":"#385aad","primary-fixed-dim":"#b2c5ff","on-tertiary-fixed":"#390c00","on-secondary-container":"#382b8a","surface-dim":"#d9d8f2","outline-variant":"#c4c6d3","on-error":"#ffffff","on-primary-container":"#002f7e","tertiary-fixed":"#ffdbd0","surface-container-high":"#e7e6ff","primary-container":"#7b9bf2","on-tertiary":"#ffffff","outline":"#747683","background":"#fbf8ff","surface-bright":"#fbf8ff","inverse-surface":"#2e2f43","on-surface-variant":"#444651","on-primary-fixed":"#001848","secondary-fixed-dim":"#c7bfff","surface-container-low":"#f5f2ff","surface-container":"#eeecff","on-error-container":"#93000a","secondary":"#5b51af","error-container":"#ffdad6","on-secondary":"#ffffff","on-primary-fixed-variant":"#1b4294","on-background":"#191a2d","tertiary-container":"#e38564","secondary-container":"#a49afe","primary":"#385aad","on-secondary-fixed":"#170065","primary-fixed":"#dae2ff","tertiary":"#96482c","inverse-primary":"#b2c5ff","secondary-fixed":"#e4dfff","on-tertiary-fixed-variant":"#783117","inverse-on-surface":"#f1efff","on-secondary-fixed-variant":"#433896","on-tertiary-container":"#612007","tertiary-fixed-dim":"#ffb59d"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"margin-lg":"3rem","margin-md":"2rem","space-xl":"2.5rem","space-xs":"0.25rem","gutter":"1rem","space-lg":"1.5rem","space-sm":"0.5rem","margin":"1rem","gutter-md":"1.5rem","space-md":"1rem"},"fontFamily":{"label-lg":["Plus Jakarta Sans"],"display-lg":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"]},"fontSize":{"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.02em","fontWeight":"700"}],"display-lg":["44px",{"lineHeight":"52px","letterSpacing":"-0.02em","fontWeight":"800"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-sm":["18px",{"lineHeight":"26px","fontWeight":"600"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.01em","fontWeight":"700"}],"body-md":["14px",{"lineHeight":"22px","fontWeight":"400"}],"headline-md":["22px",{"lineHeight":"30px","fontWeight":"700"}],"label-sm":["11px",{"lineHeight":"16px","letterSpacing":"0.04em","fontWeight":"600"}],"label-md":["13px",{"lineHeight":"18px","fontWeight":"600"}],"body-sm":["12px",{"lineHeight":"18px","fontWeight":"400"}],"headline-lg-mobile":["26px",{"lineHeight":"34px","letterSpacing":"-0.01em","fontWeight":"700"}]}}}};</script><title>Friendly — Caso de estudio UX/UI</title></head><body class="bg-background font-body-md text-on-surface antialiased selection:bg-secondary-fixed selection:text-on-secondary-fixed"><main class="w-full pt-0 bg-background"><div class="flex flex-col w-full">
+<!-- Top Ambient Glow -->
+<div class="relative w-full overflow-hidden">
+<div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[900px] h-[340px] bg-gradient-to-r from-primary-fixed via-secondary-fixed to-surface-variant blur-3xl opacity-60 pointer-events-none"></div>
+<!-- HERO SECTION -->
+<section class="relative w-full max-w-7xl mx-auto px-6 lg:px-12 pt-10 pb-16 flex flex-col gap-space-xl">
+<!-- Breadcrumb & Badge -->
+<div class="flex flex-wrap items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm text-on-surface-variant">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary">Portafolio UX/UI</span>
+<span class="font-body-sm text-body-sm text-outline-variant">/</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Design Systems</span>
+<span class="font-body-sm text-body-sm text-outline-variant">/</span>
+<span class="font-label-sm text-label-sm text-on-surface">Friendly UI Kit</span>
+</div>
+<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container-high">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Design System para Comunidades Digitales</span>
+</div>
+</div>
+<!-- Main Headline Block -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<div class="inline-block">
+<span class="px-3 py-1 rounded-lg bg-primary-fixed text-on-primary-fixed font-label-md text-label-md">Caso de Estudio UX/UI</span>
+</div>
+<h1 class="font-display-lg text-display-lg text-on-surface tracking-tight">
+            Friendly: Red de Amigos <br/>
+<span class="text-transparent bg-clip-text bg-gradient-to-r from-primary via-secondary to-tertiary-container">
+              UI Kit &amp; Sistema Modular
+            </span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+            Arquitectura integral de componentes atómicos, estados interactivos y lenguaje visual empático diseñado para potenciar la conexión humana, la creación de eventos grupales y el bienestar social en entornos móviles y web.
+          </p>
+<!-- Action Pills -->
+<div class="flex flex-wrap items-center gap-space-md pt-2">
+<a class="inline-flex items-center gap-space-xs px-6 py-3 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg shadow-md hover:bg-primary-container hover:text-on-primary-container transition-all" href="#anatomia-sistema">
+<span class="material-symbols-outlined text-[18px]">view_quilt</span>
+              Explorar Componentes
+            </a>
+</div>
+</div>
+<!-- Cover Illustration Showcase -->
+<div class="lg:col-span-5 relative">
+<div class="relative rounded-2xl bg-surface-container-lowest p-4 shadow-xl overflow-hidden flex flex-col items-center">
+<div class="w-full flex items-center justify-between pb-3">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-error-container"></span>
+<span class="w-3 h-3 rounded-full bg-secondary-fixed"></span>
+<span class="w-3 h-3 rounded-full bg-primary-fixed"></span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">friendly-brand-cover.fig</span>
+</div>
+<img referrerpolicy="no-referrer" loading="lazy" alt="Friendly Red de Amigos Cover" class="w-full h-auto rounded-xl object-contain shadow-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2nqUgB3aKZ3NeNuiIIZtp88qvkWl8q49O_eB5X5ixo2ffsPO7ZEtf4J3D4Y0_NfSMed0Bi8rdMA-1Xq0I4DpogRKOAuI0zBsp1GxeQECR6T3lcFvCmF6BiTTmxoaDUH1rIK0pIPQ7b3xtnom2ZYZmNfGbMVB-ghj2k0Isd2K_mrsiRq1aXbyeGJmBzKliwIob5dv5OBy-W1eMpq2xgmh_49Ud0ylNYmIS0TSoyYDJdFlP13LWYgCpP-klhqh7pHecZhY"/>
+<div class="w-full mt-3 p-3 rounded-xl bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">music_note</span>
+<span class="font-label-md text-label-md text-on-surface">Identidad Comunitaria Friendly</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-bold">UI Kit</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Project Metadata Strip -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-md p-6 rounded-2xl bg-surface-container-lowest shadow-sm">
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-outline uppercase">Rol de Diseño</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Lead UI/UX &amp; DS</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Arquitectura &amp; Tokens</span>
+</div>
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-outline uppercase">Metodología</span>
+<span class="font-headline-sm text-headline-sm text-primary">Atomic Design</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Tokens + WCAG 2.1 AA</span>
+</div>
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-outline uppercase">Herramientas</span>
+<span class="font-headline-sm text-headline-sm text-secondary">Figma + React Specs</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Variables &amp; Microcopy</span>
+</div>
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-outline uppercase">Plataformas</span>
+<span class="font-headline-sm text-headline-sm text-tertiary">Web &amp; Native Apps</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">iOS, Android, Desktop</span>
+</div>
+</div>
+</section>
+</div>
+<!-- CAPÍTULO 01: CONTEXTO, RETO Y PILARES -->
+<section class="w-full bg-surface-container-lowest py-20">
+<div class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col gap-space-xl">
+<div class="flex flex-col gap-space-xs max-w-3xl">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">Capítulo 01 · Fundamentos</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Rediseñando la Interacción Social desde la Empatía</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+          Las plataformas sociales tradicionales apuestan por patrones de adicción, sobrecarga visual y tipografías agresivas. Friendly nace como un espacio digital cálido para organizar planes tangibles, ensayos de música, clubes de lectura y reuniones reales sin fatiga cognitiva.
+        </p>
+</div>
+<!-- 3 Pillars Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<div class="p-8 rounded-2xl bg-surface-container-low flex flex-col gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-primary-container text-on-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[26px]">sentiment_satisfied</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">1. Calidez &amp; Cercanía</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Uso de tonos pastel periwinkle, lavanda y melocotón que inducen tranquilidad, eliminando la sensación de alerta constante que transmiten los feeds corporativos convencionales.
+          </p>
+<div class="pt-4 mt-auto">
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wide">Reducción de fatiga visual</span>
+</div>
+</div>
+<div class="p-8 rounded-2xl bg-surface-container-low flex flex-col gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-[26px]">account_tree</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">2. Claridad Atómica</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Arquitectura escalable en cuatro niveles: Tokens de valor, Átomos interactivos, Moléculas funcionales y Organismos orquestados para una rápida composición sin fricciones.
+          </p>
+<div class="pt-4 mt-auto">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wide">Desacoplamiento total</span>
+</div>
+</div>
+<div class="p-8 rounded-2xl bg-surface-container-low flex flex-col gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-[26px]">accessibility_new</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">3. Accesibilidad Empática</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Áreas de pulsación mínimas de 44px, relaciones de contraste certificadas WCAG AA en texto regular y microcopys amables en situaciones de validación o error de formulario.
+          </p>
+<div class="pt-4 mt-auto">
+<span class="font-label-sm text-label-sm text-tertiary uppercase font-bold tracking-wide">Affordance garantizado</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CAPÍTULO 02: IDENTIDAD, COLOR & TOKENS -->
+<section class="w-full bg-background py-20">
+<div class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col gap-space-xl">
+<div class="flex flex-col gap-space-xs max-w-2xl">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Capítulo 02 · Tokens de Marca</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Paleta Cromática &amp; Jerarquía Visual Armónica</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+          Cada token representa un acuerdo emocional entre el usuario y la plataforma. Evitamos saturaciones extremas a favor de superficies luminosas y contrastes refinados.
+        </p>
+</div>
+<!-- Color Swatches Grid -->
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-space-md">
+<div class="flex flex-col rounded-2xl bg-surface-container-lowest p-4 shadow-sm gap-3">
+<div class="w-full h-20 rounded-xl bg-primary"></div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Primary Blue</span>
+<span class="font-body-sm text-body-sm text-outline">#385AAD</span>
+<span class="font-label-sm text-label-sm text-primary mt-1">Interacciones clave</span>
+</div>
+</div>
+<div class="flex flex-col rounded-2xl bg-surface-container-lowest p-4 shadow-sm gap-3">
+<div class="w-full h-20 rounded-xl bg-primary-container"></div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Soft Periwinkle</span>
+<span class="font-body-sm text-body-sm text-outline">#7B9BF2</span>
+<span class="font-label-sm text-label-sm text-primary mt-1">Botones &amp; Cards</span>
+</div>
+</div>
+<div class="flex flex-col rounded-2xl bg-surface-container-lowest p-4 shadow-sm gap-3">
+<div class="w-full h-20 rounded-xl bg-secondary"></div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Secondary Iris</span>
+<span class="font-body-sm text-body-sm text-outline">#5B51AF</span>
+<span class="font-label-sm text-label-sm text-secondary mt-1">Comunidades &amp; Tags</span>
+</div>
+</div>
+<div class="flex flex-col rounded-2xl bg-surface-container-lowest p-4 shadow-sm gap-3">
+<div class="w-full h-20 rounded-xl bg-secondary-fixed"></div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Lavanda Suave</span>
+<span class="font-body-sm text-body-sm text-outline">#E4DFFF</span>
+<span class="font-label-sm text-label-sm text-secondary mt-1">Fondos &amp; Chips</span>
+</div>
+</div>
+<div class="flex flex-col rounded-2xl bg-surface-container-lowest p-4 shadow-sm gap-3">
+<div class="w-full h-20 rounded-xl bg-tertiary-container"></div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Coral Alerta</span>
+<span class="font-body-sm text-body-sm text-outline">#E38564</span>
+<span class="font-label-sm text-label-sm text-tertiary mt-1">Advertencia suave</span>
+</div>
+</div>
+<div class="flex flex-col rounded-2xl bg-surface-container-lowest p-4 shadow-sm gap-3">
+<div class="w-full h-20 rounded-xl bg-surface-dim"></div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Canvas Slate</span>
+<span class="font-body-sm text-body-sm text-outline">#D9D8F2</span>
+<span class="font-label-sm text-label-sm text-outline mt-1">Bordes &amp; Contenedor</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CAPÍTULO 03: ICONOGRAFÍA Y MICRO-SEÑALÉTICA -->
+<section class="w-full bg-surface-container-lowest py-20">
+<div class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col gap-space-xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">Capítulo 03 · Iconografía</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Set de 35 Glifos Monolínea con Terminación Redondeada</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Diseñados en una matriz base de 24x24 px con grosor uniforme de 1.75px. El set combina micro-señalética operativa (flechas, check, search) con metáforas comunitarias (calendario, avatar, corazón de favoritos, fuego de tendencias y avión de viajes compartidos).
+          </p>
+<div class="p-4 rounded-xl bg-surface-container-low flex flex-col gap-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">token</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Tinte Periwinkle Monocromático</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Garantiza que la iconografía actúe como un elemento de guía sereno sin competir con las fotografías y contenidos compartidos por los usuarios.
+            </p>
+</div>
+</div>
+<!-- Real Image Integration: ICON SET -->
+<div class="lg:col-span-7">
+<div class="p-6 rounded-2xl bg-surface-container-low shadow-sm flex flex-col items-center">
+<div class="w-full flex items-center justify-between pb-4">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold uppercase tracking-wider">Icon Library v1.2 · 35 Unidades</span>
+<span class="px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm">Grid 24px</span>
+</div>
+<div class="w-full bg-surface-container-lowest rounded-xl p-6 flex items-center justify-center shadow-sm">
+<img referrerpolicy="no-referrer" loading="lazy" alt="Colección de 35 iconos vectoriales azul periwinkle de Friendly UI Kit" class="w-full max-w-xl h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlvUoKNx9kveIKWHBcnVjN7mOOGAtq3aYxhh3gnOnc-FYIBgY4xbs85ZXfhxSSYY0LirfDmRyZPvOKvxY3zukLE7Yro7jQ0jCeo0s6w26eKnr3PCrdFIsSoCGZMQ2G9zT8nTWMV9EPzOsAJGF_hyZsbODlAdYlv9TgFG2i9RXn_RE1SN0LDfQDHBRPsY8SvcbFvXcjNIseRPWLcjA86QC4eJGWMmvrZI9NYRoqIWsMxjvWcDelqZmEnFiSK4OLc8sNkWQ"/>
+</div>
+<div class="w-full grid grid-cols-4 gap-2 pt-4 text-center">
+<span class="font-label-sm text-label-sm text-outline">Navegación</span>
+<span class="font-label-sm text-label-sm text-outline">Interacción</span>
+<span class="font-label-sm text-label-sm text-outline">Multimedia</span>
+<span class="font-label-sm text-label-sm text-outline">Perfil &amp; Utilidad</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CAPÍTULO 04: ÁTOMOS & CONTROLES DE INTERACCIÓN BÁSICA -->
+<section class="w-full bg-background py-20" id="anatomia-sistema">
+<div class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col gap-space-xl">
+<div class="flex flex-col gap-space-xs max-w-3xl">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">Capítulo 04 · Átomos Fundamentales</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Matriz de Botones, Micro-Interacciones &amp; Controles</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+          Estudio riguroso de tamaños, densidades y comportamientos interactivos para responder a usuarios con diversas destrezas táctiles y periféricos.
+        </p>
+</div>
+<!-- ROW 1: BOTONES MATRIZ & QUICK ACTIONS -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- Matriz de Botones -->
+<div class="lg:col-span-8 p-6 rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Matriz Universal de Botones</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">4 Familias Semánticas × 3 Tamaños Táctiles (Grande, Mediano, Pequeño)</span>
+</div>
+<span class="px-2.5 py-1 rounded-md bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm">Tokens Base</span>
+</div>
+<div class="w-full bg-surface-container-low rounded-xl p-6 flex items-center justify-center">
+<img referrerpolicy="no-referrer" loading="lazy" alt="Matriz de botones de Friendly: Primario, Secundario, Advertencia y Deshabilitado en tamaños Grande, Mediano y Pequeño" class="w-full max-w-2xl h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSzEHCiCu96va2KJr5q74K0-8SG-VGw989pYvpyzuA34TiefqvJgQxPmESEocZJmhVOjUKeAkSK-jMLduXrHvvKtIjMNuh-zG52eGSevodix5XU7Xx0TPC_I2ZKOQxX69KtVs54YCUkRbhhW_L3-uLkMhkfe2UtXYPvNpdUmTDAjyKfYjc2zt47_cFFatMQhWtUCNYH63_UscISM-N2BvgMO8PKFvmu6XUuXILlnZsfu1reFslTCWqxQvtBFz3KQk4V10"/>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-3 pt-2">
+<div class="p-3 rounded-lg bg-surface-container-low">
+<span class="font-label-sm text-label-sm text-primary font-bold block">Primario</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Acciones críticas y confirmación principal.</span>
+</div>
+<div class="p-3 rounded-lg bg-surface-container-low">
+<span class="font-label-sm text-label-sm text-secondary font-bold block">Secundario</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Borde fino para jerarquías complementarias.</span>
+</div>
+<div class="p-3 rounded-lg bg-surface-container-low">
+<span class="font-label-sm text-label-sm text-tertiary font-bold block">Advertencia</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Coral atenuado para salidas o cancelaciones.</span>
+</div>
+<div class="p-3 rounded-lg bg-surface-container-low">
+<span class="font-label-sm text-label-sm text-outline font-bold block">Deshabilitado</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Gris suave sin affordance de cliqueo.</span>
+</div>
+</div>
+</div>
+<!-- Quick Action Buttons -->
+<div class="lg:col-span-4 p-6 rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Botones de Acción Rápida</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Feedback cromático instantáneo</span>
+</div>
+<span class="material-symbols-outlined text-secondary text-[20px]">touch_app</span>
+</div>
+<div class="w-full bg-surface-container-low rounded-xl p-4 flex items-center justify-center">
+<img referrerpolicy="no-referrer" loading="lazy" alt="Botones de acción rápida con estados Por defecto y Accionado en rosa/lila" class="w-full max-w-xs h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAl8YyAzVm8q7CeoCE3tf2kbBs9qGv-N9xf9rF0d5UWCoJzqyGUc8Qs1wxBp7BXQdhkuJlDRna6UeIlEQhGAsfYhwSmFxwCbyKxtRU8C6ZLec3NCiWoXoCaUuHdklp-O2SemzP5dCbe2DCn_9DCw_yrnMkfCktbFPI_SNpFbouuJu8ck5ZBKoL3_zOJLHAXAentJRwA7tTgBWztuBccj2-llT_dUJM61zyJWeZwfckWjbwC3Y4-XEMqHhPvWvclFH8rQvw"/>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Las píldoras de acción asimétricas alojan micro-interacciones de <em>Like / Favorito</em>, <em>Vista Previa</em> y <em>Añadir a Planes</em>. Al accionarse, transicionan a lila con un glifo rosa de recompensa visual inmediata.
+          </p>
+</div>
+</div>
+<!-- ROW 2: CONTROLES DE SELECCIÓN, SLIDERS, PROGRESS & ASSIST -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Checkboxes -->
+<div class="p-6 rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Checkboxes</h4>
+<span class="font-label-sm text-label-sm text-primary font-bold">3 Estados</span>
+</div>
+<div class="w-full bg-surface-container-low rounded-xl p-3 flex items-center justify-center">
+<img referrerpolicy="no-referrer" loading="lazy" alt="Checkboxes en tres estados: Seleccionado, No Seleccionado e Indefinido" class="h-28 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXaWvJ2AIeKGuNZCK9MuCpfFSwVIqEa3gsdrAf4mDuv7lPdW_jndLkG_qtflXWzEehwn0Ve7IDYpD_fHmLsX3zdQ0O1ScoPDFwDBfSlaBJZfjBllPfd9IgUKk2QgukqfDren8Ya5T4nBhqTqtruP_rjJoCWEO6zqGGSG9mNypzEdsDB011XYPZcoyVhr4qSKh42P-CmoPjlJho2MlnQpOaQMcydAb15g9Pv6xEfVWLeCoGUREDBE5HyRrH3SzwbqjLaK0"/>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Validación de selección única o múltiple con soporte para estado parcial/indefinido en subgrupos.
+          </p>
+</div>
+<!-- Radio Buttons -->
+<div class="p-6 rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Radio Buttons</h4>
+<span class="font-label-sm text-label-sm text-secondary font-bold">Excluyentes</span>
+</div>
+<div class="w-full bg-surface-container-low rounded-xl p-3 flex items-center justify-center">
+<img referrerpolicy="no-referrer" loading="lazy" alt="Radio buttons en estados Seleccionado y No Seleccionado" class="h-28 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDv2gmylVMVSSmwMrySFXuZx2seWg1yP3A5bTwMdRwfCEJGEmOv6jzHDmCN4c991NPe58o805O-LN5b8ITuESF6pKaaiutVrzc8JfXRpnPen6Hfi3x9d0VQdiJIGNdT56aN9PYbQWfua3LuPpdXHRk0KLgZoBUrw0RJRxsPZGgUVCfUGTdw6l6l7yaCW9mFmdKwTF7LDFA9Yb2L-7l-SbQZyR3sDXHWfmuaJ8U_8PIklvQKzBGGG_ukqpN-rFOmy-5ZxsQ"/>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Geometría circular con punto interior azul pastel para selecciones mutuamente excluyentes.
+          </p>
+</div>
+<!-- Sliders -->
+<div class="p-6 rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Sliders de Rango</h4>
+<span class="font-label-sm text-label-sm text-tertiary font-bold">Continuo</span>
+</div>
+<div class="w-full bg-surface-container-low rounded-xl p-3 flex items-center justify-center">
+<img referrerpolicy="no-referrer" loading="lazy" alt="Sliders de rango con estados Por Defecto, Rango Medio y Completo" class="h-28 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-W-rS4WbMzu9MJzA0CCg-ZikyfFdnfZecdDJs01Gqr_LYlmk2tFlkSNpDLZMZhOwpotFoONzmmo7B7tefH86gEtoHNnsSHfXTg37KyIePhov5jC2-38hTKW7trQqL1D-6aptbNf9v0NcwJ0um9UYkps_8Gkl6dqUZfXK8LsQv7zr956utX4doflGLA7NxjtMYmefmwabtkpBft6mXaDTWYcp4UMfRPCx4c1-aC7KJcW8Xc64qpSmlmURxViSWR7ajWvw"/>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Handle circular con halo sutil para ajuste continuo de radio de búsqueda y volumen de notificaciones.
+          </p>
+</div>
+<!-- Progress & Assist -->
+<div class="p-6 rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Progreso &amp; Ayuda</h4>
+<span class="font-label-sm text-label-sm text-outline font-bold">Feedback</span>
+</div>
+<div class="w-full grid grid-cols-2 gap-2">
+<div class="bg-surface-container-low rounded-xl p-2 flex items-center justify-center">
+<img referrerpolicy="no-referrer" loading="lazy" alt="Indicadores de progreso Lineal y Circular" class="h-24 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPQ1n1aPORh_sEdMB5FO2rQSnR4s6B2NVSD6c5uQy4sqN8h3-xIpPIWodEuUTjQceCVHM-GYa59ui95qcpZWR5R7-EbDWmotjP5Nb1Mdxl2aYPYfH_CWlsQALIzF17f8oIU8eGFBBm4DMjACLqyCFdHv-Eki6gx-o1Lt7jaQChxSlfxPzlXXCmLCt5HFdIu5AB6Cp9RANFwbHmzjrY465Ic_iobFoJDTPYU2Nek007DPa1gMrQ1a9gvmSgpXfF8ab_8Ew"/>
+</div>
+<div class="bg-surface-container-low rounded-xl p-2 flex items-center justify-center">
+<img referrerpolicy="no-referrer" loading="lazy" alt="Botones de asistencia Información y Ayuda" class="h-24 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDK0E8dySxj7lqrS1jUdJIVyD7kI-0A9vB0Sa9cFzXIhanvIkeWUdP5r4LLS5TK755i8FdrDR439oZ1FRa9n3qR1Cje5ROrTC84ufz2iw6pKL3E2xaVVAyol4Krswcqfr45i9TdVbffcgCnCZ5AuNzhzQ4Frx4ZPSHMYMDzQQb2h7OX8_yD6z3sz0TCS6VOJ5cQLzII1u04HEmz7efGuO-hizl3MS2V0atQY2yGKn_J2LJI_wuUNA0qx5lTvvUCnRe2OJc"/>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Spinners continuos, barras de subida de fotos y píldoras flotantes para resolver dudas en vivo.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- CAPÍTULO 05: MOLÉCULAS: FORMULARIOS, DROPDOWNS & TAGS -->
+<section class="w-full bg-surface-container-lowest py-20">
+<div class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col gap-space-xl">
+<div class="flex flex-col gap-space-xs max-w-3xl">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Capítulo 05 · Moléculas de Entrada</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Formularios Resilientes, Selectores y Etiquetas Dinámicas</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+          La gestión de información personal y preferencias comunitarias debe ser fluida, segura y transparente en cada punto de interacción.
+        </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-stretch">
+<!-- Input States -->
+<div class="lg:col-span-5 p-6 rounded-2xl bg-surface-container-low flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Estados de Text Inputs</h3>
+<span class="px-2.5 py-1 rounded-md bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm">4 Estados</span>
+</div>
+<div class="w-full bg-surface-container-lowest rounded-xl p-4 flex items-center justify-center">
+<img referrerpolicy="no-referrer" loading="lazy" alt="Estados de campos de texto input: Default, Active, Disabled y Error con icono de visibilidad" class="w-full max-w-xs h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCp2WWbYKpQ4CkNvrckbUl5NfjHlf8v5NTvD4EhoNZw7sUg0Sm3WyJFxCKjaygD7I-c7bJX78r2AlEz9hcyHWxfCKtE6an4itPhQu2gbeJP6ONMgwxZnLYutQYbyix75uBwjLERQXoa6g_cTDQsKh8lOWRj4gVZFlWXdFEH3IXSGjzE_cX6dhAQa2vNRuFsjijOzJ0IeOd06tHkn08PSrTfLbB-lyTkDDsAZbqB7OCx71nKLYR77aSBI3bs_EOwTkc5lMw"/>
+</div>
+<ul class="flex flex-col gap-2 font-body-sm text-body-sm text-on-surface-variant">
+<li class="flex items-start gap-2">
+<span class="w-2 h-2 rounded-full bg-primary mt-1.5 shrink-0"></span>
+<span><strong>Default &amp; Active:</strong> Borde azul sutil que se acentúa en navegación por teclado.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="w-2 h-2 rounded-full bg-error mt-1.5 shrink-0"></span>
+<span><strong>Estado de Error:</strong> Contorno coral/rojo con copy explicativo debajo y toggle de visibilidad seguro.</span>
+</li>
+</ul>
+</div>
+<!-- Dropdowns and Tag Modal -->
+<div class="lg:col-span-7 flex flex-col gap-space-lg">
+<!-- Dropdown Section -->
+<div class="p-6 rounded-2xl bg-surface-container-low flex flex-col md:flex-row gap-space-md items-center">
+<div class="w-full md:w-1/2 flex flex-col gap-2">
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold">Selector Dinámico</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Dropdown Menu</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Componente flotante con soporte para foco accesible, navegación con flechas y resaltado interactivo de opción activa.
+              </p>
+</div>
+<div class="w-full md:w-1/2 bg-surface-container-lowest rounded-xl p-4 flex items-center justify-center">
+<img referrerpolicy="no-referrer" loading="lazy" alt="Componente de Dropdown desplegable con opciones y estado hover" class="w-full max-w-[200px] h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwveilgGbJBOnw7bMM7zCVC1UQtWPn6l5uRm--qbcpj0cvTZGuRsm0W2eDjoHZ3P2v7v57rFKA8VvnVKyY56-R-YoUe2qHHu81d5-9_kcZDSUMF19LF5ST-xsIHowDtFhZZsE6cZkumFMdOVWNfamwt8N0s3czXZqHaCZGJ7_IcdFAoyXRq70xm_cn2fW9BIOYdM-HGLa7cc1uIQ4rS0LBGN8oLqQWnTLcxwo9i2nCBmm1GigqXzKK6tC_IL3DNYQ8zLo"/>
+</div>
+</div>
+<!-- Tags Modal Section -->
+<div class="p-6 rounded-2xl bg-surface-container-low flex flex-col md:flex-row gap-space-md items-center">
+<div class="w-full md:w-1/2 flex flex-col gap-2">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold">Filtros Comunitarios</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Sistema de Etiquetas &amp; Gustos</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Modal de selección de intereses (Música, Deportes, Jam Sessions). Cada chip lavanda incluye botón de descarte rápido (x) y estado reordenable.
+              </p>
+</div>
+<div class="w-full md:w-1/2 bg-surface-container-lowest rounded-xl p-4 flex items-center justify-center">
+<img referrerpolicy="no-referrer" loading="lazy" alt="Modal de etiquetas interactivas de color morado con botón de cerrar" class="w-full max-w-sm h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLG2zuSLHKE1qvcvnjlB_9lbT_i9mUb_8uV3TdYGvUuXszN8X9UiXGDeiHrS_b2pUiUdVQTklJ1mUZ6my0r1oJ8FktEY0V1TCH_Z5vJ0JkuGONz7mMwctpvInArCABUSwJKLl7DTdjPb6lHXC8XvRuOd0-B6TN-ueZZtrHoWh0W2PudDyW8w-DuwDWq7nM99LSBOz9Sf_6-yvTRNvinE076BPdd0_6dDRsWc3vYJO08s1UvZ2Fb8SSLn6PVStGHBakYNY"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CAPÍTULO 06: ORGANISMOS: AGENDAMIENTO, CALENDARIO & PAGINACIÓN -->
+<section class="w-full bg-background py-20">
+<div class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col gap-space-xl">
+<div class="flex flex-col gap-space-xs max-w-3xl">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">Capítulo 06 · Organismos Complejos</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Planificador de Quedadas &amp; Navegación de Listados</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+          Los organismos combinan moléculas y átomos en experiencias de tarea única: agendar un plan grupal o navegar catálogos extensos de actividades sin perder el hilo.
+        </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center">
+<!-- Date & Time Picker Component -->
+<div class="lg:col-span-6 p-8 rounded-3xl bg-surface-container-lowest shadow-md flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[24px]">calendar_month</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Selector Integral Fecha &amp; Hora</h3>
+</div>
+<span class="px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold">Live Feature</span>
+</div>
+<div class="w-full bg-surface-container-low rounded-2xl p-6 flex items-center justify-center">
+<img referrerpolicy="no-referrer" loading="lazy" alt="Selector de fecha y hora interactivo con cuadrícula de junio y slots de 09am a 04:30pm" class="w-full max-w-sm h-auto object-contain rounded-xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBrga6blRFraEu_dx4QRvS1utypADqyWKhjZJZU7iDZcsLt0HBG_r-qb_SuFN_cKsC529dZ98J-5gxylwedtLj2KaUubJ8U0SG_lo_VkKaJIUWz5SoeQ8U81Sf2Oh1GHFQkpoFZm1B-yzytASscDG1w_IYIo7p1ivvwrBh3w9-MVasRZBLtLc-ix0OiD4AqDr37pFD66qu_XstQLBttyUubT8gEPnCWaMcGIm2gKRbKHI-nIIa-AcYmSoMzTOVeJ90wBU"/>
+</div>
+<div class="flex flex-col gap-2">
+<span class="font-label-md text-label-md text-on-surface font-bold">Casos de Uso Principales:</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Reserva de horarios para salas de ensayo, convocatorias de partidos y sincronización de horarios disponibles entre círculos de amigos. El gradiente superior aporta ligereza estética mientras los slots horarios ofrecen feedback háptico.
+            </p>
+</div>
+</div>
+<!-- Pagination System & Deep Dive -->
+<div class="lg:col-span-6 flex flex-col gap-space-lg">
+<div class="p-8 rounded-3xl bg-surface-container-lowest shadow-md flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[24px]">first_page</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Sistema de Paginación Escalable</h3>
+</div>
+<span class="font-label-sm text-label-sm text-outline font-semibold">Web &amp; Mobile</span>
+</div>
+<div class="w-full bg-surface-container-low rounded-2xl p-6 flex items-center justify-center">
+<img referrerpolicy="no-referrer" loading="lazy" alt="Paginación interactiva mostrando estados inicial, intermedio con página 7 activa y final" class="w-full max-w-md h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmXogEGwVwt_-6sD2F8jMcETxndCxJ3xu0drzCCdRAakGRDbttIF9NBYc2Y83vNy7RCg9GS3rL4ZYE6cdaSI4vL6stYCh-54KGeFocm6ZAs-HhduFyYX_jr_jh59kH_bnTjfDULpw2q-xU_U2jq7pvmHhn5Zjat9OHJwfvFCC0Z7uucrtYZeDft-cYnZfjN2li81dQonfA3UqVS-vlTxuE-kJ_d7R98HYe-CXyP0LTjCJ6uGSPwC6A5VhN5-e1RbEiY-4"/>
+</div>
+<div class="flex flex-col gap-3 font-body-sm text-body-sm text-on-surface-variant">
+<div class="p-3 rounded-xl bg-surface-container-low flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-primary font-bold">Momento 1 · Arranque de Lista</span>
+<span>Páginas 1 a 6 con elipsis hacia el extremo final ("Fin").</span>
+</div>
+<div class="p-3 rounded-xl bg-surface-container-low flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-secondary font-bold">Momento 2 · Navegación Central</span>
+<span>Página 7 activa con ventanas simétricas de 2 pasos anteriores y posteriores.</span>
+</div>
+<div class="p-3 rounded-xl bg-surface-container-low flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-outline font-bold">Momento 3 · Límite de Colección</span>
+<span>Página 15 activa y desactivación semántica del control "Fin".</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CAPÍTULO 07: COMPONENTES DE CONTENIDO: CARDS & LAYOUTS MODULARES -->
+<section class="w-full bg-surface-container-lowest py-20">
+<div class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col gap-space-xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Capítulo 07 · Contenedores Modulares</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Card System: 4 Variantes para Feeds Dinámicos</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Las tarjetas estructuran el contenido comunitario según la naturaleza del evento. Soportan imágenes protagónicas simples, collages de recuerdos grupales o variantes invertidas con llamadas a la acción directas para confirmar asistencia.
+          </p>
+<div class="flex flex-col gap-3 pt-2">
+<div class="flex items-center gap-3 p-3 rounded-xl bg-surface-container-low">
+<span class="w-7 h-7 rounded-lg bg-primary-fixed text-on-primary-fixed flex items-center justify-center font-bold text-label-sm">A</span>
+<span class="font-body-sm text-body-sm text-on-surface"><strong>Card Estándar:</strong> Encabezado, foto hero y sinopsis editorial.</span>
+</div>
+<div class="flex items-center gap-3 p-3 rounded-xl bg-surface-container-low">
+<span class="w-7 h-7 rounded-lg bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center font-bold text-label-sm">B</span>
+<span class="font-body-sm text-body-sm text-on-surface"><strong>Card Galería Collage:</strong> Mosaico de 5 imágenes para eventos pasados.</span>
+</div>
+<div class="flex items-center gap-3 p-3 rounded-xl bg-surface-container-low">
+<span class="w-7 h-7 rounded-lg bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center font-bold text-label-sm">C</span>
+<span class="font-body-sm text-body-sm text-on-surface"><strong>Card con CTA de Acción:</strong> Botón directo para unirse a la actividad.</span>
+</div>
+<div class="flex items-center gap-3 p-3 rounded-xl bg-surface-container-low">
+<span class="w-7 h-7 rounded-lg bg-surface-dim text-on-surface flex items-center justify-center font-bold text-label-sm">D</span>
+<span class="font-body-sm text-body-sm text-on-surface"><strong>Card Invertida:</strong> Copy explicativo superior y galería inferior.</span>
+</div>
+</div>
+</div>
+<!-- Real Image Integration: CARDS GRID -->
+<div class="lg:col-span-7">
+<div class="p-6 rounded-3xl bg-surface-container-low shadow-sm flex flex-col items-center">
+<div class="w-full flex items-center justify-between pb-4">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold uppercase tracking-wider">Feed Content Cards Specification</span>
+<span class="px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">Flexible Grid</span>
+</div>
+<div class="w-full bg-surface-container-lowest rounded-2xl p-6 flex items-center justify-center shadow-sm">
+<img referrerpolicy="no-referrer" loading="lazy" alt="Grid de 4 variantes de Cards de contenido: simple, galería múltiple y con botón de acción" class="w-full max-w-xl h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkDNkF9RQOGRfuF-eSaXbTbJjurYM_NWOb9yQYuxV9EiqH1fNZ5KWRUl2tu8SWCGL7Pb89zrQAWDQZmASF4tB-Cm0HBOVD9Mc5c-eT2HgqVeW-I4yZGq0YTK5-tRSiNzvJqrbbwmKobscQ4HcLiN-BFOVDALqLq0Lz2m6FdZgZR5yg5maQbRLf2kDLdLr9Rvc2KEuWZwyCJMEHpgo7rn8r3-idQERwMZBY7SFkJpGnlB2N8CuuepPDeEelzxCxY4JBxlI"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CAPÍTULO 08: APRENDIZAJES, CONCLUSIONES & CTA -->
+<section class="w-full bg-surface-container-low py-20" id="metricas">
+<div class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col gap-space-xl">
+<div class="flex flex-col gap-space-xs text-center items-center max-w-2xl mx-auto">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">Capítulo 08 · Retrospectiva</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Aprendizajes Clave en el Diseño de Comunidades</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+          Diseñar para la amistad digital implica reducir los estímulos artificiales y priorizar la autenticidad en cada estado del sistema.
+        </p>
+</div>
+<!-- Takeaways 3 Columns -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<div class="p-8 rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[32px]">psychology</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Psicología del Color Sin Estrés</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Reemplazar las alertas estridentes por acentos de melocotón y lavanda busca reducir la fatiga digital y mantener una interfaz serena en cada estado.
+          </p>
+</div>
+<div class="p-8 rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[32px]">code</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Tokens como Lenguaje Común</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Nombrar las variables por intención semántica y no por valor hexadecimal ayuda a evitar errores de sincronización entre diseñadores en Figma y desarrolladores en React Native.
+          </p>
+</div>
+<div class="p-8 rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-sm">
+<span class="material-symbols-outlined text-tertiary text-[32px]">thumb_up</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Escalabilidad por Diseño</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            La arquitectura desacoplada está pensada para absorber nuevas verticales (clubes de senderismo y talleres creativos) sin modificar el sistema base.
+          </p>
+</div>
+</div>
+<!-- Portfolio Contact Card -->
+<div class="relative overflow-hidden p-8 lg:p-12 rounded-3xl bg-surface-container-lowest shadow-xl flex flex-col lg:flex-row items-center justify-between gap-space-xl">
+<div class="absolute -right-16 -bottom-16 w-80 h-80 bg-primary-fixed/30 rounded-full blur-3xl pointer-events-none"></div>
+<div class="flex flex-col gap-space-xs max-w-xl text-center lg:text-left">
+<div class="inline-flex items-center gap-2 self-center lg:self-start px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold">
+<span>Disponible para Nuevos Retos</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-on-surface">¿Deseas escalar el Design System de tu Producto?</h3>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+            Ayudo a empresas de tecnología y startups a estructurar bibliotecas de componentes de alta conversión, auditadas en accesibilidad y listas para producción.
+          </p>
+</div>
+<div class="flex flex-col sm:flex-row items-center gap-space-md shrink-0 w-full sm:w-auto">
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg hover:bg-primary-container hover:text-on-primary-container transition-all shadow-md" href="../index.html#contact" target="_top">
+<span class="material-symbols-outlined text-[20px]">chat_bubble</span>
+            Hablemos
+          </a>
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-4 rounded-xl bg-surface-container text-on-surface font-label-lg text-label-lg hover:bg-surface-container-high transition-all" href="https://www.behance.net/gallery/170244457/Friendly" target="_blank" rel="noreferrer">
+<span class="material-symbols-outlined text-[20px]">open_in_new</span>
+            Ver en Behance
+          </a>
+</div>
+</div>
+</div>
+</section>
+</div></main><footer class="w-full bg-surface-container-low shadow-[0_-1px_8px_rgba(123,155,242,0.04)] py-margin-md"><div class="w-full max-w-7xl mx-auto px-6 lg:px-12 flex flex-col md:flex-row items-center justify-between gap-space-lg"><div class="flex flex-col items-center md:items-start gap-space-xs"><div class="flex items-center gap-space-sm"><span class="font-headline-sm text-headline-sm text-primary">Friendly</span><span class="font-label-sm text-label-sm text-on-surface-variant">Red de Amigos UI Kit &amp; Design System</span></div><p class="font-body-sm text-body-sm text-on-surface-variant">© Uldis Kriss Gómez R. Todos los derechos reservados.</p></div><nav class="flex flex-wrap items-center justify-center gap-space-md"><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" href="https://www.behance.net/gallery/170244457/Friendly" target="_blank" rel="noreferrer">Behance</a></nav></div></footer><script>
+/* Opened on its own? Show it inside the portfolio so the site navigation and language switch are available. */
+(function(){try{if(window.top===window.self){location.replace('../index.html#case-friendly');return}}catch(e){}
+var PAIRS=[["UX/UI Portfolio", "Portafolio UX/UI"], ["/", "/"], ["Design Systems", "Design Systems"], ["Friendly UI Kit", "Friendly UI Kit"], ["Design System for Digital Communities", "Design System para Comunidades Digitales"], ["UX/UI Case Study", "Caso de Estudio UX/UI"], ["Friendly: Friends Network", "Friendly: Red de Amigos"], ["UI Kit & Modular System", "UI Kit & Sistema Modular"], ["A complete architecture of atomic components, interactive states and an empathetic visual language designed to strengthen human connection, group events and social well-being on mobile and web.", "Arquitectura integral de componentes atómicos, estados interactivos y lenguaje visual empático diseñado para potenciar la conexión humana, la creación de eventos grupales y el bienestar social en entornos móviles y web."], ["Explore Components", "Explorar Componentes"], ["friendly-brand-cover.fig", "friendly-brand-cover.fig"], ["Friendly Community Identity", "Identidad Comunitaria Friendly"], ["UI Kit", "UI Kit"], ["Design Role", "Rol de Diseño"], ["Lead UI/UX & DS", "Lead UI/UX & DS"], ["Architecture & Tokens", "Arquitectura & Tokens"], ["Methodology", "Metodología"], ["Atomic Design", "Atomic Design"], ["Tokens + WCAG 2.1 AA", "Tokens + WCAG 2.1 AA"], ["Tools", "Herramientas"], ["Figma + React Specs", "Figma + React Specs"], ["Variables & Microcopy", "Variables & Microcopy"], ["Platforms", "Plataformas"], ["Web & Native Apps", "Web & Native Apps"], ["iOS, Android, Desktop", "iOS, Android, Desktop"], ["Chapter 01 · Foundations", "Capítulo 01 · Fundamentos"], ["Redesigning Social Interaction from Empathy", "Rediseñando la Interacción Social desde la Empatía"], ["Traditional social platforms rely on addictive patterns, visual overload and aggressive typography. Friendly was born as a warm digital space for organising tangible plans, band rehearsals, book clubs and real-life meetups without cognitive fatigue.", "Las plataformas sociales tradicionales apuestan por patrones de adicción, sobrecarga visual y tipografías agresivas. Friendly nace como un espacio digital cálido para organizar planes tangibles, ensayos de música, clubes de lectura y reuniones reales sin fatiga cognitiva."], ["1. Warmth & Closeness", "1. Calidez & Cercanía"], ["Pastel periwinkle, lavender and peach tones that induce calm, removing the constant sense of alert that conventional corporate feeds convey.", "Uso de tonos pastel periwinkle, lavanda y melocotón que inducen tranquilidad, eliminando la sensación de alerta constante que transmiten los feeds corporativos convencionales."], ["Less visual fatigue", "Reducción de fatiga visual"], ["2. Atomic Clarity", "2. Claridad Atómica"], ["A scalable architecture in four levels: value Tokens, interactive Atoms, functional Molecules and orchestrated Organisms for fast, frictionless composition.", "Arquitectura escalable en cuatro niveles: Tokens de valor, Átomos interactivos, Moléculas funcionales y Organismos orquestados para una rápida composición sin fricciones."], ["Fully decoupled", "Desacoplamiento total"], ["3. Empathetic Accessibility", "3. Accesibilidad Empática"], ["Minimum 44px touch targets, WCAG AA-certified contrast ratios on regular text and kind microcopy in form validation and error situations.", "Áreas de pulsación mínimas de 44px, relaciones de contraste certificadas WCAG AA en texto regular y microcopys amables en situaciones de validación o error de formulario."], ["Guaranteed affordance", "Affordance garantizado"], ["Chapter 02 · Brand Tokens", "Capítulo 02 · Tokens de Marca"], ["Colour Palette & Harmonious Visual Hierarchy", "Paleta Cromática & Jerarquía Visual Armónica"], ["Each token represents an emotional agreement between the user and the platform. We avoid extreme saturation in favour of luminous surfaces and refined contrast.", "Cada token representa un acuerdo emocional entre el usuario y la plataforma. Evitamos saturaciones extremas a favor de superficies luminosas y contrastes refinados."], ["Primary Blue", "Primary Blue"], ["#385AAD", "#385AAD"], ["Key interactions", "Interacciones clave"], ["Soft Periwinkle", "Soft Periwinkle"], ["#7B9BF2", "#7B9BF2"], ["Buttons & Cards", "Botones & Cards"], ["Secondary Iris", "Secondary Iris"], ["#5B51AF", "#5B51AF"], ["Communities & Tags", "Comunidades & Tags"], ["Soft Lavender", "Lavanda Suave"], ["#E4DFFF", "#E4DFFF"], ["Backgrounds & Chips", "Fondos & Chips"], ["Coral Alert", "Coral Alerta"], ["#E38564", "#E38564"], ["Soft warning", "Advertencia suave"], ["Canvas Slate", "Canvas Slate"], ["#D9D8F2", "#D9D8F2"], ["Borders & Containers", "Bordes & Contenedor"], ["Chapter 03 · Iconography", "Capítulo 03 · Iconografía"], ["Set of 35 Monoline Glyphs with Rounded Terminals", "Set de 35 Glifos Monolínea con Terminación Redondeada"], ["Designed on a 24x24 px base grid with a uniform 1.75px stroke. The set combines operational micro-signage (arrows, check, search) with community metaphors (calendar, avatar, favourites heart, trending flame and shared-trip plane).", "Diseñados en una matriz base de 24x24 px con grosor uniforme de 1.75px. El set combina micro-señalética operativa (flechas, check, search) con metáforas comunitarias (calendario, avatar, corazón de favoritos, fuego de tendencias y avión de viajes compartidos)."], ["Monochrome Periwinkle Tint", "Tinte Periwinkle Monocromático"], ["Ensures the iconography acts as a calm guiding element without competing with the photos and content shared by users.", "Garantiza que la iconografía actúe como un elemento de guía sereno sin competir con las fotografías y contenidos compartidos por los usuarios."], ["Icon Library v1.2 · 35 Units", "Icon Library v1.2 · 35 Unidades"], ["24px Grid", "Grid 24px"], ["Navigation", "Navegación"], ["Interaction", "Interacción"], ["Multimedia", "Multimedia"], ["Profile & Utility", "Perfil & Utilidad"], ["Chapter 04 · Fundamental Atoms", "Capítulo 04 · Átomos Fundamentales"], ["Button Matrix, Micro-Interactions & Controls", "Matriz de Botones, Micro-Interacciones & Controles"], ["A rigorous study of sizes, densities and interactive behaviours to serve users with different touch abilities and input devices.", "Estudio riguroso de tamaños, densidades y comportamientos interactivos para responder a usuarios con diversas destrezas táctiles y periféricos."], ["Universal Button Matrix", "Matriz Universal de Botones"], ["4 Semantic Families × 3 Touch Sizes (Large, Medium, Small)", "4 Familias Semánticas × 3 Tamaños Táctiles (Grande, Mediano, Pequeño)"], ["Base Tokens", "Tokens Base"], ["Primary", "Primario"], ["Critical actions and main confirmation.", "Acciones críticas y confirmación principal."], ["Secondary", "Secundario"], ["Thin border for complementary hierarchies.", "Borde fino para jerarquías complementarias."], ["Warning", "Advertencia"], ["Muted coral for exits or cancellations.", "Coral atenuado para salidas o cancelaciones."], ["Disabled", "Deshabilitado"], ["Soft grey with no click affordance.", "Gris suave sin affordance de cliqueo."], ["Quick Action Buttons", "Botones de Acción Rápida"], ["Instant colour feedback", "Feedback cromático instantáneo"], ["Asymmetric action pills host micro-interactions for", "Las píldoras de acción asimétricas alojan micro-interacciones de"], ["Like / Favourite", "Like / Favorito"], [",", ","], ["Preview", "Vista Previa"], ["Add to Plans", "Añadir a Planes"], [". When triggered, they transition to lilac with a pink glyph for immediate visual reward.", ". Al accionarse, transicionan a lila con un glifo rosa de recompensa visual inmediata."], ["Checkboxes", "Checkboxes"], ["3 States", "3 Estados"], ["Single or multiple selection validation, with support for a partial/indeterminate state in subgroups.", "Validación de selección única o múltiple con soporte para estado parcial/indefinido en subgrupos."], ["Radio Buttons", "Radio Buttons"], ["Exclusive", "Excluyentes"], ["Circular geometry with a pastel-blue inner dot for mutually exclusive selections.", "Geometría circular con punto interior azul pastel para selecciones mutuamente excluyentes."], ["Range Sliders", "Sliders de Rango"], ["Continuous", "Continuo"], ["Circular handle with a subtle halo for continuous adjustment of search radius and notification volume.", "Handle circular con halo sutil para ajuste continuo de radio de búsqueda y volumen de notificaciones."], ["Progress & Assist", "Progreso & Ayuda"], ["Feedback", "Feedback"], ["Continuous spinners, photo upload bars and floating pills to resolve doubts live.", "Spinners continuos, barras de subida de fotos y píldoras flotantes para resolver dudas en vivo."], ["Chapter 05 · Input Molecules", "Capítulo 05 · Moléculas de Entrada"], ["Resilient Forms, Selectors and Dynamic Tags", "Formularios Resilientes, Selectores y Etiquetas Dinámicas"], ["Managing personal information and community preferences must be fluid, safe and transparent at every point of interaction.", "La gestión de información personal y preferencias comunitarias debe ser fluida, segura y transparente en cada punto de interacción."], ["Text Input States", "Estados de Text Inputs"], ["4 States", "4 Estados"], ["Default & Active:", "Default & Active:"], ["Subtle blue border that strengthens during keyboard navigation.", "Borde azul sutil que se acentúa en navegación por teclado."], ["Error State:", "Estado de Error:"], ["Coral/red outline with explanatory copy below and a secure visibility toggle.", "Contorno coral/rojo con copy explicativo debajo y toggle de visibilidad seguro."], ["Dynamic Selector", "Selector Dinámico"], ["Dropdown Menu", "Dropdown Menu"], ["Floating component with accessible focus support, arrow-key navigation and interactive highlighting of the active option.", "Componente flotante con soporte para foco accesible, navegación con flechas y resaltado interactivo de opción activa."], ["Community Filters", "Filtros Comunitarios"], ["Tags & Interests System", "Sistema de Etiquetas & Gustos"], ["Interest selection modal (Music, Sports, Jam Sessions). Each lavender chip includes a quick dismiss button (x) and a reorderable state.", "Modal de selección de intereses (Música, Deportes, Jam Sessions). Cada chip lavanda incluye botón de descarte rápido (x) y estado reordenable."], ["Chapter 06 · Complex Organisms", "Capítulo 06 · Organismos Complejos"], ["Meetup Planner & List Navigation", "Planificador de Quedadas & Navegación de Listados"], ["Organisms combine molecules and atoms into single-task experiences: scheduling a group plan or browsing long activity catalogues without losing the thread.", "Los organismos combinan moléculas y átomos en experiencias de tarea única: agendar un plan grupal o navegar catálogos extensos de actividades sin perder el hilo."], ["Integrated Date & Time Selector", "Selector Integral Fecha & Hora"], ["Live Feature", "Live Feature"], ["Main Use Cases:", "Casos de Uso Principales:"], ["Booking rehearsal rooms, match invitations and syncing available times across friend circles. The top gradient adds visual lightness while the time slots offer haptic feedback.", "Reserva de horarios para salas de ensayo, convocatorias de partidos y sincronización de horarios disponibles entre círculos de amigos. El gradiente superior aporta ligereza estética mientras los slots horarios ofrecen feedback háptico."], ["Scalable Pagination System", "Sistema de Paginación Escalable"], ["Web & Mobile", "Web & Mobile"], ["Moment 1 · List Start", "Momento 1 · Arranque de Lista"], ["Pages 1 to 6 with an ellipsis towards the end (\"Last\").", "Páginas 1 a 6 con elipsis hacia el extremo final (\"Fin\")."], ["Moment 2 · Central Navigation", "Momento 2 · Navegación Central"], ["Page 7 active with symmetrical windows of 2 pages before and after.", "Página 7 activa con ventanas simétricas de 2 pasos anteriores y posteriores."], ["Moment 3 · Collection Limit", "Momento 3 · Límite de Colección"], ["Page 15 active and semantic deactivation of the \"Last\" control.", "Página 15 activa y desactivación semántica del control \"Fin\"."], ["Chapter 07 · Modular Containers", "Capítulo 07 · Contenedores Modulares"], ["Card System: 4 Variants for Dynamic Feeds", "Card System: 4 Variantes para Feeds Dinámicos"], ["Cards structure community content according to the nature of the event. They support single hero images, collages of group memories or inverted variants with direct calls to action to confirm attendance.", "Las tarjetas estructuran el contenido comunitario según la naturaleza del evento. Soportan imágenes protagónicas simples, collages de recuerdos grupales o variantes invertidas con llamadas a la acción directas para confirmar asistencia."], ["A", "A"], ["Standard Card:", "Card Estándar:"], ["Header, hero photo and editorial synopsis.", "Encabezado, foto hero y sinopsis editorial."], ["B", "B"], ["Collage Gallery Card:", "Card Galería Collage:"], ["Mosaic of 5 images for past events.", "Mosaico de 5 imágenes para eventos pasados."], ["C", "C"], ["Card with Action CTA:", "Card con CTA de Acción:"], ["A direct button to join the activity.", "Botón directo para unirse a la actividad."], ["D", "D"], ["Inverted Card:", "Card Invertida:"], ["Explanatory copy on top and gallery below.", "Copy explicativo superior y galería inferior."], ["Feed Content Cards Specification", "Feed Content Cards Specification"], ["Flexible Grid", "Flexible Grid"], ["Chapter 08 · Retrospective", "Capítulo 08 · Retrospectiva"], ["Key Lessons in Designing Communities", "Aprendizajes Clave en el Diseño de Comunidades"], ["Designing for digital friendship means reducing artificial stimuli and prioritising authenticity in every state of the system.", "Diseñar para la amistad digital implica reducir los estímulos artificiales y priorizar la autenticidad en cada estado del sistema."], ["Stress-Free Colour Psychology", "Psicología del Color Sin Estrés"], ["Replacing loud alerts with peach and lavender accents aims to reduce digital fatigue and keep the interface calm in every state.", "Reemplazar las alertas estridentes por acentos de melocotón y lavanda busca reducir la fatiga digital y mantener una interfaz serena en cada estado."], ["Tokens as a Common Language", "Tokens como Lenguaje Común"], ["Naming variables by semantic intent rather than hex value helps avoid sync errors between designers in Figma and developers in React Native.", "Nombrar las variables por intención semántica y no por valor hexadecimal ayuda a evitar errores de sincronización entre diseñadores en Figma y desarrolladores en React Native."], ["Scalability by Design", "Escalabilidad por Diseño"], ["The decoupled architecture is designed to absorb new verticals (hiking clubs and creative workshops) without changing the base system.", "La arquitectura desacoplada está pensada para absorber nuevas verticales (clubes de senderismo y talleres creativos) sin modificar el sistema base."], ["Available for New Challenges", "Disponible para Nuevos Retos"], ["Want to scale your product's Design System?", "¿Deseas escalar el Design System de tu Producto?"], ["I help tech companies and startups structure high-conversion component libraries that are audited for accessibility and production-ready.", "Ayudo a empresas de tecnología y startups a estructurar bibliotecas de componentes de alta conversión, auditadas en accesibilidad y listas para producción."], ["Let's talk", "Hablemos"], ["View on Behance", "Ver en Behance"], ["Friendly", "Friendly"], ["Friends Network UI Kit & Design System", "Red de Amigos UI Kit & Design System"], ["© Uldis Kriss Gómez R. All rights reserved.", "© Uldis Kriss Gómez R. Todos los derechos reservados."], ["Behance", "Behance"], ["Friendly Friends Network cover", "Friendly Red de Amigos Cover"], ["Collection of 35 periwinkle-blue vector icons from the Friendly UI Kit", "Colección de 35 iconos vectoriales azul periwinkle de Friendly UI Kit"], ["Friendly button matrix: Primary, Secondary, Warning and Disabled in Large, Medium and Small sizes", "Matriz de botones de Friendly: Primario, Secundario, Advertencia y Deshabilitado en tamaños Grande, Mediano y Pequeño"], ["Quick action buttons with Default and Triggered states in pink/lilac", "Botones de acción rápida con estados Por defecto y Accionado en rosa/lila"], ["Checkboxes in three states: Selected, Unselected and Indeterminate", "Checkboxes en tres estados: Seleccionado, No Seleccionado e Indefinido"], ["Radio buttons in Selected and Unselected states", "Radio buttons en estados Seleccionado y No Seleccionado"], ["Range sliders with Default, Mid-range and Full states", "Sliders de rango con estados Por Defecto, Rango Medio y Completo"], ["Linear and Circular progress indicators", "Indicadores de progreso Lineal y Circular"], ["Assist buttons: Information and Help", "Botones de asistencia Información y Ayuda"], ["Text input field states: Default, Active, Disabled and Error with visibility icon", "Estados de campos de texto input: Default, Active, Disabled y Error con icono de visibilidad"], ["Dropdown component with options and hover state", "Componente de Dropdown desplegable con opciones y estado hover"], ["Interactive purple tag modal with a close button", "Modal de etiquetas interactivas de color morado con botón de cerrar"], ["Interactive date and time picker with a June grid and slots from 09am to 04:30pm", "Selector de fecha y hora interactivo con cuadrícula de junio y slots de 09am a 04:30pm"], ["Interactive pagination showing start, middle (page 7 active) and end states", "Paginación interactiva mostrando estados inicial, intermedio con página 7 activa y final"], ["Grid of 4 content card variants: simple, multi-image gallery and with an action button", "Grid de 4 variantes de Cards de contenido: simple, galería múltiple y con botón de acción"], ["and", "y"]];
+var EN2ES=new Map(),ES2EN=new Map();
+function NORM(t){return t.replace(/\s+/g,' ').trim()}
+PAIRS.forEach(function(p){var en=NORM(p[0]),es=NORM(p[1]);if(en!==es){EN2ES.set(en,es);ES2EN.set(es,en)}});
+var ORIG=new WeakMap(),ATTRS=['alt','title','aria-label','placeholder'];
+function resolve(t,lang){var k=NORM(t);if(!k)return null;if(ES2EN.has(k))return lang==='en'?ES2EN.get(k):k;if(EN2ES.has(k))return lang==='es'?EN2ES.get(k):k;return null}
+function apply(lang){
+  var w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,{acceptNode:function(n){var p=n.parentElement;return(!p||p.closest('script,style'))?NodeFilter.FILTER_REJECT:NodeFilter.FILTER_ACCEPT}});
+  var nodes=[],n;while(n=w.nextNode())nodes.push(n);
+  nodes.forEach(function(node){
+    if(!ORIG.has(node)){if(resolve(node.data,'es')===null)return;ORIG.set(node,node.data)}
+    var base=ORIG.get(node),r=resolve(base,lang);if(r===null)return;
+    var m=base.match(/^(\s*)[\s\S]*?(\s*)$/);var next=m[1]+r+m[2];if(next!==node.data)node.data=next});
+  document.querySelectorAll('[alt],[title],[aria-label]').forEach(function(el){
+    var o=ORIG.get(el)||{};
+    ATTRS.forEach(function(a){if(!el.hasAttribute(a))return;if(!(a in o)){if(resolve(el.getAttribute(a),'es')===null)return;o[a]=el.getAttribute(a)}var r=resolve(o[a],lang);if(r!==null)el.setAttribute(a,r)});
+    ORIG.set(el,o)});
+  document.documentElement.lang=lang;
+}
+window.addEventListener('message',function(e){if(e.data&&e.data.type==='ukg-lang')apply(e.data.lang==='en'?'en':'es')});
+var saved=null;try{saved=localStorage.getItem('ukg-lang')}catch(_){}
+if(saved==='en')apply('en');
+try{window.parent.postMessage({type:'ukg-ready'},'*')}catch(_){}
+})();
+</script></body></html>
