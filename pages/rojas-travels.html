@@ -1,0 +1,535 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-tertiary-container": "#ffdeac", "tertiary-container": "#865d00", "error-container": "#ffdad6", "primary": "#9f0100", "secondary": "#006c51", "on-error-container": "#93000a", "primary-container": "#cc0502", "on-background": "#141b2b", "on-secondary-container": "#007055", "inverse-primary": "#ffb4a8", "outline": "#926f69", "surface-container-lowest": "#ffffff", "outline-variant": "#e7bdb6", "on-primary-fixed": "#410000", "on-surface-variant": "#5d3f3a", "on-primary-fixed-variant": "#930100", "surface": "#f9f9ff", "surface-bright": "#f9f9ff", "on-tertiary-fixed-variant": "#5f4100", "secondary-fixed": "#71facb", "tertiary-fixed": "#ffdeab", "surface-tint": "#c00000", "on-surface": "#141b2b", "on-tertiary-fixed": "#281900", "surface-container-low": "#f1f3ff", "tertiary": "#674700", "inverse-surface": "#293040", "on-secondary-fixed": "#002116", "primary-fixed": "#ffdad4", "tertiary-fixed-dim": "#ffba34", "surface-dim": "#d3daef", "on-primary": "#ffffff", "on-secondary-fixed-variant": "#00513c", "error": "#ba1a1a", "secondary-container": "#6ef7c9", "on-tertiary": "#ffffff", "background": "#f9f9ff", "on-error": "#ffffff", "primary-fixed-dim": "#ffb4a8", "surface-container": "#e9edff", "surface-container-highest": "#dce2f7", "on-secondary": "#ffffff", "secondary-fixed-dim": "#50ddb0", "surface-variant": "#dce2f7", "surface-container-high": "#e1e8fd", "inverse-on-surface": "#edf0ff", "on-primary-container": "#ffdbd5" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "margin": "3rem", "space-lg": "1.5rem", "gutter-mobile": "1rem", "space-xl": "2.5rem", "space-md": "1rem", "space-xs": "0.25rem", "margin-mobile": "1.25rem", "space-sm": "0.5rem", "gutter": "1.5rem" }, "fontFamily": { "headline-md": [ "Plus Jakarta Sans" ], "headline-lg": [ "Plus Jakarta Sans" ], "display-xl-mobile": [ "Plus Jakarta Sans" ], "body-xl": [ "Inter" ], "metric-num": [ "Plus Jakarta Sans" ], "body-md": [ "Inter" ], "label-md": [ "Inter" ], "headline-sm": [ "Plus Jakarta Sans" ], "display-xl": [ "Plus Jakarta Sans" ], "body-sm": [ "Inter" ], "headline-lg-mobile": [ "Plus Jakarta Sans" ] }, "fontSize": { "headline-md": [ "24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700" } ], "headline-lg": [ "36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "display-xl-mobile": [ "36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "800" } ], "body-xl": [ "18px", { "lineHeight": "28px", "fontWeight": "400" } ], "metric-num": [ "48px", { "lineHeight": "52px", "letterSpacing": "-0.03em", "fontWeight": "800" } ], "body-md": [ "16px", { "lineHeight": "24px", "fontWeight": "400" } ], "label-md": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "600" } ], "headline-sm": [ "20px", { "lineHeight": "28px", "fontWeight": "600" } ], "display-xl": [ "56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "800" } ], "body-sm": [ "14px", { "lineHeight": "20px", "fontWeight": "400" } ], "headline-lg-mobile": [ "28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" } ] } } } };</script><title>Rojas Travels App — Caso de estudio UX/UI</title></head><body class="bg-surface font-body-md text-on-surface antialiased"><main class="w-full pt-0 bg-surface"><div class="flex flex-col w-full">
+<!-- HERO SECTION -->
+<section class="relative w-full overflow-hidden bg-surface-container-lowest pb-space-xl pt-space-lg">
+<div class="absolute -right-24 -top-24 h-96 w-96 rounded-full bg-primary/5 blur-3xl pointer-events-none"></div>
+<div class="absolute -left-20 top-1/2 h-80 w-80 rounded-full bg-secondary/5 blur-3xl pointer-events-none"></div>
+<div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin flex flex-col gap-space-xl">
+<!-- Breadcrumb / Overline -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pb-1 border-b border-surface-container">
+<div class="flex flex-wrap items-center gap-2">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-md text-label-md font-bold">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span class="">CASO DE ESTUDIO UX/UI</span>
+</span>
+<span class="text-outline text-xs">/</span>
+<span class="px-2.5 py-1 rounded-md bg-surface-container text-on-surface font-label-md text-xs font-semibold uppercase tracking-wider">MOBILE TRAVEL APP</span>
+</div>
+<div class="inline-flex items-center gap-1.5 text-outline font-label-md text-xs tracking-wider">
+<span class="material-symbols-outlined text-[14px]">schedule</span>
+<span class="">Q4 · TRAVEL &amp; HOSPITALITY TECH</span>
+</div>
+</div>
+<!-- Hero Main Content Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<!-- Text Column (7 cols) -->
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-md text-label-md text-primary font-bold tracking-wider uppercase">Diseño de Experiencia de Producto</span>
+<h1 class="font-headline-lg lg:font-display-xl text-headline-lg lg:text-display-xl text-on-surface">
+              Rojas Travels App: Rediseño de la Experiencia Móvil de Turismo en La Guajira
+            </h1>
+</div>
+<p class="font-body-xl text-body-xl text-on-surface-variant max-w-2xl">
+            Diseño integral de producto digital (UX/UI, Design System y Prototipado Móvil) para la agencia turística líder en La Guajira, Colombia. Facilitando el descubrimiento de planes culturales Wayuu, reservas en tiempo real y asistencia integral al viajero.
+          </p>
+<!-- Project Metadata Strip -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-sm p-space-md bg-surface-container-low rounded-xl">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-outline uppercase tracking-wider">Rol</span>
+<span class="font-body-sm text-body-sm font-semibold text-on-surface">Lead UX/UI Designer</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-outline uppercase tracking-wider">Duración</span>
+<span class="font-body-sm text-body-sm font-semibold text-on-surface">8 Semanas (E2E)</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-outline uppercase tracking-wider">Herramientas</span>
+<span class="font-body-sm text-body-sm font-semibold text-on-surface">Figma, Tokens, UI Lab</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-outline uppercase tracking-wider">Plataforma</span>
+<span class="font-body-sm text-body-sm font-semibold text-on-surface">iOS / Android Nativo</span>
+</div>
+</div>
+<!-- CTA actions -->
+<div class="flex flex-wrap items-center gap-space-md pt-space-xs">
+<a class="inline-flex items-center gap-space-xs px-space-lg py-3 rounded-lg bg-primary-container text-on-primary font-body-sm text-body-sm font-semibold hover:bg-primary transition-all shadow-md" href="#screens">
+<span class="material-symbols-outlined text-[20px]">visibility</span>
+<span class="">Explorar Pantallas Finales</span>
+</a>
+<a class="inline-flex items-center gap-space-xs px-space-lg py-3 rounded-lg bg-surface-container-lowest text-on-surface font-body-sm text-body-sm font-semibold hover:bg-surface-container-high transition-all shadow-sm" href="#ui-kit">
+<span class="material-symbols-outlined text-[20px]">design_services</span>
+<span class="">Ver UI Kit y Sistema</span>
+</a>
+</div>
+</div>
+<!-- Visual Hero Showcase (5 cols) -->
+<div class="lg:col-span-5 flex justify-center relative">
+<div class="relative w-full max-w-md rounded-2xl overflow-hidden bg-surface-container-lowest shadow-2xl p-space-sm">
+<div class="relative rounded-xl overflow-hidden aspect-[5/4] bg-surface-container flex items-center justify-center">
+<img class="w-full h-full object-cover rounded-xl" data-alt="High quality mockup presentation of Rojas Travels mobile application held in hand featuring Caribbean desert and palm beach scenery with origami bird emblem and search interface" src="../assets/rojas-cover.jpg">
+<div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent pointer-events-none"></div>
+<div class="absolute bottom-4 left-4 right-4 text-white p-3 rounded-lg bg-black/40 backdrop-blur-md">
+<span class="font-label-md text-label-md uppercase tracking-wider text-secondary-container">Cover Visual</span>
+<p class="font-body-sm text-body-sm font-medium">Concepto Guajira Mágica · Rediseño Mobile 2025</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CAPÍTULO 02: BRANDING & IDENTIDAD VISUAL -->
+<section class="w-full py-space-xl bg-surface-container-lowest" id="ui-kit">
+<div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin flex flex-col gap-space-xl">
+<!-- Section Header -->
+<div class="flex flex-col max-w-3xl gap-space-xs">
+<div class="flex items-center gap-space-xs text-primary font-label-md text-label-md uppercase tracking-widest font-bold">
+<span class="material-symbols-outlined text-[16px]">palette</span>
+<span class="">Capítulo 02 · Identidad Visual &amp; Iconografía</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">
+          Branding: Vuelo de Libertad en Origami y Calidez Wayuu
+        </h2>
+<p class="font-body-xl text-body-xl text-on-surface-variant">
+          El imagotipo nace de la intersección entre la artesanía geométrica Wayuu y el concepto universal de viaje: un ave mensajera en origami rojo carmesí en pleno vuelo ascendente.
+        </p>
+</div>
+<!-- Visual Showcase Image -->
+<div class="w-full rounded-2xl overflow-hidden bg-surface-container shadow-md">
+<img alt="UI Kit, Branding, Origami Bird Symbol, and Comprehensive Iconography System for Rojas Travels App" class="w-full h-auto object-cover" src="../assets/rojas-uikit.jpg">
+</div>
+<!-- Icon System Deep Dive -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<div class="p-space-lg rounded-xl bg-surface-container-low flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs text-primary">
+<span class="material-symbols-outlined text-[24px]">touch_app</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Actions Icons</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Construidos sobre una retícula de 24x24 px con trazo unificado de 2px. Incluye engranajes de configuración, lupa de búsqueda dinámica, favoritos de corazón, visibilidad y marcadores de planes.
+          </p>
+<div class="flex flex-wrap gap-2 pt-space-xs">
+<span class="px-2 py-1 rounded bg-surface-container-lowest text-xs font-mono">search</span>
+<span class="px-2 py-1 rounded bg-surface-container-lowest text-xs font-mono">favorite</span>
+<span class="px-2 py-1 rounded bg-surface-container-lowest text-xs font-mono">visibility</span>
+<span class="px-2 py-1 rounded bg-surface-container-lowest text-xs font-mono">bookmark</span>
+</div>
+</div>
+<div class="p-space-lg rounded-xl bg-surface-container-low flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs text-tertiary">
+<span class="material-symbols-outlined text-[24px]">notifications_active</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Alerts &amp; Feedback</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Puntos de contacto visual para información sanitaria, cancelaciones de vuelos o advertencias climáticas en el desierto con estados semánticos directos.
+          </p>
+<div class="flex flex-wrap gap-2 pt-space-xs">
+<span class="px-2 py-1 rounded bg-surface-container-lowest text-xs font-mono">info</span>
+<span class="px-2 py-1 rounded bg-surface-container-lowest text-xs font-mono">warning</span>
+<span class="px-2 py-1 rounded bg-surface-container-lowest text-xs font-mono">notifications</span>
+</div>
+</div>
+<div class="p-space-lg rounded-xl bg-surface-container-low flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs text-secondary">
+<span class="material-symbols-outlined text-[24px]">hub</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Services Hub</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Glosario de 14 íconos utilitarios: calendario de salidas, sol mágico, tag de descuentos, teléfono directo, hotelería, cronómetro, soporte y asistencia jurídica local.
+          </p>
+<div class="flex flex-wrap gap-2 pt-space-xs">
+<span class="px-2 py-1 rounded bg-surface-container-lowest text-xs font-mono">calendar_month</span>
+<span class="px-2 py-1 rounded bg-surface-container-lowest text-xs font-mono">wb_sunny</span>
+<span class="px-2 py-1 rounded bg-surface-container-lowest text-xs font-mono">local_offer</span>
+<span class="px-2 py-1 rounded bg-surface-container-lowest text-xs font-mono">support_agent</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CAPÍTULO 03: DIGITAL TYPOGRAPHY & COLOR SYSTEM -->
+<section class="w-full py-space-xl bg-surface">
+<div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin flex flex-col gap-space-xl">
+<!-- Section Header -->
+<div class="flex flex-col max-w-3xl gap-space-xs">
+<div class="flex items-center gap-space-xs text-primary font-label-md text-label-md uppercase tracking-widest font-bold">
+<span class="material-symbols-outlined text-[16px]">format_shapes</span>
+<span class="">Capítulo 03 · Sistema de Tipografía &amp; Colorimetría</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">
+          Precisión Tipográfica Lato y Paleta Guajira Viva
+        </h2>
+<p class="font-body-xl text-body-xl text-on-surface-variant">
+          Estructura tipográfica optimizada para legibilidad en pantallas AMOLED bajo la luz solar intensa del Caribe, combinada con tonos cálidos del atardecer guajiro y la frescura turquesa del mar de Palomino.
+        </p>
+</div>
+<!-- Typography Artifact Full Image Showcase -->
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md uppercase tracking-wider text-outline">Artefacto 03.1 · Especificación de Escala Tipográfica</span>
+<span class="font-label-md text-label-md text-primary font-semibold">Fuente: Lato (Thin, Regular, Semibold, Black)</span>
+</div>
+<div class="w-full rounded-2xl overflow-hidden bg-surface-container shadow-md">
+<img alt="Especificación tipográfica oficial para Rojas Travels App detallando H1, H2, H3, H4 y pesos de texto" class="w-full h-auto object-cover" src="../assets/rojas-typography.jpg">
+</div>
+</div>
+<!-- Color Tokens Full Image Showcase -->
+<div class="flex flex-col gap-space-md pt-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md uppercase tracking-wider text-outline">Artefacto 03.2 · Sistema Cromático y Rampa de Color</span>
+<span class="font-label-md text-label-md text-secondary font-semibold">Primarios Carmesí + Acentos Caribe</span>
+</div>
+<div class="w-full rounded-2xl overflow-hidden bg-surface-container shadow-md">
+<img alt="Guía de Estilo y Paleta de Color con Crimson Red, Deep Wine, Coral Red, Warm Gold, Sunset Orange y Emerald Mint" class="w-full h-auto object-cover" src="../assets/rojas-colors.jpg">
+</div>
+</div>
+<!-- Color Psychology Breakdown Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-xs">
+<div class="w-full h-12 rounded-lg bg-primary-container flex items-center justify-center text-on-primary font-mono text-xs font-bold">
+            #CC0502 · Crimson Red
+          </div>
+<span class="font-headline-sm text-headline-sm text-on-surface mt-2">Carmesí Pasión</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Color rector que simboliza la calidez humana de los anfitriones y el dinamismo de la marca.</p>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-xs">
+<div class="w-full h-12 rounded-lg bg-secondary flex items-center justify-center text-on-secondary font-mono text-xs font-bold">
+            #006C51 / #00B389
+          </div>
+<span class="font-headline-sm text-headline-sm text-on-surface mt-2">Esmeralda Caribe</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Tonos tomados de las aguas de Palomino y Manaure para resaltar descuentos y promociones.</p>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-xs">
+<div class="w-full h-12 rounded-lg bg-tertiary-fixed-dim flex items-center justify-center text-on-tertiary-fixed font-mono text-xs font-bold">
+            #FFB50D · Golden Amber
+          </div>
+<span class="font-headline-sm text-headline-sm text-on-surface mt-2">Dunas &amp; Sol</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">El color de las arenas de Taroa y el atardecer en el Cabo de la Vela, para estados de alerta y botones secundarios.</p>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-xs">
+<div class="w-full h-12 rounded-lg bg-surface-container-highest flex items-center justify-center text-on-surface font-mono text-xs font-bold">
+            #F9FAFF / #E9EDFF
+          </div>
+<span class="font-headline-sm text-headline-sm text-on-surface mt-2">Superficie Pura</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Bases níveas que permiten que la fotografía de los paisajes respire con máxima nitidez.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- CAPÍTULO 04: LAYOUT, GRID & SPACING SYSTEM -->
+<section class="w-full py-space-xl bg-surface-container-lowest">
+<div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin flex flex-col gap-space-xl">
+<!-- Section Header -->
+<div class="flex flex-col max-w-3xl gap-space-xs">
+<div class="flex items-center gap-space-xs text-primary font-label-md text-label-md uppercase tracking-widest font-bold">
+<span class="material-symbols-outlined text-[16px]">grid_4x4</span>
+<span class="">Capítulo 04 · Retícula &amp; Arquitectura de Contenedores</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">
+          Grid Móvil de 4 Columnas y Jerarquía de Contenedores
+        </h2>
+<p class="font-body-xl text-body-xl text-on-surface-variant">
+          Estructura geométrica basada en una grilla móvil de 4 columnas con márgenes laterales de 20px y gutters de 16px. La arquitectura modular permite una jerarquía de navegación predecible.
+        </p>
+</div>
+<!-- Grid Artifact Image -->
+<div class="w-full rounded-2xl overflow-hidden bg-surface-container shadow-md">
+<img alt="Grid &amp; Layout Specification showing 4 columns grid, 16px gutters, 20px margins, and Container hierarchy from A1 to E1" class="w-full h-auto object-cover" src="../assets/rojas-grid.jpg">
+</div>
+<!-- Container Hierarchy Technical Notes -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-xs">
+<span class="font-label-md text-label-md font-bold text-primary">CONTENEDOR A1 · HERO BANNER</span>
+<p class="font-body-sm text-body-sm text-on-surface">Ocupa la zona superior completa, alojando el saludo contextual, la identidad visual y el buscador de aventura interactivo.</p>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-xs">
+<span class="font-label-md text-label-md font-bold text-secondary">CONTENEDORES B1 A B4 · PILLS &amp; CARDS</span>
+<p class="font-body-sm text-body-sm text-on-surface">Pestañas duales y cards secundarias con ratios adaptables para scrolls horizontales y listas continuas.</p>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-xs">
+<span class="font-label-md text-label-md font-bold text-tertiary">CONTENEDOR D1 &amp; E1 · HIGHLIGHT &amp; CTA</span>
+<p class="font-body-sm text-body-sm text-on-surface">Card principal de recomendación del día y barra inferior flotante con disparadores de alta conversión.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- CAPÍTULO 05: COMPONENTES, BOTONES & CARDS DE TOURS -->
+<section class="w-full py-space-xl bg-surface">
+<div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin flex flex-col gap-space-xl">
+<!-- Section Header -->
+<div class="flex flex-col max-w-3xl gap-space-xs">
+<div class="flex items-center gap-space-xs text-primary font-label-md text-label-md uppercase tracking-widest font-bold">
+<span class="material-symbols-outlined text-[16px]">widgets</span>
+<span class="">Capítulo 05 · Biblioteca de Componentes</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">
+          Botones de Acción Rápida y Sistema de Cards de Tours
+        </h2>
+<p class="font-body-xl text-body-xl text-on-surface-variant">
+          Diseño atómico estructurado para ofrecer alta respuesta táctil: pills multifunción con estados activo/inactivo y cards de paquetes turísticos con badges de precio y valoraciones transparentes.
+        </p>
+</div>
+<!-- Artifact Showcase: Buttons and Cards -->
+<div class="w-full rounded-2xl overflow-hidden bg-surface-container shadow-md">
+<img class="w-full h-auto object-cover" data-alt="Component system showcase displaying navigation pills in active and inactive states, tour package cards with pricing and ratings, and primary booking buttons in red and green" src="../assets/rojas-components.jpg">
+</div>
+<!-- Live Recreated Interactive Component Matrix -->
+<div class="flex flex-col gap-space-md">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Muestra de Componentes</h3>
+<!-- Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Card 1: Guajira Mágica -->
+<div class="p-space-sm rounded-xl bg-surface-container-lowest shadow-md flex flex-col gap-space-sm">
+<div class="relative w-full h-40 rounded-lg overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Rocky coastal landscape of Cabo de la Vela in La Guajira Colombia with turquoise ocean water under bright blue skies" src="../assets/rojas-card-1.jpg">
+<button class="absolute top-2 right-2 w-8 h-8 rounded-full bg-white/80 backdrop-blur-sm flex items-center justify-center text-primary hover:bg-white transition-colors">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+</div>
+<div class="flex flex-col gap-0.5">
+<span class="font-headline-sm text-headline-sm text-on-surface line-clamp-1">Plan Guajira Mágica</span>
+</div>
+<div class="flex items-center justify-between mt-auto pt-2">
+<div class="flex items-center gap-1 text-tertiary-container font-semibold text-sm">
+<span class="material-symbols-outlined text-[16px] text-yellow-500" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="">4.7 (549)</span>
+</div>
+<button class="px-3 py-1.5 rounded-md bg-primary-container text-on-primary font-label-md text-label-md font-bold uppercase hover:bg-primary transition-all">
+                Reservar
+              </button>
+</div>
+</div>
+<!-- Card 2: Palomino -->
+<div class="p-space-sm rounded-xl bg-surface-container-lowest shadow-md flex flex-col gap-space-sm">
+<div class="relative w-full h-40 rounded-lg overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Lush green tropical rainforest along the Palomino river meeting the Caribbean sea near Sierra Nevada de Santa Marta" src="../assets/rojas-card-2.jpg">
+<button class="absolute top-2 right-2 w-8 h-8 rounded-full bg-white/80 backdrop-blur-sm flex items-center justify-center text-outline hover:text-primary hover:bg-white transition-colors">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+</div>
+<div class="flex flex-col gap-0.5">
+<span class="font-headline-sm text-headline-sm text-on-surface line-clamp-1">Palomino al pie de la Sierra</span>
+</div>
+<div class="flex items-center justify-between mt-auto pt-2">
+<div class="flex items-center gap-1 text-tertiary-container font-semibold text-sm">
+<span class="material-symbols-outlined text-[16px] text-yellow-500" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="">4.5 (421)</span>
+</div>
+<button class="px-3 py-1.5 rounded-md bg-primary-container text-on-primary font-label-md text-label-md font-bold uppercase hover:bg-primary transition-all">
+                Reservar
+              </button>
+</div>
+</div>
+<!-- Card 3: Villa Román - Magia Wayuu -->
+<div class="p-space-sm rounded-xl bg-surface-container-lowest shadow-md flex flex-col gap-space-sm">
+<div class="relative w-full h-40 rounded-lg overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Traditional Wayuu woman in colorful woven manta robe standing in desert rancheria settlement in La Guajira under warm sun" src="../assets/rojas-card-3.jpg">
+<button class="absolute top-2 right-2 w-8 h-8 rounded-full bg-white/80 backdrop-blur-sm flex items-center justify-center text-outline hover:text-primary hover:bg-white transition-colors">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+</div>
+<div class="flex flex-col gap-0.5">
+<span class="font-headline-sm text-headline-sm text-on-surface line-clamp-1">Villa Román - Magia Wayuu</span>
+</div>
+<div class="flex items-center justify-between mt-auto pt-2">
+<div class="flex items-center gap-1 text-tertiary-container font-semibold text-sm">
+<span class="material-symbols-outlined text-[16px] text-yellow-500" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="">4.4 (319)</span>
+</div>
+<button class="px-3 py-1.5 rounded-md bg-primary-container text-on-primary font-label-md text-label-md font-bold uppercase hover:bg-primary transition-all">
+                Reservar
+              </button>
+</div>
+</div>
+<!-- Card 4: Tour del Carbón -->
+<div class="p-space-sm rounded-xl bg-surface-container-lowest shadow-md flex flex-col gap-space-sm">
+<div class="relative w-full h-40 rounded-lg overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Iconic freight locomotive train traversing vast arid plains in northern Colombia under sunny sky" src="../assets/rojas-card-4.jpg">
+<button class="absolute top-2 right-2 w-8 h-8 rounded-full bg-white/80 backdrop-blur-sm flex items-center justify-center text-outline hover:text-primary hover:bg-white transition-colors">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+</div>
+<div class="flex flex-col gap-0.5">
+<span class="font-headline-sm text-headline-sm text-on-surface line-clamp-1">Tour del Carbón</span>
+</div>
+<div class="flex items-center justify-between mt-auto pt-2">
+<div class="flex items-center gap-1 text-tertiary-container font-semibold text-sm">
+<span class="material-symbols-outlined text-[16px] text-yellow-500" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="">4.7 (214)</span>
+</div>
+<button class="px-3 py-1.5 rounded-md bg-primary-container text-on-primary font-label-md text-label-md font-bold uppercase hover:bg-primary transition-all">
+                Reservar
+              </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CAPÍTULO 06: PANTALLAS FINALES & EXPERIENCIA COMPLETA -->
+<section class="w-full py-space-xl bg-surface-container-lowest" id="screens">
+<div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin flex flex-col gap-space-xl">
+<!-- Section Header -->
+<div class="flex flex-col max-w-3xl gap-space-xs">
+<div class="flex items-center gap-space-xs text-primary font-label-md text-label-md uppercase tracking-widest font-bold">
+<span class="material-symbols-outlined text-[16px]">devices</span>
+<span class="">Capítulo 06 · Pantallas Finales &amp; User Flow</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">
+          Flujo Integral de Producto Móvil
+        </h2>
+<p class="font-body-xl text-body-xl text-on-surface-variant">
+          De la bienvenida a la solicitud de asistencia en terreno: las pantallas finales del prototipo móvil.
+        </p>
+</div>
+<div class="w-full rounded-2xl overflow-hidden bg-surface-container shadow-md"><img alt="Vista general de las pantallas finales de Rojas Travels App" class="w-full h-auto object-cover" src="../assets/rojas-screens-overview.jpg"></div>
+<!-- Flow Gallery Grid (Screens) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-space-md items-start">
+<!-- Screen 1: Splash / Home -->
+<div class="flex flex-col gap-space-xs">
+<div class="rounded-2xl overflow-hidden bg-surface-container-high shadow-lg">
+<img alt="Screen 01: Bienvenido a La Guajira - Pantalla principal con buscador y selector rápido" class="w-full h-auto object-cover" src="../assets/rojas-screen-1.jpg">
+</div>
+<div class="flex flex-col p-2">
+<span class="font-label-md text-label-md font-bold text-primary">PANTALLA 01</span>
+<span class="font-headline-sm text-headline-sm text-on-surface text-base">Splash &amp; Home</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-xs">Acceso inmediato al buscador y atajo a ofertas.</p>
+</div>
+</div>
+<!-- Screen 2: Feed Planes -->
+<div class="flex flex-col gap-space-xs">
+<div class="rounded-2xl overflow-hidden bg-surface-container-high shadow-lg">
+<img alt="Screen 02: Feed de Planes Favoritos y Los Más Buscados con cards completas" class="w-full h-auto object-cover" src="../assets/rojas-screen-2.jpg">
+</div>
+<div class="flex flex-col p-2">
+<span class="font-label-md text-label-md font-bold text-primary">PANTALLA 02</span>
+<span class="font-headline-sm text-headline-sm text-on-surface text-base">Catálogo &amp; Favoritos</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-xs">Filtros por popularidad y planes guardados.</p>
+</div>
+</div>
+<!-- Screen 3: Formulario Reserva -->
+<div class="flex flex-col gap-space-xs">
+<div class="rounded-2xl overflow-hidden bg-surface-container-high shadow-lg">
+<img alt="Screen 03: Formulario interactivo Reserva tu Plan Turístico con mapa de La Guajira y selector de pasajeros" class="w-full h-auto object-cover" src="../assets/rojas-screen-3.jpg">
+</div>
+<div class="flex flex-col p-2">
+<span class="font-label-md text-label-md font-bold text-primary">PANTALLA 03</span>
+<span class="font-headline-sm text-headline-sm text-on-surface text-base">Reserva &amp; Fechas</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-xs">Selector de personas, mapa y cotización clara.</p>
+</div>
+</div>
+<!-- Screen 4: Información a la Mano -->
+<div class="flex flex-col gap-space-xs">
+<div class="rounded-2xl overflow-hidden bg-surface-container-high shadow-lg">
+<img alt="Screen 04: Información a la Mano - Comunidad y experiencias Wayuu verificadas" class="w-full h-auto object-cover" src="../assets/rojas-screen-4.jpg">
+</div>
+<div class="flex flex-col p-2">
+<span class="font-label-md text-label-md font-bold text-primary">PANTALLA 04</span>
+<span class="font-headline-sm text-headline-sm text-on-surface text-base">Info a la Mano</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-xs">Experiencias Wayuu, recomendaciones y tips.</p>
+</div>
+</div>
+<!-- Screen 5: Servicios Externos -->
+<div class="flex flex-col gap-space-xs">
+<div class="rounded-2xl overflow-hidden bg-surface-container-high shadow-lg">
+<img alt="Screen 05: Servicios Externos y Asistencia Presencial con soporte de guías y traductores" class="w-full h-auto object-cover" src="../assets/rojas-screen-5.jpg">
+</div>
+<div class="flex flex-col p-2">
+<span class="font-label-md text-label-md font-bold text-primary">PANTALLA 05</span>
+<span class="font-headline-sm text-headline-sm text-on-surface text-base">Servicios Externos</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-xs">Soporte médico, traductores y auxilio logístico.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CAPÍTULO 07: CONCLUSIONES, APRENDIZAJES & IMPACTO -->
+<section class="w-full py-space-xl bg-surface">
+<div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin flex flex-col gap-space-xl">
+<!-- Section Header -->
+<div class="flex flex-col max-w-3xl gap-space-xs">
+<div class="flex items-center gap-space-xs text-primary font-label-md text-label-md uppercase tracking-widest font-bold">
+<span class="material-symbols-outlined text-[16px]">insights</span>
+<span class="">Capítulo 07 · Conclusiones &amp; Madurez de Producto</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">
+          Aprendizajes Clave de Diseño en Contextos Étnicos y Rurales
+        </h2>
+</div>
+<!-- Key Insights Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-sm">
+<span class="w-10 h-10 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center font-bold">01</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Diseño Respetuoso de la Identidad Étnica</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Evitar clichés folclóricos y en su lugar traducir la sofisticación geométrica de los tejidos Wayuu a sistemas de diseño contemporáneos con microinteracciones sutiles.
+          </p>
+</div>
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-sm">
+<span class="w-10 h-10 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center font-bold">02</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Optimización para Alta Luminosidad y Conectividad</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Alto contraste pensado para usar la app bajo el sol del mediodía en las dunas, y contemplando zonas sin cobertura 4G.
+          </p>
+</div>
+<div class="p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-sm">
+<span class="w-10 h-10 rounded-full bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center font-bold">03</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Transparencia Radical en Precios y Logística</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Eliminar la ambigüedad en costos de peajes indígenas, alimentación y requerimientos de vehículos todo terreno fue una prioridad de diseño para generar confianza antes de reservar.
+          </p>
+</div>
+</div>
+<!-- Contact & Call to Action Box -->
+<div class="p-space-xl rounded-3xl bg-surface-container-lowest shadow-xl flex flex-col lg:flex-row items-center justify-between gap-space-lg">
+<div class="flex flex-col gap-space-xs max-w-xl text-center lg:text-left">
+<span class="font-label-md text-label-md uppercase tracking-wider text-primary font-bold">¿Listo para construir el siguiente producto?</span>
+<h3 class="font-headline-lg text-headline-lg text-on-surface">
+            ¿Hablamos sobre cómo elevar tu producto digital?
+          </h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Estoy disponible para roles como Lead Product Designer, Consultoría UX/UI estratégica y conferencias sobre diseño en turismo cultural.
+          </p>
+</div>
+<div class="flex flex-wrap items-center justify-center gap-space-sm shrink-0">
+<a class="inline-flex items-center gap-space-xs px-space-lg py-3.5 rounded-xl bg-primary-container text-on-primary font-body-sm text-body-sm font-semibold hover:bg-primary transition-all shadow-md" href="../index.html#contact" target="_top">
+<span class="material-symbols-outlined text-[20px]">calendar_today</span>
+<span class="">Hablemos</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+</div></main><footer class="w-full bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] py-space-xl"><div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin flex flex-col md:flex-row items-center justify-between gap-space-lg"><div class="flex flex-col gap-space-xs text-center md:text-left"><div class="flex items-center justify-center md:justify-start gap-space-sm"><span class="font-headline-sm text-headline-sm text-on-surface font-bold">Rojas Travels App</span><span class="inline-flex items-center gap-1.5 px-space-sm py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-md text-label-md"><span class="w-2 h-2 rounded-full bg-secondary"></span>Disponible para proyectos</span></div><p class="font-body-sm text-body-sm text-on-surface-variant">Diseño UX/UI &amp; Product Design · Rojas Travels App · Portfolio Case Study</p></div><div class="flex flex-wrap items-center justify-center gap-space-md"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="https://www.behance.net/gallery/170222585/Rojas-Travels-APP" target="_blank" rel="noreferrer">Behance</a></div></div><div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin mt-space-lg pt-space-md flex flex-col sm:flex-row items-center justify-between gap-space-sm text-center font-body-sm text-body-sm text-on-surface-variant"><p class="">© 2025 Rojas Travels App. Todos los derechos reservados.</p></div></footer>
+
+<script>
+/* Opened on its own? Show it inside the portfolio so the site navigation and language switch are available. */
+(function(){try{if(window.top===window.self){location.replace('../index.html#case-rojas');return}}catch(e){}
+var PAIRS=[["UX/UI CASE STUDY", "CASO DE ESTUDIO UX/UI"], ["MOBILE TRAVEL APP", "MOBILE TRAVEL APP"], ["Product Experience Design", "Diseño de Experiencia de Producto"], ["Rojas Travels App: Redesigning the Mobile Tourism Experience in La Guajira", "Rojas Travels App: Rediseño de la Experiencia Móvil de Turismo en La Guajira"], ["End-to-end digital product design (UX/UI, Design System and Mobile Prototyping) for the leading travel agency in La Guajira, Colombia. Making Wayuu cultural plans easier to discover, enabling real-time bookings and offering complete on-the-ground traveller support.", "Diseño integral de producto digital (UX/UI, Design System y Prototipado Móvil) para la agencia turística líder en La Guajira, Colombia. Facilitando el descubrimiento de planes culturales Wayuu, reservas en tiempo real y asistencia integral al viajero."], ["Role", "Rol"], ["Duration", "Duración"], ["8 Weeks (E2E)", "8 Semanas (E2E)"], ["Tools", "Herramientas"], ["Platform", "Plataforma"], ["Native iOS / Android", "iOS / Android Nativo"], ["Explore the final screens", "Explorar Pantallas Finales"], ["View the UI kit and system", "Ver UI Kit y Sistema"], ["Cover Visual", "Cover Visual"], ["Guajira Mágica concept · Mobile redesign 2025", "Concepto Guajira Mágica · Rediseño Mobile 2025"], ["Direct bookings", "Reservas Directas"], ["Increase in package conversion from mobile devices.", "Incremento en conversión de paquetes desde dispositivo móvil."], ["Checkout friction", "Fricción en Checkout"], ["Lower drop-off when choosing dates and passengers.", "Reducción del abandono en la selección de fechas y pasajeros."], ["UI consistency", "Consistencia UI"], ["Tokens and components in sync with the Design System.", "Tokens y componentes sincronizados con Design System."], ["Traveller CSAT", "CSAT de Viajeros"], ["Satisfaction score in qualitative tests with real users.", "Índice de satisfacción en pruebas cualitativas con usuarios reales."], ["Chapter 01 · Context and Diagnosis", "Capítulo 01 · Contexto y Diagnóstico"], ["The Challenge: Digitising the Cultural and Natural Magic of La Guajira", "El Reto: Digitalizar la Magia Étnica y Natural de La Guajira"], ["Tourism in Colombia’s northernmost peninsula faced a paradox: unmatched visual and cultural richness (Wayuu culture, Cabo de la Vela, the dunes of Taroa and Palomino) trapped in manual WhatsApp channels, printed brochures and distrust of remote payments.", "El turismo en la península más septentrional de Colombia enfrentaba una paradoja: una riqueza visual y cultural inigualable (Cultura Wayuu, Cabo de la Vela, dunas de Taroa y Palomino) atrapada en canales manuales por WhatsApp, folletos impresos y desconfianza en métodos de pago remotos."], ["Critical pain points", "Puntos de Dolor Críticos"], ["Scattered and Distrusted", "Dispersión y Desconfianza"], ["Fragmented information:", "Información fragmentada:"], ["No central source for real itineraries, exact costs or 4x4 logistics requirements.", "Sin centralización de itinerarios reales, costos exactos ni requerimientos logísticos 4x4."], ["Transactional friction:", "Fricción transaccional:"], ["Bookings relied on phone calls and bank transfers with no immediate receipt.", "Reservas dependientes de llamadas y transferencias bancarias sin comprobante inmediato."], ["Isolation on the ground:", "Aislamiento en territorio:"], ["Travellers lacked unified local assistance (bilingual guide, Wayuunaiki translators, medical help).", "Los viajeros carecían de asistencia local unificada (guía bilingüe, traductores Wayuunaiki, auxilio médico)."], ["Designed strategy", "Estrategia Diseñada"], ["A Complete Mobile Experience", "Experiencia Móvil Integral"], ["Immersive visual catalogue:", "Catálogo Visual Inmersivo:"], ["Cards with authentic photography, transparent price breakdowns and verified ratings.", "Tarjetas con fotografía auténtica, desglose de precios transparentes y calificaciones verificadas."], ["Dynamic passenger and date selector:", "Selector de Pasajeros & Fechas Dinámico:"], ["Quick setup of adults, children and infants with an instant quote.", "Configuración ágil de adultos, niños y bebés con cotización instantánea."], ["On-the-ground assistance hub:", "Hub de Asistencia en Terreno:"], ["One-tap access to external services: official guide, childcare, 4x4 transport and rancheria lodging.", "Acceso a un toque a servicios externos: guía oficial, guardería, transporte 4x4 y hospedaje en rancherías."], ["Discovery path & information architecture", "Ruta de Descubrimiento & Arquitectura de Información"], ["01 · INSPIRATION", "01 · INSPIRACIÓN"], ["Welcome to Guajira", "Bienvenido Guajira"], ["Sensory banner, free search, direct access to daily offers and the most searched plans.", "Banner sensorial, buscador libre, acceso directo a ofertas diarias y planes más buscados."], ["02 · SELECTION", "02 · SELECCIÓN"], ["Browsing by Cards", "Exploración por Cards"], ["Cards with key metadata: Guajira Mágica, Palomino, Wayuu Magic and the Coal Tour.", "Cards con metadatos clave: Guajira Mágica, Palomino, Magia Wayuu y Tour del Carbón."], ["03 · BOOKING", "03 · RESERVA"], ["Dynamic Booking", "Reserva Dinámica"], ["Modular form for travellers, departure calendar with geolocation maps.", "Formulario modular de personas, calendario de salidas con mapas de geolocalización."], ["04 · SUPPORT", "04 · SOPORTE"], ["In-person Services", "Servicios Presenciales"], ["Access to a support network for incidents, native-language translators and mobile logistics.", "Acceso a red de apoyo para incidentes, traductores de lengua nativa y logística móvil."], ["Chapter 02 · Visual Identity & Iconography", "Capítulo 02 · Identidad Visual & Iconografía"], ["Branding: A Flight of Freedom in Origami and Wayuu Warmth", "Branding: Vuelo de Libertad en Origami y Calidez Wayuu"], ["The logo emerges where Wayuu geometric craft meets the universal idea of travel: a crimson-red origami messenger bird in full ascending flight.", "El imagotipo nace de la intersección entre la artesanía geométrica Wayuu y el concepto universal de viaje: un ave mensajera en origami rojo carmesí en pleno vuelo ascendente."], ["Actions Icons", "Actions Icons"], ["Built on a 24x24 px grid with a consistent 2px stroke. Includes settings gears, a dynamic search magnifier, heart favourites, visibility and plan bookmarks.", "Construidos sobre una retícula de 24x24 px con trazo unificado de 2px. Incluye engranajes de configuración, lupa de búsqueda dinámica, favoritos de corazón, visibilidad y marcadores de planes."], ["Alerts & Feedback", "Alerts & Feedback"], ["Visual touchpoints for health information, flight cancellations or desert weather warnings, with direct semantic states.", "Puntos de contacto visual para información sanitaria, cancelaciones de vuelos o advertencias climáticas en el desierto con estados semánticos directos."], ["Services Hub", "Services Hub"], ["A glossary of 14 utility icons: departure calendar, magic sun, discount tag, direct phone, lodging, timer, support and local legal assistance.", "Glosario de 14 íconos utilitarios: calendario de salidas, sol mágico, tag de descuentos, teléfono directo, hotelería, cronómetro, soporte y asistencia jurídica local."], ["Chapter 03 · Typography & Colour System", "Capítulo 03 · Sistema de Tipografía & Colorimetría"], ["Lato Typographic Precision and the Guajira Viva Palette", "Precisión Tipográfica Lato y Paleta Guajira Viva"], ["A type structure tuned for legibility on AMOLED screens in intense Caribbean sunlight, paired with the warm tones of the Guajira sunset and the turquoise freshness of the Palomino sea.", "Estructura tipográfica optimizada para legibilidad en pantallas AMOLED bajo la luz solar intensa del Caribe, combinada con tonos cálidos del atardecer guajiro y la frescura turquesa del mar de Palomino."], ["Artefact 03.1 · Type Scale Specification", "Artefacto 03.1 · Especificación de Escala Tipográfica"], ["Typeface: Lato (Thin, Regular, Semibold, Black)", "Fuente: Lato (Thin, Regular, Semibold, Black)"], ["Artefact 03.2 · Colour System and Colour Ramp", "Artefacto 03.2 · Sistema Cromático y Rampa de Color"], ["Crimson primaries + Caribbean accents", "Primarios Carmesí + Acentos Caribe"], ["Passion Crimson", "Carmesí Pasión"], ["The lead colour, symbolising the human warmth of the hosts and the dynamism of the brand.", "Color rector que simboliza la calidez humana de los anfitriones y el dinamismo de la marca."], ["Caribbean Emerald", "Esmeralda Caribe"], ["Tones taken from the waters of Palomino and Manaure to highlight discounts and promotions.", "Tonos tomados de las aguas de Palomino y Manaure para resaltar descuentos y promociones."], ["Dunes & Sun", "Dunas & Sol"], ["The colour of the Taroa sands and the sunset at Cabo de la Vela, for alert states and secondary buttons.", "El color de las arenas de Taroa y el atardecer en el Cabo de la Vela, para estados de alerta y botones secundarios."], ["Pure Surface", "Superficie Pura"], ["Snow-white bases that let landscape photography breathe with maximum sharpness.", "Bases níveas que permiten que la fotografía de los paisajes respire con máxima nitidez."], ["Chapter 04 · Grid & Container Architecture", "Capítulo 04 · Retícula & Arquitectura de Contenedores"], ["4-Column Mobile Grid and Container Hierarchy", "Grid Móvil de 4 Columnas y Jerarquía de Contenedores"], ["A geometric structure built on a 4-column mobile grid with 20px side margins and 16px gutters. The modular architecture gives navigation a predictable hierarchy.", "Estructura geométrica basada en una grilla móvil de 4 columnas con márgenes laterales de 20px y gutters de 16px. La arquitectura modular permite una jerarquía de navegación predecible."], ["CONTAINER A1 · HERO BANNER", "CONTENEDOR A1 · HERO BANNER"], ["Fills the whole top area, holding the contextual greeting, the visual identity and the interactive adventure search.", "Ocupa la zona superior completa, alojando el saludo contextual, la identidad visual y el buscador de aventura interactivo."], ["CONTAINERS B1 TO B4 · PILLS & CARDS", "CONTENEDORES B1 A B4 · PILLS & CARDS"], ["Dual tabs and secondary cards with flexible ratios for horizontal scrolls and continuous lists.", "Pestañas duales y cards secundarias con ratios adaptables para scrolls horizontales y listas continuas."], ["CONTAINERS D1 & E1 · HIGHLIGHT & CTA", "CONTENEDOR D1 & E1 · HIGHLIGHT & CTA"], ["Main recommendation card of the day and a floating bottom bar with high-conversion triggers.", "Card principal de recomendación del día y barra inferior flotante con disparadores de alta conversión."], ["Chapter 05 · Component Library", "Capítulo 05 · Biblioteca de Componentes"], ["Quick-Action Buttons and the Tour Card System", "Botones de Acción Rápida y Sistema de Cards de Tours"], ["Atomic design built for responsive touch: multi-function pills with active/inactive states and tour package cards with price badges and transparent ratings.", "Diseño atómico estructurado para ofrecer alta respuesta táctil: pills multifunción con estados activo/inactivo y cards de paquetes turísticos con badges de precio y valoraciones transparentes."], ["Component Showcase", "Muestra de Componentes"], ["Plan Guajira Mágica", "Plan Guajira Mágica"], ["Palomino at the Foot of the Sierra", "Palomino al pie de la Sierra"], ["Reserve", "Reservar"], ["Chapter 06 · Final Screens & User Flow", "Capítulo 06 · Pantallas Finales & User Flow"], ["An End-to-End Mobile Product Flow", "Flujo Integral de Producto Móvil"], ["From the welcome screen to requesting on-the-ground assistance: the final screens of the mobile prototype.", "De la bienvenida a la solicitud de asistencia en terreno: las pantallas finales del prototipo móvil."], ["SCREEN 01", "PANTALLA 01"], ["Splash & Home", "Splash & Home"], ["Instant access to search and a shortcut to offers.", "Acceso inmediato al buscador y atajo a ofertas."], ["SCREEN 02", "PANTALLA 02"], ["Catalogue & Favourites", "Catálogo & Favoritos"], ["Popularity filters and saved plans.", "Filtros por popularidad y planes guardados."], ["SCREEN 03", "PANTALLA 03"], ["Booking & Dates", "Reserva & Fechas"], ["Traveller selector, map and a clear quote.", "Selector de personas, mapa y cotización clara."], ["SCREEN 04", "PANTALLA 04"], ["Info at Hand", "Info a la Mano"], ["Wayuu experiences, recommendations and tips.", "Experiencias Wayuu, recomendaciones y tips."], ["SCREEN 05", "PANTALLA 05"], ["External Services", "Servicios Externos"], ["Medical support, translators and logistics help.", "Soporte médico, traductores y auxilio logístico."], ["Chapter 07 · Conclusions & Product Maturity", "Capítulo 07 · Conclusiones & Madurez de Producto"], ["Key Design Lessons for Ethnic and Rural Contexts", "Aprendizajes Clave de Diseño en Contextos Étnicos y Rurales"], ["Design That Respects Ethnic Identity", "Diseño Respetuoso de la Identidad Étnica"], ["Avoiding folkloric clichés and instead translating the geometric sophistication of Wayuu weaving into contemporary design systems with subtle micro-interactions.", "Evitar clichés folclóricos y en su lugar traducir la sofisticación geométrica de los tejidos Wayuu a sistemas de diseño contemporáneos con microinteracciones sutiles."], ["Optimised for High Brightness and Low Connectivity", "Optimización para Alta Luminosidad y Conectividad"], ["High contrast designed for using the app under the midday sun on the dunes, with areas without 4G coverage in mind.", "Alto contraste pensado para usar la app bajo el sol del mediodía en las dunas, y contemplando zonas sin cobertura 4G."], ["Radical Transparency in Pricing and Logistics", "Transparencia Radical en Precios y Logística"], ["Removing ambiguity around indigenous toll costs, meals and off-road vehicle requirements was a design priority to build trust before booking.", "Eliminar la ambigüedad en costos de peajes indígenas, alimentación y requerimientos de vehículos todo terreno fue una prioridad de diseño para generar confianza antes de reservar."], ["Ready to build the next product?", "¿Listo para construir el siguiente producto?"], ["Shall we talk about elevating your digital product?", "¿Hablamos sobre cómo elevar tu producto digital?"], ["I’m available for roles such as Lead Product Designer, strategic UX/UI consulting and talks on design in cultural tourism.", "Estoy disponible para roles como Lead Product Designer, Consultoría UX/UI estratégica y conferencias sobre diseño en turismo cultural."], ["Let’s talk", "Hablemos"], ["Available for projects", "Disponible para proyectos"], ["UX/UI & Product Design · Rojas Travels App · Portfolio Case Study", "Diseño UX/UI & Product Design · Rojas Travels App · Portfolio Case Study"], ["© 2025 Rojas Travels App. All rights reserved.", "© 2025 Rojas Travels App. Todos los derechos reservados."], ["UI Kit, Branding, Origami Bird Symbol, and Comprehensive Iconography System for Rojas Travels App", "Kit de UI, branding, símbolo del ave de origami y sistema completo de iconografía de Rojas Travels App"], ["Official typography specification for Rojas Travels App detailing H1, H2, H3, H4 and text weights", "Especificación tipográfica oficial para Rojas Travels App detallando H1, H2, H3, H4 y pesos de texto"], ["Style guide and colour palette with Crimson Red, Deep Wine, Coral Red, Warm Gold, Sunset Orange and Emerald Mint", "Guía de Estilo y Paleta de Color con Crimson Red, Deep Wine, Coral Red, Warm Gold, Sunset Orange y Emerald Mint"], ["Grid & Layout Specification showing 4 columns grid, 16px gutters, 20px margins, and Container hierarchy from A1 to E1", "Especificación de grid y layout con grilla de 4 columnas, gutters de 16px, márgenes de 20px y jerarquía de contenedores de A1 a E1"], ["Overview of the final Rojas Travels App screens", "Vista general de las pantallas finales de Rojas Travels App"], ["Screen 01: Welcome to La Guajira – home screen with search and quick selector", "Screen 01: Bienvenido a La Guajira - Pantalla principal con buscador y selector rápido"], ["Screen 02: Favourite plans and Most Searched feed with full cards", "Screen 02: Feed de Planes Favoritos y Los Más Buscados con cards completas"], ["Screen 03: Interactive booking form with a map of La Guajira and passenger selector", "Screen 03: Formulario interactivo Reserva tu Plan Turístico con mapa de La Guajira y selector de pasajeros"], ["Screen 04: Information at Hand – community and verified Wayuu experiences", "Screen 04: Información a la Mano - Comunidad y experiencias Wayuu verificadas"], ["Screen 05: External Services and in-person assistance with guides and translators", "Screen 05: Servicios Externos y Asistencia Presencial con soporte de guías y traductores"], ["Villa Román – Wayuu Magic", "Villa Román - Magia Wayuu"], ["Coal Tour", "Tour del Carbón"]];
+var EN2ES=new Map(),ES2EN=new Map();
+function NORM(t){return t.replace(/\s+/g,' ').trim()}
+PAIRS.forEach(function(p){var en=NORM(p[0]),es=NORM(p[1]);if(en!==es){EN2ES.set(en,es);ES2EN.set(es,en)}});
+var ORIG=new WeakMap(),ATTRS=['alt','title','aria-label','placeholder'];
+function resolve(t,lang){var k=NORM(t);if(!k)return null;if(ES2EN.has(k))return lang==='en'?ES2EN.get(k):k;if(EN2ES.has(k))return lang==='es'?EN2ES.get(k):k;return null}
+function apply(lang){
+  var w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,{acceptNode:function(n){var p=n.parentElement;return(!p||p.closest('script,style'))?NodeFilter.FILTER_REJECT:NodeFilter.FILTER_ACCEPT}});
+  var nodes=[],n;while(n=w.nextNode())nodes.push(n);
+  nodes.forEach(function(node){
+    if(!ORIG.has(node)){if(resolve(node.data,'es')===null)return;ORIG.set(node,node.data)}
+    var base=ORIG.get(node),r=resolve(base,lang);if(r===null)return;
+    var m=base.match(/^(\s*)[\s\S]*?(\s*)$/);var next=m[1]+r+m[2];if(next!==node.data)node.data=next});
+  document.querySelectorAll('[alt],[title],[aria-label]').forEach(function(el){
+    var o=ORIG.get(el)||{};
+    ATTRS.forEach(function(a){if(!el.hasAttribute(a))return;if(!(a in o)){if(resolve(el.getAttribute(a),'es')===null)return;o[a]=el.getAttribute(a)}var r=resolve(o[a],lang);if(r!==null)el.setAttribute(a,r)});
+    ORIG.set(el,o)});
+  document.documentElement.lang=lang;
+}
+window.addEventListener('message',function(e){if(e.data&&e.data.type==='ukg-lang')apply(e.data.lang==='en'?'en':'es')});
+var saved=null;try{saved=localStorage.getItem('ukg-lang')}catch(_){}
+if(saved==='en')apply('en');
+try{window.parent.postMessage({type:'ukg-ready'},'*')}catch(_){}
+})();
+</script>
+</body></html>
