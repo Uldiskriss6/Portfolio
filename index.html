@@ -618,6 +618,7 @@ body.in-case .sn-lang{order:3}
 .project:after{content:"";display:block;flex:none;height:2px;margin-top:auto;border-radius:2px;background:var(--accent-gradient)}
 @media(max-width:400px){.sn-links a{padding:0 7px}.sn-lang button{min-width:38px}}
 @media(min-width:981px){.project-grid{grid-template-columns:repeat(6,minmax(0,1fr))}.project-grid>.project,.project-grid>.project:nth-child(n){grid-column:span 2}.project-grid>.project:nth-child(7){grid-column:2/4}.project-grid>.project:nth-child(8){grid-column:4/6}}
+@media(min-width:981px){.project-grid{column-gap:clamp(40px,4vw,64px);row-gap:76px}}@media(min-width:621px) and (max-width:980px){.project-grid{column-gap:36px;row-gap:56px}}@media(max-width:620px){.project-grid{row-gap:60px}}
 </style>
 </head>
 <body data-lang="en"><div id="scroll-progress" aria-hidden="true"></div>
