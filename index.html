@@ -647,8 +647,8 @@ body.in-case .sn-lang{order:3}
 #to-top{background:var(--accent-gradient);color:var(--ink);box-shadow:0 0 0 3px rgba(255,255,255,.85),0 10px 30px rgba(32,43,43,.28)}#to-top:hover{background:var(--accent-gradient);transform:translateY(-3px)}
 .pillar-icon svg{width:24px;height:24px;stroke-width:1.7}
 .about-photo{margin:0 0 30px}
-.sn-brand .mark-photo{width:44px;height:44px;object-position:center 30%}
-@media(max-width:760px){.sn-brand .mark-photo{width:38px;height:38px}}
+.sn-photo-btn .mark-photo{width:44px;height:44px;object-position:center 30%}
+@media(max-width:760px){.sn-photo-btn .mark-photo{width:38px;height:38px}}
 .pillar-search .srch{width:34px;height:34px;overflow:visible}
 .srch-line{fill:none;stroke:var(--ink);stroke-width:107.9;stroke-linecap:round;stroke-linejoin:round}
 .srch-dot{fill:var(--ink);opacity:0}
@@ -677,12 +677,27 @@ body.in-case .sn-lang{order:3}
 .rk-flame-s{transform-box:view-box;transform-origin:0 82px;animation:rk-flame-s 2s cubic-bezier(.33,0,.67,1) infinite}
 @keyframes rk-flame-s{0%,53.33%{transform:scale(1)}68.33%{transform:scale(1.09)}81.67%,100%{transform:scale(1)}}
 @media(prefers-reduced-motion:reduce){.arw-n1,.arw-ch,.arw-sc,.arw-line,.rk,.rk-fade,.rk-flame-s{animation:none}.arw-ch{transform:translate(.5px,28.317px)}.arw-n1{transform:translateY(1.5px)}.rk{stroke-dashoffset:0}}
+.sn-brand-group{display:inline-flex;align-items:center;gap:10px}
+body.in-case .sn-brand-group{display:none!important}
+.sn-photo-btn{padding:0;border:0;background:none;border-radius:50%;cursor:zoom-in;display:grid;transition:transform .25s var(--ease)}
+.sn-photo-btn:hover{transform:scale(1.06)}.sn-photo-btn:focus-visible{outline:2px solid #0875cf;outline-offset:3px}
+.sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.photo-dialog{padding:0;border:0;background:transparent;max-width:min(92vw,560px);max-height:92vh;overflow:visible}
+.photo-dialog::backdrop{background:rgba(20,26,26,.72);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+.photo-dialog img{display:block;width:100%;height:auto;max-height:88vh;object-fit:contain;border-radius:22px;box-shadow:0 30px 80px rgba(0,0,0,.35)}
+.photo-dialog[open]{animation:photo-in .35s var(--ease)}
+@keyframes photo-in{from{opacity:0;transform:scale(.94)}to{opacity:1;transform:none}}
+.photo-close{position:absolute;top:-14px;right:-14px;width:44px;height:44px;border-radius:50%;border:0;cursor:pointer;display:grid;place-items:center;background:var(--accent-gradient);color:var(--ink);box-shadow:0 0 0 3px #fff,0 8px 20px rgba(0,0,0,.25)}
+.photo-close svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
+.photo-close:focus-visible{outline:2px solid #0875cf;outline-offset:3px}
+@media(max-width:620px){.photo-close{top:8px;right:8px}}
+@media(prefers-reduced-motion:reduce){.photo-dialog[open]{animation:none}}
 @media(prefers-reduced-motion:reduce){.srch-move,.srch-dot{animation:none}.srch-dot{opacity:1}.srch-move{transform:translate(154px,154px)}}
 </style>
 </head>
-<body data-lang="en"><div id="scroll-progress" aria-hidden="true"></div><button type="button" id="to-top" aria-label="Volver arriba / Back to top" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5.5 11.5 12 5l6.5 6.5"/></svg></button>
+<body data-lang="en"><div id="scroll-progress" aria-hidden="true"></div><dialog id="photo-dialog" class="photo-dialog" aria-label="Uldis Kriss Gómez R."><img src="assets/uldis-full.jpg" width="1086" height="1448" alt="Uldis Kriss Gómez R."><button type="button" class="photo-close" data-close-photo><span class="sr-only"><span class="en">Close</span><span class="es">Cerrar</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button></dialog><button type="button" id="to-top" aria-label="Volver arriba / Back to top" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5.5 11.5 12 5l6.5 6.5"/></svg></button>
 <header id="site-nav" class="site-nav"><div class="sn-inner">
-<a class="wordmark sn-brand" href="#top" data-nav="top" aria-label="Uldis Kriss Gómez R."><img class="mark mark-photo" src="assets/uldis-avatar.jpg" width="40" height="40" alt=""><span class="sn-name">ULDIS KRISS GÓMEZ R.</span></a>
+<div class="sn-brand-group"><button type="button" class="sn-photo-btn" data-open-photo aria-haspopup="dialog"><img class="mark mark-photo" src="assets/uldis-avatar.jpg" width="40" height="40" alt=""><span class="sr-only"><span class="en">View full photo</span><span class="es">Ver foto completa</span></span></button><a class="wordmark sn-brand" href="#top" data-nav="top" aria-label="Uldis Kriss Gómez R."><span class="sn-name">ULDIS KRISS GÓMEZ R.</span></a></div>
 <nav class="sn-links" aria-label="Main"><a href="#work" data-nav="work"><span class="en">Work</span><span class="es">Proyectos</span></a><a href="#about" data-nav="about"><span class="en">About</span><span class="es">Sobre mí</span></a><a href="#contact" data-nav="contact"><span class="en">Contact</span><span class="es">Contacto</span></a></nav>
 <div class="sn-right"><button type="button" class="sn-back" data-back-home>← <span class="en">All projects</span><span class="es">Todos los proyectos</span></button>
 <div class="sn-lang" role="group" aria-label="Language / Idioma"><button type="button" data-set-lang="en" aria-pressed="true" lang="en" aria-label="English">EN</button><button type="button" data-set-lang="es" aria-pressed="false" lang="es" aria-label="Español">ES</button></div></div>
@@ -936,4 +951,5 @@ const _openCase=openCase;openCase=function(which){_openCase(which);setCurrent('w
 if(document.body.classList.contains('in-case'))setCurrent('work');
 </script><script>(()=>{const b=document.getElementById('to-top');if(!b)return;b.hidden=false;const u=()=>b.classList.toggle('show',window.scrollY>600);window.addEventListener('scroll',u,{passive:true});u();b.addEventListener('click',()=>{const r=matchMedia('(prefers-reduced-motion: reduce)').matches;window.scrollTo({top:0,behavior:r?'auto':'smooth'})});})();</script>
 
+<script>(()=>{const d=document.getElementById('photo-dialog'),o=document.querySelector('[data-open-photo]');if(!d||!o)return;if(typeof d.showModal!=='function'){o.addEventListener('click',()=>window.open(d.querySelector('img').src,'_blank'));return}o.addEventListener('click',()=>d.showModal());d.querySelector('[data-close-photo]').addEventListener('click',()=>d.close());d.addEventListener('click',e=>{if(e.target===d)d.close()});d.addEventListener('close',()=>o.focus());})();</script>
 </body></html>
