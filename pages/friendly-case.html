@@ -584,7 +584,7 @@
           </p>
 </div>
 <div class="flex flex-col sm:flex-row items-center gap-space-md shrink-0 w-full sm:w-auto">
-<a class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg hover:bg-primary-container hover:text-on-primary-container transition-all shadow-md" href="../index.html#contact" target="_top">
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg hover:bg-primary-container hover:text-on-primary-container transition-all shadow-md" href="mailto:uldiskriss006@gmail.com">
 <span class="material-symbols-outlined text-[20px]">chat_bubble</span>
             Hablemos
           </a>
@@ -623,4 +623,10 @@ var saved=null;try{saved=localStorage.getItem('ukg-lang')}catch(_){}
 if(saved==='en')apply('en');
 try{window.parent.postMessage({type:'ukg-ready'},'*')}catch(_){}
 })();
-</script></body></html>
+</script><script>(()=>{if(window.parent===window)return;const d=document,root=d.documentElement;root.classList.add('ukg-embedded');
+const st=d.createElement('style');st.textContent='html.ukg-embedded,html.ukg-embedded body{overflow:hidden!important;height:auto!important;min-height:0!important}html.ukg-embedded main{min-height:0!important}';d.head.appendChild(st);
+let last=0;const send=()=>{const b=d.body;if(!b)return;const cs=getComputedStyle(b);const h=Math.ceil(b.getBoundingClientRect().height+parseFloat(cs.marginTop)+parseFloat(cs.marginBottom));if(h>0&&Math.abs(h-last)>1){last=h;parent.postMessage({type:'ukg-height',h},'*')}};
+if('ResizeObserver' in window)new ResizeObserver(send).observe(d.body);addEventListener('load',send);d.querySelectorAll('img').forEach(i=>i.complete||i.addEventListener('load',send));setTimeout(send,300);
+addEventListener('message',e=>{if(e.data&&e.data.type==='ukg-measure'){last=0;send()}});
+d.addEventListener('click',e=>{const a=e.target.closest&&e.target.closest('a[href^="#"]');if(!a)return;const id=decodeURIComponent(a.getAttribute('href').slice(1));e.preventDefault();const t=id&&d.getElementById(id);parent.postMessage({type:'ukg-scroll',y:t?t.getBoundingClientRect().top:0},'*')});})();</script>
+</body></html>

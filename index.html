@@ -411,7 +411,7 @@ body{background:#FFFDFD}
 #asistente-case-content{background:#f8f9ff;min-height:100vh}
 .asistente-case-toolbar{position:sticky;top:0;z-index:1000;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:12px clamp(18px,4vw,56px);background:rgba(248,249,255,.94);backdrop-filter:blur(14px);border-bottom:1px solid #d8e3f4;font:12px 'DM Sans',sans-serif}
 .asistente-case-toolbar button{border:1px solid #c2c6d5;background:white;border-radius:999px;padding:10px 14px;cursor:pointer;color:#003f8b}
-.asistente-case-frame{display:block;width:100%;height:calc(100vh - 53px);min-height:700px;border:0;background:#f8f9ff}
+.asistente-case-frame{display:block;width:100%;overflow:hidden;height:calc(100vh - 53px);min-height:700px;border:0;background:#f8f9ff}
 @media(max-width:620px){.asistente-case-frame{height:calc(100vh - 58px);min-height:650px}.asistente-case-toolbar{padding:10px 14px}}
 /* ===== UX/UI polish: readability, contrast, rhythm (case studies) ===== */
 /* Type scale: label 12 / caption 13-14 / body 15-17 / lede 20. Illustrated mock-ups are left untouched. */
@@ -952,4 +952,10 @@ if(document.body.classList.contains('in-case'))setCurrent('work');
 </script><script>(()=>{const b=document.getElementById('to-top');if(!b)return;b.hidden=false;const u=()=>b.classList.toggle('show',window.scrollY>600);window.addEventListener('scroll',u,{passive:true});u();b.addEventListener('click',()=>{const r=matchMedia('(prefers-reduced-motion: reduce)').matches;window.scrollTo({top:0,behavior:r?'auto':'smooth'})});})();</script>
 
 <script>(()=>{const d=document.getElementById('photo-dialog'),o=document.querySelector('[data-open-photo]');if(!d||!o)return;if(typeof d.showModal!=='function'){o.addEventListener('click',()=>window.open(d.querySelector('img').src,'_blank'));return}o.addEventListener('click',()=>d.showModal());d.querySelector('[data-close-photo]').addEventListener('click',()=>d.close());d.addEventListener('click',e=>{if(e.target===d)d.close()});d.addEventListener('close',()=>o.focus());})();</script>
+<script>(()=>{const frames=()=>[...document.querySelectorAll('#case-shell iframe')];
+addEventListener('message',e=>{const d=e.data;if(!d||!d.type)return;const f=frames().find(x=>x.contentWindow===e.source);if(!f)return;
+if(d.type==='ukg-height'&&d.h>0){f.style.setProperty('height',d.h+'px','important');f.style.setProperty('min-height','0','important');f.setAttribute('scrolling','no')}
+if(d.type==='ukg-scroll'){const nav=document.getElementById('site-nav');const off=(nav?nav.offsetHeight:0)+16;const y=f.getBoundingClientRect().top+scrollY+(d.y||0)-(d.y?off:0);window.scrollTo({top:Math.max(0,y),behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'})}});
+const remeasure=()=>setTimeout(()=>frames().forEach(f=>{try{f.contentWindow.postMessage({type:'ukg-measure'},'*')}catch(_){}}),60);
+document.addEventListener('click',e=>{if(e.target.closest&&e.target.closest('[data-open-case],[data-set-lang]'))remeasure()});addEventListener('popstate',remeasure);addEventListener('resize',remeasure);addEventListener('load',remeasure);})();</script>
 </body></html>

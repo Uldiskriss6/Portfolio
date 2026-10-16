@@ -494,7 +494,7 @@
           </p>
 </div>
 <div class="flex flex-wrap items-center justify-center gap-space-sm shrink-0">
-<a class="inline-flex items-center gap-space-xs px-space-lg py-3.5 rounded-xl bg-primary-container text-on-primary font-body-sm text-body-sm font-semibold hover:bg-primary transition-all shadow-md" href="../index.html#contact" target="_top">
+<a class="inline-flex items-center gap-space-xs px-space-lg py-3.5 rounded-xl bg-primary-container text-on-primary font-body-sm text-body-sm font-semibold hover:bg-primary transition-all shadow-md" href="mailto:uldiskriss006@gmail.com">
 <span class="material-symbols-outlined text-[20px]">calendar_today</span>
 <span class="">Hablemos</span>
 </a>
@@ -532,4 +532,10 @@ if(saved==='en')apply('en');
 try{window.parent.postMessage({type:'ukg-ready'},'*')}catch(_){}
 })();
 </script>
+<script>(()=>{if(window.parent===window)return;const d=document,root=d.documentElement;root.classList.add('ukg-embedded');
+const st=d.createElement('style');st.textContent='html.ukg-embedded,html.ukg-embedded body{overflow:hidden!important;height:auto!important;min-height:0!important}html.ukg-embedded main{min-height:0!important}';d.head.appendChild(st);
+let last=0;const send=()=>{const b=d.body;if(!b)return;const cs=getComputedStyle(b);const h=Math.ceil(b.getBoundingClientRect().height+parseFloat(cs.marginTop)+parseFloat(cs.marginBottom));if(h>0&&Math.abs(h-last)>1){last=h;parent.postMessage({type:'ukg-height',h},'*')}};
+if('ResizeObserver' in window)new ResizeObserver(send).observe(d.body);addEventListener('load',send);d.querySelectorAll('img').forEach(i=>i.complete||i.addEventListener('load',send));setTimeout(send,300);
+addEventListener('message',e=>{if(e.data&&e.data.type==='ukg-measure'){last=0;send()}});
+d.addEventListener('click',e=>{const a=e.target.closest&&e.target.closest('a[href^="#"]');if(!a)return;const id=decodeURIComponent(a.getAttribute('href').slice(1));e.preventDefault();const t=id&&d.getElementById(id);parent.postMessage({type:'ukg-scroll',y:t?t.getBoundingClientRect().top:0},'*')});})();</script>
 </body></html>
