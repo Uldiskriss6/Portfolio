@@ -108,8 +108,8 @@ if(saved==='en')apply('en');
 try{window.parent.postMessage({type:'ukg-ready'},'*')}catch(_){}
 })();
 </script><script>(()=>{if(window.parent===window)return;const d=document,root=d.documentElement;root.classList.add('ukg-embedded');
-const st=d.createElement('style');st.textContent='html.ukg-embedded,html.ukg-embedded body{overflow:hidden!important;height:auto!important;min-height:0!important}html.ukg-embedded main{min-height:0!important}';d.head.appendChild(st);
-let last=0;const send=()=>{const b=d.body;if(!b)return;const cs=getComputedStyle(b);const h=Math.ceil(b.getBoundingClientRect().height+parseFloat(cs.marginTop)+parseFloat(cs.marginBottom));if(h>0&&Math.abs(h-last)>1){last=h;parent.postMessage({type:'ukg-height',h},'*')}};
+const st=d.createElement('style');st.textContent='html.ukg-embedded,html.ukg-embedded body{height:auto!important;min-height:0!important;scrollbar-width:none;overscroll-behavior:auto}html.ukg-embedded::-webkit-scrollbar,html.ukg-embedded body::-webkit-scrollbar{display:none;width:0;height:0}html.ukg-embedded body{display:flow-root}html.ukg-embedded main{min-height:0!important}';d.head.appendChild(st);
+let last=0;const send=()=>{const b=d.body;if(!b)return;const cs=getComputedStyle(b);let h=Math.ceil(b.getBoundingClientRect().height+parseFloat(cs.marginTop)+parseFloat(cs.marginBottom));if(root.scrollHeight>root.clientHeight+1)h=Math.max(h,root.scrollHeight);if(h>0&&Math.abs(h-last)>1){last=h;parent.postMessage({type:'ukg-height',h},'*')}};
 if('ResizeObserver' in window)new ResizeObserver(send).observe(d.body);addEventListener('load',send);d.querySelectorAll('img').forEach(i=>i.complete||i.addEventListener('load',send));setTimeout(send,300);
 addEventListener('message',e=>{if(e.data&&e.data.type==='ukg-measure'){last=0;send()}});
 d.addEventListener('click',e=>{const a=e.target.closest&&e.target.closest('a[href^="#"]');if(!a)return;const id=decodeURIComponent(a.getAttribute('href').slice(1));e.preventDefault();const t=id&&d.getElementById(id);parent.postMessage({type:'ukg-scroll',y:t?t.getBoundingClientRect().top:0},'*')});})();</script>
