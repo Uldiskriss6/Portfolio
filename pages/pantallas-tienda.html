@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-dim": "#d3daef", "secondary-fixed": "#cce5ff", "secondary-container": "#5bb8fe", "tertiary-fixed-dim": "#ffb95f", "surface-card": "#FFFFFF", "inverse-primary": "#aec6ff", "on-primary": "#ffffff", "surface-slate-dim": "#F1F5F9", "inverse-on-surface": "#edf0ff", "on-surface-variant": "#424753", "tertiary-container": "#7e4f00", "background": "#f9f9ff", "tertiary-fixed": "#ffddb8", "on-secondary-fixed-variant": "#004b73", "on-primary-fixed-variant": "#004395", "on-surface": "#141b2b", "on-tertiary-fixed": "#2a1700", "surface-container-high": "#e1e8fd", "secondary": "#006398", "on-error": "#ffffff", "executive-navy": "#0B132B", "surface-container-highest": "#dce2f7", "on-error-container": "#93000a", "primary-fixed": "#d8e2ff", "on-primary-container": "#bcd0ff", "error": "#ba1a1a", "surface-container-low": "#f1f3ff", "surface-container-lowest": "#ffffff", "surface-variant": "#dce2f7", "primary-container": "#0055b8", "surface-container": "#e9edff", "error-container": "#ffdad6", "inverse-surface": "#293040", "border-subtle": "#E2E8F0", "primary": "#003f8b", "on-secondary-fixed": "#001d31", "on-secondary-container": "#00476e", "outline-variant": "#c2c6d5", "on-tertiary-fixed-variant": "#653e00", "on-secondary": "#ffffff", "border-strong": "#CBD5E1", "on-background": "#141b2b", "tertiary": "#5f3a00", "surface-bright": "#f9f9ff", "outline": "#737784", "secondary-fixed-dim": "#93ccff", "surface": "#f9f9ff", "text-muted": "#64748B", "accent-rose": "#E11D48", "primary-fixed-dim": "#aec6ff", "surface-canvas": "#F8FAFC", "surface-tint": "#115bbe", "on-tertiary": "#ffffff", "on-primary-fixed": "#001a42", "on-tertiary-container": "#ffc682" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "margin-md": "2.5rem", "space-lg": "1.5rem", "space-md": "1rem", "margin-lg": "4rem", "space-xl": "2.5rem", "space-xs": "0.25rem", "gutter-lg": "2rem", "space-sm": "0.5rem", "gutter": "1.5rem", "margin": "1.25rem" }, "fontFamily": { "title-md": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "display-lg-mobile": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"] }, "fontSize": { "title-md": ["16px", { "lineHeight": "24px", "fontWeight": "600" }], "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }], "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "700" }], "display-lg-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "body-lg": ["18px", { "lineHeight": "30px", "fontWeight": "400" }], "display-lg": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "800" }], "headline-lg-mobile": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }] } } } };</script><title>Pantallas Digitales en Tienda — Caso de estudio UX/UI</title></head><body class="bg-background font-body-md text-on-surface antialiased"><main class="w-full pt-0 bg-background"><div class="flex flex-col w-full">
+<!-- 1. HERO SECTION (#overview) -->
+<section class="w-full py-space-xl bg-background scroll-mt-32" id="overview">
+<div class="max-w-[1360px] mx-auto px-margin md:px-margin-md lg:px-margin-lg flex flex-col gap-space-xl">
+<!-- Title & Executive Pitch -->
+<div class="flex flex-col gap-space-md max-w-4xl">
+<div class="inline-flex items-center gap-space-xs self-start px-space-sm py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant">
+<span class="material-symbols-outlined text-[16px] text-secondary">store</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider">CASO DE ESTUDIO | RETAIL DIGITAL &amp; OMNICANALIDAD</span>
+</div>
+<h1 class="font-display-lg text-headline-lg md:text-display-lg text-executive-navy leading-tight">
+          Pantallas Digitales en Tienda: Rediseño de la Experiencia de Venta Asistida y Autoservicio en Homecenter
+        </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+          Diseño de producto end-to-end durante <strong>17 meses</strong> para transformar la interacción en kioscos interactivos de retail físico, unificando tecnología, negocio, growth y valor real para clientes y asesores de venta.
+        </p>
+</div>
+<!-- Ficha Técnica Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-md">
+<div class="p-space-md rounded-xl bg-surface-card shadow-sm flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase text-text-muted">Rol Estratégico</span>
+<span class="font-title-md text-title-md text-primary">Senior UX/UI Designer</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Diseño de experiencia y trabajo con squads multidisciplinares.</p>
+</div>
+<div class="p-space-md rounded-xl bg-surface-card shadow-sm flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase text-text-muted">Duración &amp; Alcance</span>
+<span class="font-title-md text-title-md text-on-surface">17 Meses</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Múltiples releases en la red de tiendas.</p>
+</div>
+<div class="p-space-md rounded-xl bg-surface-card shadow-sm flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase text-text-muted">Equipo de Trabajo</span>
+<span class="font-title-md text-title-md text-on-surface">Squad Multidisciplinar</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Tecnología, Growth, Negocio Retail y Asesores de Tienda.</p>
+</div>
+<div class="p-space-md rounded-xl bg-surface-card shadow-sm flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase text-text-muted">Metodología</span>
+<span class="font-title-md text-title-md text-on-surface">Agile Scrum &amp; Lean UX</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Sprints quincenales bajo la premisa "Fail fast, learn faster".</p>
+</div>
+<div class="p-space-md rounded-xl bg-surface-card shadow-sm flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase text-text-muted">Plataforma</span>
+<span class="font-title-md text-title-md text-on-surface">Kioscos Touchscreen</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Displays táctiles gran formato (Full HD / 4K) &amp; Web Kiosk App.</p>
+</div>
+</div>
+<!-- Showcase Visual Dual: In-Store Test + Physical Hardware -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-space-lg items-stretch">
+<!-- In-store testing with team -->
+<div class="flex flex-col rounded-2xl overflow-hidden bg-surface-card shadow-md">
+<div class="relative w-full h-[360px] md:h-[440px] overflow-hidden bg-surface-container">
+<img referrerpolicy="no-referrer" loading="lazy" alt="Equipo de diseño y asesores de Homecenter probando un kiosco táctil en tienda" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNQfbes9t5H43VeVF-t_BV0ngW7U66G3S1Hz2-ds11t2CRGfM5gcUCPqImrwJHC1bcflBiEB7JuXX1PVD1V8fEYAUfMlnho4cN-gcat9x5tUDWRd6jKZb2ia3-dJCWKaktODROqkRZCsk1UL7DC6M28ZEhNq727h2q6LhE27_2ZnN48xDgJAQFZQtOMXSanKEg3n3rwoGObNPD9TYpWTjPQ1UgwF2Uas5eKhUnGYaqWCduANGWLWYhqQ"/>
+<div class="absolute bottom-4 left-4 right-4 bg-executive-navy/85 backdrop-blur-md p-space-sm rounded-xl text-on-primary flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-accent-rose animate-pulse"></span>
+<span class="font-label-md text-label-md">Testing In-Situ: Piso de Venta Real</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary-fixed">Feedback directo con asesores</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col gap-space-xs">
+<span class="font-title-md text-title-md text-executive-navy">Inmersión en Campo &amp; Validación de Contexto Físico</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Validación táctil presencial con los asesores comerciales de Homecenter. Evaluamos ergonomía de alcance, reflejos lumínicos de la nave de venta y velocidad de respuesta en momentos de alta afluencia de clientes.
+            </p>
+</div>
+</div>
+<!-- Hardware & Kiosk Display -->
+<div class="flex flex-col rounded-2xl overflow-hidden bg-surface-card shadow-md">
+<div class="relative w-full h-[360px] md:h-[440px] overflow-hidden bg-surface-container">
+<img referrerpolicy="no-referrer" loading="lazy" alt="Módulo de kiosco interactivo físico en el departamento de muebles" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCp3DM_5luu8YW3HRLnH8bzt2h2vQ6erNkjLVPEb9WrLioaPsVooCWeGqrVY1Bi5CMPfmqARg5irY6X8tT3CZARMYP2ZLmRocyyIIfqJsEnqZ7ENMChps76lZZtmccoVmXIky3USz_ON3j9MG6Ai24sF2DPMXcIe5DQNYbHs123lQlG0LWoD0bNh-NCiSfaYDLJSiIVV-_nkTRD07A57bwaV8GnOYZgs0a2FIllOgu7sZYsj3Hj8l9CMA"/>
+<div class="absolute bottom-4 left-4 right-4 bg-executive-navy/85 backdrop-blur-md p-space-sm rounded-xl text-on-primary flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary-container"></span>
+<span class="font-label-md text-label-md">Kiosco Táctil Operativo</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary-fixed">Hardware 1080x1920 con Datáfono &amp; Scanner</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col gap-space-xs">
+<span class="font-title-md text-title-md text-executive-navy">Integración Hardware + Software de Retail</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Diseño adaptado a periféricos físicos integrados: lector de código de barras para consulta rápida de precios y terminal POS para pago directo sin pasar por cajas tradicionales.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. LIDERAZGO, EQUIPO Y FILOSOFÍA ÁGIL (#liderazgo) -->
+<section class="w-full py-space-xl bg-surface-slate-dim scroll-mt-32" id="liderazgo">
+<div class="max-w-[1360px] mx-auto px-margin md:px-margin-md lg:px-margin-lg flex flex-col gap-space-lg">
+<div class="flex flex-col gap-space-xs max-w-3xl">
+<div class="inline-flex items-center gap-space-xs self-start px-space-sm py-0.5 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm uppercase">
+          Liderazgo de Producto &amp; Estrategia
+        </div>
+<h2 class="font-headline-lg text-headline-lg text-executive-navy">
+          Impulsando la Transformación Omnicanal con Enfoque "Fail Fast, Learn Faster"
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Como diseñadora Senior UX/UI, mi misión principal no fue únicamente trazar pantallas, sino orquestar el puente estratégico entre las prioridades comerciales del retail físico, las restricciones de arquitectura tecnológica y las necesidades reales de los clientes que caminan por la tienda.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Card 1 -->
+<div class="p-space-lg rounded-2xl bg-surface-card shadow-sm flex flex-col gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[28px]">hub</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-executive-navy">Coordinación Multidisciplinar</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Alineación bisemanal con directores de retail, equipos de backend/frontend y especialistas de growth. Traduje requerimientos de venta compleja en patrones de diseño escalables y accesibles a cualquier nivel de alfabetización digital.
+          </p>
+<div class="mt-auto pt-space-sm flex items-center gap-space-xs text-primary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span>Alineación estratégica de stakeholders</span>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="p-space-lg rounded-2xl bg-surface-card shadow-sm flex flex-col gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[28px]">speed</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-executive-navy">Sprints Ágiles e Incrementales</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Adoptamos ciclos de 2 semanas de desarrollo e hipótesis de diseño. En lugar de especular meses frente al monitor, creamos prototipos de testeo rápido: probar, fallar barato en tienda piloto, iterar la arquitectura y desplegar la versión refinada.
+          </p>
+<div class="mt-auto pt-space-sm flex items-center gap-space-xs text-secondary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px]">cycle</span>
+<span>Entregas continuas cada 14 días</span>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="p-space-lg rounded-2xl bg-surface-card shadow-sm flex flex-col gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-tertiary-container">
+<span class="material-symbols-outlined text-[28px] text-tertiary-container">visibility</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-executive-navy">Cultura de Observación en Campo</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Instauré la práctica de investigación in-situ obligatoria para todo el equipo de producto. Medir el ruido ambiente, la distancia visual desde el pasillo y el uso de guantes de trabajo cambió drásticamente los tamaños de botones y zonas táctiles.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. EL PROCESO: DESIGN THINKING EN 5 ETAPAS (#design-thinking) -->
+<section class="w-full py-space-xl bg-background scroll-mt-32" id="design-thinking">
+<div class="max-w-[1360px] mx-auto px-margin md:px-margin-md lg:px-margin-lg flex flex-col gap-space-lg">
+<div class="flex flex-col gap-space-xs max-w-3xl">
+<div class="inline-flex items-center gap-space-xs self-start px-space-sm py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm uppercase">
+          Marco Metodológico
+        </div>
+<h2 class="font-headline-lg text-headline-lg text-executive-navy">
+          Design Thinking &amp; Doble Diamante Aplicado al Retail Físico
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Un proceso sistemático y riguroso diseñado para desarmar la complejidad logística de Sodimac Homecenter y convertirla en una experiencia de autoservicio natural y sin fricciones.
+        </p>
+</div>
+<!-- 5-Stage Stepper Cards -->
+<div class="grid grid-cols-1 md:grid-cols-5 gap-space-sm">
+<!-- Stage 1 -->
+<div class="p-space-md rounded-xl bg-surface-card shadow-sm flex flex-col gap-space-xs relative overflow-hidden">
+<div class="flex items-center justify-between pb-space-xs">
+<span class="font-label-sm text-label-sm font-bold text-primary uppercase">Fase 01</span>
+<span class="material-symbols-outlined text-primary text-[20px]">groups</span>
+</div>
+<span class="font-title-md text-title-md text-executive-navy">Empatizar</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Inmersión física en tiendas Homecenter Calle 80 y Norte. Sesiones de shadowing, entrevistas a clientes cargando materiales y registro del lenguaje de los asesores.
+          </p>
+<div class="mt-auto pt-space-xs font-label-sm text-label-sm text-text-muted">
+            Entrevistas • Mapas de Empatía
+          </div>
+</div>
+<!-- Stage 2 -->
+<div class="p-space-md rounded-xl bg-surface-card shadow-sm flex flex-col gap-space-xs relative overflow-hidden">
+<div class="flex items-center justify-between pb-space-xs">
+<span class="font-label-sm text-label-sm font-bold text-primary uppercase">Fase 02</span>
+<span class="material-symbols-outlined text-primary text-[20px]">filter_alt</span>
+</div>
+<span class="font-title-md text-title-md text-executive-navy">Definir</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Síntesis de cuellos de botella: dificultad crítica para calcular cantidades de cerámica/obra, saturación visual de catálogos y abandono por formularios lentos.
+          </p>
+<div class="mt-auto pt-space-xs font-label-sm text-label-sm text-text-muted">
+            Problem Framing • Journey Maps
+          </div>
+</div>
+<!-- Stage 3 -->
+<div class="p-space-md rounded-xl bg-surface-card shadow-sm flex flex-col gap-space-xs relative overflow-hidden">
+<div class="flex items-center justify-between pb-space-xs">
+<span class="font-label-sm text-label-sm font-bold text-secondary uppercase">Fase 03</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">lightbulb</span>
+</div>
+<span class="font-title-md text-title-md text-executive-navy">Idear</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Workshops colaborativos con ingeniería y ventas. Co-diseño de la Calculadora de Pisos en 3 pasos, selector ergonómico de fechas y taxonomía multimarca.
+          </p>
+<div class="mt-auto pt-space-xs font-label-sm text-label-sm text-text-muted">
+            Crazy 8's • Arquitectura Táctil
+          </div>
+</div>
+<!-- Stage 4 -->
+<div class="p-space-md rounded-xl bg-surface-card shadow-sm flex flex-col gap-space-xs relative overflow-hidden">
+<div class="flex items-center justify-between pb-space-xs">
+<span class="font-label-sm text-label-sm font-bold text-secondary uppercase">Fase 04</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">devices</span>
+</div>
+<span class="font-title-md text-title-md text-executive-navy">Prototipar</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Construcción de componentes interactivos de alta fidelidad en Figma conectados a un Design System específico para touchscreens de 1080x1920 con hitboxes de 48px+.
+          </p>
+<div class="mt-auto pt-space-xs font-label-sm text-label-sm text-text-muted">
+            Design System • Hi-Fi Flows
+          </div>
+</div>
+<!-- Stage 5 -->
+<div class="p-space-md rounded-xl bg-surface-card shadow-sm flex flex-col gap-space-xs relative overflow-hidden">
+<div class="flex items-center justify-between pb-space-xs">
+<span class="font-label-sm text-label-sm font-bold text-accent-rose uppercase">Fase 05</span>
+<span class="material-symbols-outlined text-accent-rose text-[20px]">fact_check</span>
+</div>
+<span class="font-title-md text-title-md text-executive-navy">Testear</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Validación continua en terminales reales con asesores y compradores reales. Medición de tasa de éxito de tarea y agilidad del agendamiento de envíos mixtos.
+          </p>
+<div class="mt-auto pt-space-xs font-label-sm text-label-sm text-text-muted">
+            Métricas de Usabilidad • Pilotos
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. PRUEBAS DE USABILIDAD Y AUDITORÍA DE COMPONENTES (#pruebas) -->
+<section class="w-full py-space-xl bg-surface-slate-dim scroll-mt-32" id="pruebas">
+<div class="max-w-[1360px] mx-auto px-margin md:px-margin-md lg:px-margin-lg flex flex-col gap-space-lg">
+<div class="flex flex-col gap-space-xs max-w-3xl">
+<div class="inline-flex items-center gap-space-xs self-start px-space-sm py-0.5 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm uppercase">
+          Auditoría de Componentes &amp; Heurísticas
+        </div>
+<h2 class="font-headline-lg text-headline-lg text-executive-navy">
+          Decisiones de Diseño: Qué Mantener, Modificar o Eliminar
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Las sesiones de campo revelaron que aplicar la experiencia e-commerce web tradicional en kioscos táctiles generaba frustración por botones demasiado pequeños y saturación de texto no transaccional.
+        </p>
+</div>
+<!-- Decision Matrix: 3 Columns -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Mantener -->
+<div class="p-space-md rounded-xl bg-surface-card shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs text-primary font-headline-sm text-headline-sm">
+<span class="material-symbols-outlined text-[24px]">bookmark</span>
+<span>Qué Mantener</span>
+</div>
+<ul class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant">
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-primary shrink-0 mt-1">done</span>
+<span><strong>Atajos de Tiendas Especializadas:</strong> Constructor, Car Center y Pet Center con identidad visual propia reconocida por el usuario.</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-primary shrink-0 mt-1">done</span>
+<span><strong>Buscador Global Predictivo:</strong> Con teclado táctil adaptado y sugerencias con fotos miniatura.</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-primary shrink-0 mt-1">done</span>
+<span><strong>Beneficios CMR y Precios Especialistas:</strong> Información de promociones bancarias y círculo de especialistas.</span>
+</li>
+</ul>
+</div>
+<!-- Modificar -->
+<div class="p-space-md rounded-xl bg-surface-card shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs text-secondary font-headline-sm text-headline-sm">
+<span class="material-symbols-outlined text-[24px]">tune</span>
+<span>Qué Modificar</span>
+</div>
+<ul class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant">
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-secondary shrink-0 mt-1">refresh</span>
+<span><strong>Tamaño de Cards de Producto:</strong> Incremento a mínimo 500px de altura con área de toque ampliada para dedos.</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-secondary shrink-0 mt-1">refresh</span>
+<span><strong>Badges Promocionales Táctiles:</strong> Sistema semántico de colores (Ahorra más, Nuevo, Exclusivo, Envío gratis) con tipografía visible a 1.5 metros.</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-secondary shrink-0 mt-1">refresh</span>
+<span><strong>Cálculo de Pisos y Materiales:</strong> Conversión de un flujo tedioso a una calculadora gráfica integrada con desperdicio automático (+10%).</span>
+</li>
+</ul>
+</div>
+<!-- Eliminar -->
+<div class="p-space-md rounded-xl bg-surface-card shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs text-accent-rose font-headline-sm text-headline-sm">
+<span class="material-symbols-outlined text-[24px]">remove_circle_outline</span>
+<span>Qué Eliminar</span>
+</div>
+<ul class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant">
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-accent-rose shrink-0 mt-1">close</span>
+<span><strong>Login Forzoso al Iniciar:</strong> Los clientes quieren consultar inventario o precios al instante sin escribir credenciales de antemano.</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-accent-rose shrink-0 mt-1">close</span>
+<span><strong>Formularios Extensos en Checkout:</strong> Reemplazo por escaneo de cédula o código QR al smartphone personal del cliente.</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-accent-rose shrink-0 mt-1">close</span>
+<span><strong>Banners Estáticos sin Acción:</strong> Supresión de marquesinas decorativas que distraían la compra táctil.</span>
+</li>
+</ul>
+</div>
+</div>
+<!-- Component Anatomy & Badges Showcase -->
+<div class="p-space-lg rounded-2xl bg-surface-card shadow-md flex flex-col gap-space-md">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-xs">
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Sistema de Diseño en Pantallas</span>
+<h3 class="font-headline-md text-headline-md text-executive-navy">Anatomía de Cards de Producto, Variantes y Badges Transaccionales</h3>
+</div>
+<span class="font-label-md text-label-md px-space-sm py-1 rounded-full bg-surface-container text-on-surface-variant self-start md:self-auto">Touch Ergonomics Guidelines</span>
+</div>
+<div class="w-full rounded-xl overflow-hidden bg-surface-container flex items-center justify-center p-space-sm">
+<img referrerpolicy="no-referrer" loading="lazy" alt="Sistema de diseño de componentes UI para las pantallas táctiles" class="w-full h-auto max-h-[550px] object-contain rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuB_GZxhmNky-GkVwsJ10EK__JEz4NBQ1voE8llzvS7phDCX9EOOmhhTgo-ixuHyil3ajLnF4bXsVQv72GW8gmYF1ZTFgvzDK2sw7Ygc1HrjldAYZX3e9R4LNaEIOCoAPfi0d9oJkA69ws-LJ9sj7RQ1FojKq712WKVf9AOFgj5McVa3UN07pq_n6fRvaGrvgwx4QW5KUJWY45wV1NspJgmOcfZWt0cpoof6FPQkCMEF_iyH7KNuHEGQ"/>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Optimización dimensional a 500px de altura con selector numérico accesible para manos enguantadas o dedos con movilidad reducida. Estandarización de badges semánticos con contraste de color WCAG AAA para lectura inmediata bajo luces halógenas de tienda.
+        </p>
+</div>
+</div>
+</section>
+<!-- 5. ECOSISTEMA DE FLUJOS CLAVE REDISEÑADOS (#flujos) -->
+<section class="w-full py-space-xl bg-background scroll-mt-32" id="flujos">
+<div class="max-w-[1360px] mx-auto px-margin md:px-margin-md lg:px-margin-lg flex flex-col gap-space-xl">
+<div class="flex flex-col gap-space-xs max-w-3xl">
+<div class="inline-flex items-center gap-space-xs self-start px-space-sm py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm uppercase">
+          Arquitectura de Pantallas
+        </div>
+<h2 class="font-display-lg text-headline-lg md:text-display-lg text-executive-navy">
+          Los Flujos Críticos de la Experiencia de Compra Omnicanal
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Rediseño integral de 8 puntos neurálgicos en la interacción del cliente con el kiosco: desde el descubrimiento visual de productos hasta la entrega dividida y la integración con smartphone personal.
+        </p>
+</div>
+<!-- Flow 1: Home Screen -->
+<div class="p-space-lg rounded-2xl bg-surface-card shadow-md flex flex-col lg:flex-row gap-space-lg items-center">
+<div class="w-full lg:w-3/5 rounded-xl overflow-hidden bg-surface-container">
+<img referrerpolicy="no-referrer" loading="lazy" alt="Pantalla principal (Home) de las pantallas digitales en tienda" class="w-full h-auto object-cover rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFizx_eIa58UqTcyx6rl9bYF49P8w828Xto_tK3MHoHeqe0vzoe0Cejlrh9nAcAyG6rAr1EX1vZ0-gV_cZ2hBiqksvUNWqAK07gweUi8yo1BHfCBRG6Eia_XcERAkpxlERyUgrx7kS71EE1eQGbwtTxIxLEOX0ODX1j-PkUXYYfYE3eWnQ_QN_DyM3BCQuzEh9JECRi_NbNfeRDELV5ERfZFaY8hnmaHFLrQBdlYKxYnxsI0_8jOkEcA"/>
+</div>
+<div class="w-full lg:w-2/5 flex flex-col gap-space-sm">
+<div class="inline-flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-surface-container text-primary font-label-sm text-label-sm uppercase">
+            01 • Portal Principal
+          </div>
+<h3 class="font-headline-md text-headline-md text-executive-navy">Home &amp; Nueva Experiencia Transaccional</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Reestructuración del espacio visual con jerarquía focalizada. Destaca un banner transaccional dinámico con promociones estacionales, acceso directo a microcréditos de obra (Credicrea), atajos a tiendas especializadas y compra con un solo toque desde el carrusel de "Más Vendidos".
+          </p>
+<div class="flex flex-wrap gap-space-xs pt-space-xs">
+<span class="px-space-sm py-1 rounded-md bg-surface-container-high text-on-surface font-label-sm text-label-sm">Buscador Predictivo</span>
+<span class="px-space-sm py-1 rounded-md bg-surface-container-high text-on-surface font-label-sm text-label-sm">Financiación Credicrea</span>
+<span class="px-space-sm py-1 rounded-md bg-surface-container-high text-on-surface font-label-sm text-label-sm">One-Touch Add to Cart</span>
+</div>
+</div>
+</div>
+<!-- Flow 2: Categorías & Taxonomía Visual -->
+<div class="p-space-lg rounded-2xl bg-surface-card shadow-md flex flex-col lg:flex-row-reverse gap-space-lg items-center">
+<div class="w-full lg:w-3/5 rounded-xl overflow-hidden bg-surface-container">
+<img referrerpolicy="no-referrer" loading="lazy" alt="Pantalla de categorías con navegación visual" class="w-full h-auto object-cover rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHBOJHiqI692QOf-j8ti-aY7UksJYa0KtdR-oZnBQAgKRO1KazJ5mGUwEB_SLUCPEjJCXYqAeSgKhUuZalLsOOAYb-4KBLvIrJvFJ6HLTBQgQATAm5APrXaoxK_JhGDXe303TMidZwmH76sT5MALh5FYoS49CYq0U4cnRAkEdHKJO3YD2kWU-5_zcsm-q6wv8M73YjAIJB_xQCwL53w0-7Te9CSWkgCcyDc4MqlL1sgaLvpZ_j4icqg4A9bGDOLnpRFNc"/>
+</div>
+<div class="w-full lg:w-2/5 flex flex-col gap-space-sm">
+<div class="inline-flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-surface-container text-primary font-label-sm text-label-sm uppercase">
+            02 • Exploración
+          </div>
+<h3 class="font-headline-md text-headline-md text-executive-navy">Categorías &amp; Taxonomía Visual Intuitiva</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Navegación visual pensada para compradores no técnicos y asesores. Agrupación por esferas fotográficas de gran formato que facilitan el reconocimiento inmediato del departamento deseado (Muebles, Iluminación, Herramientas, Organización) con transiciones suaves.
+          </p>
+<div class="flex flex-wrap gap-space-xs pt-space-xs">
+<span class="px-space-sm py-1 rounded-md bg-surface-container-high text-on-surface font-label-sm text-label-sm">Círculos Fotográficos</span>
+<span class="px-space-sm py-1 rounded-md bg-surface-container-high text-on-surface font-label-sm text-label-sm">Reconocimiento &gt; Memoria</span>
+<span class="px-space-sm py-1 rounded-md bg-surface-container-high text-on-surface font-label-sm text-label-sm">Zero Clics Muertos</span>
+</div>
+</div>
+</div>
+<!-- Flow 3: Product List Page (PLP) -->
+<div class="p-space-lg rounded-2xl bg-surface-card shadow-md flex flex-col lg:flex-row gap-space-lg items-center">
+<div class="w-full lg:w-3/5 rounded-xl overflow-hidden bg-surface-container">
+<img referrerpolicy="no-referrer" loading="lazy" alt="Listado de productos (PLP) con filtros táctiles" class="w-full h-auto object-cover rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfq6s4t0guuKR4WjgKiEti4ljQAqnh2Dtwvz_MQt-6MJgTzqAQIMg11nIEOI1FjNTZl_K-93dkflhU6zifFBGLJ5PZH6GQSi9dD4Ei7nwu2nd4CF8Xe2B-cjlyqB3eAckx6DsAUczZ80_m_SXN75TzxIQr7W53u29Wg8gPwRsOslDLfLdEz-5ndPqvW0jMjWAyjBy2saUhDt-lw5nd27SvT4PRMMUZO6-6s9Oljx7_Wh6lkenTKR7EKuHcG_2PUVUSOss"/>
+</div>
+<div class="w-full lg:w-2/5 flex flex-col gap-space-sm">
+<div class="inline-flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-surface-container text-primary font-label-sm text-label-sm uppercase">
+            03 • Catálogo &amp; Filtros
+          </div>
+<h3 class="font-headline-md text-headline-md text-executive-navy">Product List Page (PLP) &amp; Filtros Táctiles</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Parrilla de productos de alta densidad estructurada para pantallas verticales y horizontales. Los filtros laterales utilizan píldoras de toque generosas para ordenar por precio, marca, disponibilidad física inmediata en la tienda actual y condiciones de envío a domicilio.
+          </p>
+<div class="flex flex-wrap gap-space-xs pt-space-xs">
+<span class="px-space-sm py-1 rounded-md bg-surface-container-high text-on-surface font-label-sm text-label-sm">Filtro Stock In-Store</span>
+<span class="px-space-sm py-1 rounded-md bg-surface-container-high text-on-surface font-label-sm text-label-sm">Comparador Rápido</span>
+<span class="px-space-sm py-1 rounded-md bg-surface-container-high text-on-surface font-label-sm text-label-sm">Badges de Descuento</span>
+</div>
+</div>
+</div>
+<!-- Flow 4: Product Description Page (PDP) -->
+<div class="p-space-lg rounded-2xl bg-surface-card shadow-md flex flex-col lg:flex-row-reverse gap-space-lg items-center">
+<div class="w-full lg:w-3/5 rounded-xl overflow-hidden bg-surface-container">
+<img referrerpolicy="no-referrer" loading="lazy" alt="Ficha de producto (PDP) de un piso cerámico" class="w-full h-auto object-cover rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdmgJjV5SUn28wOyQAERO1c5yN4oFh11jE88sbXDv1A-IWdJDY3Lor0UGQCPPxrpZdRNuctrkYh0DCIR0SINs206CM04TyAy2Zbx8iY9JBOidEC87A9Qn5mX-RX7LbYZio563Ss3ltJL8-esK3YPqtXnc-5yYkXmJv-K9jsMn_7P-gJQgrGfJC3QHMM24VMPOW7MR9aMv7XxomI6fJRPAa-hviccfOB8mpVCCrc9bMDY9y9WpnYbE5NQ"/>
+</div>
+<div class="w-full lg:w-2/5 flex flex-col gap-space-sm">
+<div class="inline-flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-surface-container text-primary font-label-sm text-label-sm uppercase">
+            04 • Ficha de Producto
+          </div>
+<h3 class="font-headline-md text-headline-md text-executive-navy">Product Detail Page (PDP) &amp; Venta Asistida</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            La ficha técnica fue rediseñada para funcionar tanto para el cliente autónomo como para el asesor guiando una venta técnica. Muestra claramente el stock físico en el pasillo actual vs. stock en otras tiendas del país, modelos 3D y servicios de instalación contratables.
+          </p>
+<div class="flex flex-wrap gap-space-xs pt-space-xs">
+<span class="px-space-sm py-1 rounded-md bg-surface-container-high text-on-surface font-label-sm text-label-sm">Visor 3D &amp; RA</span>
+<span class="px-space-sm py-1 rounded-md bg-surface-container-high text-on-surface font-label-sm text-label-sm">Stock Multi-Tienda</span>
+<span class="px-space-sm py-1 rounded-md bg-surface-container-high text-on-surface font-label-sm text-label-sm">Contratación Servicios Hogar</span>
+</div>
+</div>
+</div>
+<!-- Flow 5: Calculadora de Pisos en PDP (Feature Estrella) -->
+<div class="p-space-lg rounded-2xl bg-surface-container-low shadow-md flex flex-col gap-space-lg">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm">
+<div class="flex flex-col gap-space-xs">
+<div class="inline-flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm uppercase">
+              Feature de Alto Impacto
+            </div>
+<h3 class="font-headline-lg text-headline-lg text-executive-navy">Calculadora de Pisos Integrada en PDP</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+              Resolvimos uno de los mayores cuellos de botella en la compra de pisos y cerámica: el cálculo complejo de metros cuadrados, el factor de desperdicio del 10% y la venta cruzada de adhesivos Topex y boquillas en una sola pantalla interactiva.
+            </p>
+</div>
+</div>
+<!-- 3-Step Visual Breakdown for Floor Calculator -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Step 1 -->
+<div class="flex flex-col gap-space-xs bg-surface-card p-space-md rounded-xl shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-bold text-primary">Paso 1: Punto de Entrada</span>
+<span class="material-symbols-outlined text-primary text-[18px]">calculate</span>
+</div>
+<div class="w-full h-48 rounded-lg overflow-hidden bg-surface-container">
+<img referrerpolicy="no-referrer" loading="lazy" alt="Ficha de producto con el botón para calcular cuántas cajas necesitas" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjcI-c6MdoXw5NNqAWPw4gOthpMREQ0nIAoJyvtQxoTi97L6sJ9hqmavszBueZiVEheku44AAP-9eWKWBIU3AXaYEJbq5EGwlTfbqskYy8MF9HfaAe8HVbMnfNuTK5UD4Ao44WFqffQ0A_3UZFkyxUZEzzMrtCVIWWtDccW00zX8qP3eRMvGlVMpOh-KjJexyixB15Cyxr4rqXyVPiftmIgdPIoapYIrgVJVCpolpT_mQnOSkuYzR50g"/>
+</div>
+<span class="font-title-md text-title-md text-executive-navy">Llamado a la Acción en PDP</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Botón primario visible junto al precio por m² que abre el modal interactivo sin recargar la página.</p>
+</div>
+<!-- Step 2 -->
+<div class="flex flex-col gap-space-xs bg-surface-card p-space-md rounded-xl shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-bold text-secondary">Paso 2: Medición Táctil</span>
+<span class="material-symbols-outlined text-secondary text-[18px]">dialpad</span>
+</div>
+<div class="w-full h-48 rounded-lg overflow-hidden bg-surface-container">
+<img referrerpolicy="no-referrer" loading="lazy" alt="Calculadora de pisos: medición táctil del área" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnw-SwvfXpokRY96dD2WVoIGC0qxSVuy091ECWjYWY5CVn0YoHnX5ev1PQJJSJkiYJtsyA8YsjEEb2a_NAeazsVYebxACUluhCZ4ovtoHUFDAg_6IUq7Jb83SHpTfZhZtiZ8NTiqIEbla61mTAcYgLHsCdR4nxLqzhwSLePHEiYqT2wLNarO-DQhfoFV7A3rz9RFAorCfDaHIX-moZi7H6YO3Y3RYsarO-c1wxwtCQOIex0m6_ib-6HTsU6mitwZQQfmc"/>
+</div>
+<span class="font-title-md text-title-md text-executive-navy">Teclado Numérico &amp; M²</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Ingreso táctil de área total o largo x ancho, sumando automáticamente el 10% de merma recomendado.</p>
+</div>
+<!-- Step 3 -->
+<div class="flex flex-col gap-space-xs bg-surface-card p-space-md rounded-xl shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-bold text-tertiary-container">Paso 3: Complementos</span>
+<span class="material-symbols-outlined text-tertiary-container text-[18px]">inventory_2</span>
+</div>
+<div class="w-full h-48 rounded-lg overflow-hidden bg-surface-container">
+<img referrerpolicy="no-referrer" loading="lazy" alt="Calculadora de pisos: complementos y agregar todo al carro" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmt9bUAEhTDVzF1Y9hB-7lHEyxfv0LEPQvzqBgC7SNlhA6GfPU5WVecX2E4VNaJdOcrHqIRQXnS0gHlzxYuyK587AtskqxU7Te1kSsQ6SrHrC0FTqOAO7997wZFeUF3dJ6UNH0F1LtWgYfiXyLoDQasUnxvxGOo7zdyv9kSEYDO8JCp1qtG4NOfPwK1Q3YldhwiTg-pKSvYxEpHrfZQ-5UwW6GBWWNeKfTwn6ord48Dn7Ul4zL6c3Vw5V7DfYH4__3yyE"/>
+</div>
+<span class="font-title-md text-title-md text-executive-navy">Adición Masiva de Insumos</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Sugerencia inteligente de cajas de pegante Topex, zócalos y boquillas con botón de "Agregar todo al carro".</p>
+</div>
+</div>
+</div>
+<!-- Flow 6: Carrito de Compras -->
+<div class="p-space-lg rounded-2xl bg-surface-card shadow-md flex flex-col lg:flex-row gap-space-lg items-center">
+<div class="w-full lg:w-3/5 rounded-xl overflow-hidden bg-surface-container">
+<img referrerpolicy="no-referrer" loading="lazy" alt="Carrito de compras modular con resumen de ahorro" class="w-full h-auto object-cover rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5T0W8BdPEmkkdA-oQyLhueL0_ohjd7y_DkGetuLYQHNTQPHuHd0Y1UoiwTJAgc2FHzGuA9WhEPtgAIhqEY4ll_h5Q4wYCfGRGZQGHD8i7_hIniwGG57VhXKZJPyBTAFmD-GoR8luuQF9s1eASUhHfcApnVq2rUcY06oi9HZS5U6pjQLnJYg3vBjoRTUz2Wly0znkkCTX-XYgCZNWCtyFrif-uPuyQzh8LmTsv7mfuiJKXG9iHHYlGz7UjdkyVhAKajvI"/>
+</div>
+<div class="w-full lg:w-2/5 flex flex-col gap-space-sm">
+<div class="inline-flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-surface-container text-primary font-label-sm text-label-sm uppercase">
+            05 • Transacción
+          </div>
+<h3 class="font-headline-md text-headline-md text-executive-navy">Carrito de Compras Modular &amp; Resumen</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Desglose transparente del ahorro obtenido por promociones bancarias y círculo de especialistas. Permite agregar servicios de armado profesional con un toque y elegir entre llevar el producto de inmediato o programar flete para cargas pesadas.
+          </p>
+<div class="flex flex-wrap gap-space-xs pt-space-xs">
+<span class="px-space-sm py-1 rounded-md bg-surface-container-high text-on-surface font-label-sm text-label-sm">Desglose de Ahorro</span>
+<span class="px-space-sm py-1 rounded-md bg-surface-container-high text-on-surface font-label-sm text-label-sm">Servicio de Armado</span>
+<span class="px-space-sm py-1 rounded-md bg-surface-container-high text-on-surface font-label-sm text-label-sm">División de Pedido</span>
+</div>
+</div>
+</div>
+<!-- Flow 7: Agendamiento & Entregas Divididas -->
+<div class="p-space-lg rounded-2xl bg-surface-card shadow-md flex flex-col lg:flex-row-reverse gap-space-lg items-center">
+<div class="w-full lg:w-3/5 rounded-xl overflow-hidden bg-surface-container">
+<img referrerpolicy="no-referrer" loading="lazy" alt="Checkout y agendamiento de entrega con calendario táctil" class="w-full h-auto object-cover rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHjttCX7WDDhYsmheSObwJSlO0aTRiDNI4OWOxONrGAZD7DOL_VLpyP4Ji6p2HrRYXdbO597oAck5GzH-SmSBfwrmfDnpBYcwM4KcURQKtW2I00g3SveFrRYOeWtgCIhvF-gVO6piyakpoODPUnLDhmR0-5jr2jDsIrD-q4UCoHC-7XtqLUVpee-8h7uhRkFbpx1dZVVXAI2TyIRERdT_RO4ZhR7u9IUsBreDToQ2uuzvZuTfbsCLPO22bDMNq6M-UH4A"/>
+</div>
+<div class="w-full lg:w-2/5 flex flex-col gap-space-sm">
+<div class="inline-flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-surface-container text-primary font-label-sm text-label-sm uppercase">
+            06 • Logística In-Store
+          </div>
+<h3 class="font-headline-md text-headline-md text-executive-navy">Checkout, Agendamiento &amp; Entregas Divididas</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            El mayor desafío logístico: cuando un cliente compra productos disponibles en tienda para llevar ya mismo y muebles grandes que requieren camión de reparto. Diseñamos un stepper visual intuitivo de 3 pasos con calendario táctil para elegir día y franja horaria.
+          </p>
+<div class="flex flex-wrap gap-space-xs pt-space-xs">
+<span class="px-space-sm py-1 rounded-md bg-surface-container-high text-on-surface font-label-sm text-label-sm">Stepper 3 Pasos</span>
+<span class="px-space-sm py-1 rounded-md bg-surface-container-high text-on-surface font-label-sm text-label-sm">Calendario Ergonómico</span>
+<span class="px-space-sm py-1 rounded-md bg-surface-container-high text-on-surface font-label-sm text-label-sm">Retiro + Domicilio</span>
+</div>
+</div>
+</div>
+<!-- Flow 8: Inspiración, Ambientes & Catálogos Digitales -->
+<div class="p-space-lg rounded-2xl bg-surface-card shadow-md flex flex-col gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="inline-flex items-center gap-space-xs self-start px-space-sm py-1 rounded-full bg-surface-container text-secondary font-label-sm text-label-sm uppercase">
+            07 • Experiencia Visual
+          </div>
+<h3 class="font-headline-md text-headline-md text-executive-navy">Inspiración, Ambientes &amp; Catálogos Digitales Interactivos</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Convertimos las pantallas en vitrinas interactivas para que los clientes exploren habitaciones completas decoradas (Salas, Comedores, Terrazas) y añadan los productos individuales vistos en la foto directo al carrito.
+          </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="rounded-xl overflow-hidden bg-surface-container flex flex-col">
+<img referrerpolicy="no-referrer" loading="lazy" alt="Galería de ambientes de inspiración" class="w-full h-auto object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAObFMsK_I-2c0Ji1DukDH9hWpgEaXr5ycox5U_hYTUjhlvPNW40A618VPeB7AfuhWutGXaqNZJFxwS-6AbbLM8DwNKCvwoSZzjVqzoX4oglBPYMux8vGbquZNhgCOA8NG2nf0prT7MaNSjEpZ3Vt8ushvCA3NB_M46DPzxZsdvfOlN8ACRBpNHaURejOzurIup04wRqCPnjEKSkCtbMLbbGrBohshsjiED6RHeKq7J-LrMUqlVZgjXOmbvujie-jEkvnk"/>
+<div class="p-space-sm bg-surface-card">
+<span class="font-title-md text-title-md text-executive-navy">Galería de Espacios Reales</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Lookbooks con puntos táctiles interactivos en cada mueble.</p>
+</div>
+</div>
+<div class="rounded-xl overflow-hidden bg-surface-container flex flex-col">
+<img referrerpolicy="no-referrer" loading="lazy" alt="Catálogos digitales de inspiración" class="w-full h-auto object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWvFg9Q9Jo9TA40DY2ug8H9TPvvZ_gJ-esq7hBmtMjxcnkh5NdbqPE6PCwOxiFCil8ATSmGddOnxpgN2bAtZILg1aZ6-sxtzfTgaEkyZlzRCuVU8Zs31sAaBgkjX2MXrxdkwUR2ahkxZwUfmxQgJ3liLLYtLBVzUllMfhpnzB87HskqMm-vqPqUIlgcvIpPdoKL3HlT9ghwo53HnQOVMW60DBuUX1uNLgxfnDlXfXUnnQl7Iny6kR1XF_GNKNbap3C1sU"/>
+<div class="p-space-sm bg-surface-card">
+<span class="font-title-md text-title-md text-executive-navy">Catálogos Temáticos de Temporada</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Revistas digitales hojeables de alta resolución sin tiempos de carga.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Flow 9: Autogestión de Clientes & QR Móvil -->
+<div class="p-space-lg rounded-2xl bg-surface-card shadow-md flex flex-col gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="inline-flex items-center gap-space-xs self-start px-space-sm py-1 rounded-full bg-surface-container text-primary font-label-sm text-label-sm uppercase">
+            08 • Continuidad Omnicanal
+          </div>
+<h3 class="font-headline-md text-headline-md text-executive-navy">Autogestión de Clientes &amp; Handoff a Smartphone con QR</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Privacidad y versatilidad: si el usuario prefiere no ingresar su tarjeta bancaria o datos confidenciales en una pantalla pública del pasillo, genera un código QR para transferir instantáneamente su carrito a su celular personal.
+          </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="rounded-xl overflow-hidden bg-surface-container flex flex-col">
+<img referrerpolicy="no-referrer" loading="lazy" alt="Portal de autogestión de clientes en tienda" class="w-full h-auto object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYZtGUJAGU2VeLqfIEhCF0UqWdd5gFHli8DPytDohmfz1AXKEyVyb8eB6WnAxsIyNnTKzEk-Pl5W4ElPAAXy1aPzPiFBPYv8XHb9XYcG_iQ_tlx9i7VGovR3dil5IH7N_92D_VJrJiiBXaNTFtoLa0EmyV16-2G8GQMa2O1hEtqB22aPiNLPsKsuvjfF9phrSxKa77_Su6ohiWKrgzCMfk3PM1uZzOJk7yW9NyaoknmoaGgyMaboZIKEasWMYXQvlEpTw"/>
+<div class="p-space-sm bg-surface-card">
+<span class="font-title-md text-title-md text-executive-navy">Portal de Autoservicio en Tienda</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Consulta de garantías, facturación electrónica y seguimiento de despachos.</p>
+</div>
+</div>
+<div class="rounded-xl overflow-hidden bg-surface-container flex flex-col">
+<img referrerpolicy="no-referrer" loading="lazy" alt="Traspaso del carrito al smartphone con código QR" class="w-full h-auto object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmOyrV1hVh28k0CSa90LMBELbrGGfXPS8pkGjT2QKolbXg2jHI0M8zeUS9X3wnGAXDWxnqHAblwrD4zCTOk0pb0DlGs9xSPCk72ea-LWdI7CV512IXa4Dr9Kb3dwAvBANl024e_P1AvFKDnrYmWBph5ALdEJlRUTyVKp3UjqUNpfnUUrRf7aWn8MoMu63qCg8TlABELgAyLYdPp6cZs1Vv01Dva9GhJSgATTlD4iwYGYllS4zLZVDL93sTzmiGUq_baUI"/>
+<div class="p-space-sm bg-surface-card">
+<span class="font-title-md text-title-md text-executive-navy">Handoff Seguro mediante QR</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Continuación fluida del pago en el navegador privado del smartphone del usuario.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. TIENDAS ESPECIALIZADAS HOMECENTER (#tiendas) -->
+<section class="w-full py-space-xl bg-surface-slate-dim scroll-mt-32" id="tiendas">
+<div class="max-w-[1360px] mx-auto px-margin md:px-margin-md lg:px-margin-lg flex flex-col gap-space-lg">
+<div class="flex flex-col gap-space-xs max-w-3xl">
+<div class="inline-flex items-center gap-space-xs self-start px-space-sm py-0.5 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm uppercase">
+          Arquitectura Multimarca
+        </div>
+<h2 class="font-headline-lg text-headline-lg text-executive-navy">
+          Tiendas Especializadas: Adaptabilidad Contextual por Segmento
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Homecenter reúne públicos completamente heterogéneos: maestros de obra, dueños de mascotas, mecánicos y empresas que compran por volumen. Desarrollamos un sistema modular donde el kiosco adapta paleta de color, taxonomía y servicios según la vertical física del pasillo donde está ubicado.
+        </p>
+</div>
+<!-- 4 Specialized Stores Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+<!-- Store Constructor -->
+<div class="p-space-md rounded-2xl bg-surface-card shadow-sm flex flex-col gap-space-sm">
+<div class="w-full rounded-xl overflow-hidden bg-surface-container">
+<img referrerpolicy="no-referrer" loading="lazy" alt="Tienda especializada Constructor: pantalla de inicio" class="w-full h-auto object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-0fzBAMcwcAZFwlOiuRWggoTcizi1ui-9dveEdxYv3HtoIQ1TqlTEGuL0B46KPX5NpWmIZvGjLI3IsD-FcMpDR7iwTZdkVSLewKdFDx8LmGuJQ0GYr_1p_7PPfRMlN4WfsxQ4ro9rI0-v2qYt5u_Q8Tx9flBIhli1xGgBloUdLz9BoT0pagGy8PtR6c8KMA9kkuA-VKXOp_qb9YSlhkPDb9xTtWOiqm_lJnds-1XWEmco9TiFuRyv6cFsboG6C4eSojM"/>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="w-3 h-3 rounded-full bg-[#EAB308]"></span>
+<span class="font-title-md text-title-md text-executive-navy">Mundo Constructor</span>
+</div>
+<span class="font-label-sm text-label-sm px-space-xs py-0.5 rounded bg-surface-container text-on-surface">Oficios Técnicos</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Amarillo industrial y grafito. Clasificación orientada a gremios profesionales: Electricistas, Plomeros, Carpinteros, Pintores y Maestros de obra, con acceso a cotizaciones mayoristas rápidas.
+          </p>
+</div>
+<!-- Store Al por Mayor -->
+<div class="p-space-md rounded-2xl bg-surface-card shadow-sm flex flex-col gap-space-sm">
+<div class="w-full rounded-xl overflow-hidden bg-surface-container">
+<img referrerpolicy="no-referrer" loading="lazy" alt="Tienda Al por Mayor: pantalla de inicio" class="w-full h-auto object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZbwhTdcRcowjgriLMeps0lSlfQcun2R-ROb2tctPUqbzT2oZuFm-vUKPAxRW5Ti7nPsrbv5qEdV-_v3lNmKGVv0_SYCdaP7laNXbaQ_NITUYmem1b3HynPa64IGjaCeq7GQATW-x_iUg-o_QFtVk4oKGySEH7ktpPDlRLAGFCvMigzyiIzxo5GCyFiHwO7oMfA-qv8wCrnxiN9MWGwhV9RvEeiPkNtrSjXFrG44Vl3t0YmwniAOzZLgoUIH_1_lAzlJE"/>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="w-3 h-3 rounded-full bg-[#DC2626]"></span>
+<span class="font-title-md text-title-md text-executive-navy">Al por Mayor</span>
+</div>
+<span class="font-label-sm text-label-sm px-space-xs py-0.5 rounded bg-surface-container text-on-surface">B2B &amp; Empresas</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Rojo institucional con enfoque en compra escalonada por volumen para constructoras, hoteles, restaurantes y oficinas. Muestra descuentos progresivos por cantidad de unidades.
+          </p>
+</div>
+<!-- Store Pet Center -->
+<div class="p-space-md rounded-2xl bg-surface-card shadow-sm flex flex-col gap-space-sm">
+<div class="w-full rounded-xl overflow-hidden bg-surface-container">
+<img referrerpolicy="no-referrer" loading="lazy" alt="Pet Center Petizoos: pantalla de inicio" class="w-full h-auto object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzzvn4jw-aDBJ55J2oELt3__TL-KhGu1Q8u558-YogZgTAk9N1TJpwEvxVlmvzfsmbN0HPF08kRq7WqfFoBMBJ2obxd1fZzZwgeo_Ib2axKHwTr5XwAqJQnhm2kJWyv4f5DSLWM-mFs8vt7R8zA8wVEF-M1fmXq8klWlHbmnsrWhnmBgrkHRCn_bLs89jjWyWDQetlaKDUkXzt6hTCvgNpicP2R0HNrfs1XALvuFhCKvvf1RgsLTIjxF3MIS6d3LZzWm0"/>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="w-3 h-3 rounded-full bg-[#06B6D4]"></span>
+<span class="font-title-md text-title-md text-executive-navy">Pet Center Petizoos</span>
+</div>
+<span class="font-label-sm text-label-sm px-space-xs py-0.5 rounded bg-surface-container text-on-surface">Mascotas &amp; Bienestar</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Cyan amigable enfocado en navegación afectiva: Perros, Gatos, Aves y Acuarios. Promueve la suscripción periódica de alimentos y farmacia veterinaria con retiro en tienda.
+          </p>
+</div>
+<!-- Store Car Center -->
+<div class="p-space-md rounded-2xl bg-surface-card shadow-sm flex flex-col gap-space-sm">
+<div class="w-full rounded-xl overflow-hidden bg-surface-container">
+<img referrerpolicy="no-referrer" loading="lazy" alt="Car Center: pantalla de inicio" class="w-full h-auto object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAC_xfthSJxQuw9sgfsnbMe5YkWZS7ENBPL-eBTb2uKphEr24lrMYgHgiVrnidY6XoFLltcCcYywU5-fqm0iF4-B4gHQ7sBLB5ESxWNdt-kypjI7cQf_aWEZ6CCULp34SFH5po5Qto7CUa3RYFaesFDWVzegbKVtpctyy232T8CpI18zpqj17kK04ADUvOiOPnRX10tk5u5ql46dA9q2F4aJMYjOakyE5wxcnWNZ2g7mgWbC7-uOYLsJ7A63XQD1nxpZ5Q"/>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="w-3 h-3 rounded-full bg-[#EC4899]"></span>
+<span class="font-title-md text-title-md text-executive-navy">Car Center</span>
+</div>
+<span class="font-label-sm text-label-sm px-space-xs py-0.5 rounded bg-surface-container text-on-surface">Automotriz &amp; Taller</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Paleta oscura técnica orientada a refacciones mecánicas, llantas, baterías e instalación. Incluye agenda interactiva para servicios mecánicos en el taller anexo de la tienda física.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- 7. CONCLUSIONES, RETROSPECTIVA & CONTACTO (#contacto) -->
+<section class="w-full py-space-xl bg-background scroll-mt-32" id="contacto">
+<div class="max-w-[1360px] mx-auto px-margin md:px-margin-md lg:px-margin-lg flex flex-col gap-space-xl">
+<!-- Retrospective 3 Points -->
+<div class="flex flex-col gap-space-md">
+<div class="flex flex-col gap-space-xs max-w-3xl">
+<div class="inline-flex items-center gap-space-xs self-start px-space-sm py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm uppercase">
+            Retrospectiva del Proyecto
+          </div>
+<h2 class="font-headline-lg text-headline-lg text-executive-navy">
+            Lecciones de Liderazgo, Escalabilidad &amp; Experiencia Física-Digital
+          </h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<div class="p-space-lg rounded-2xl bg-surface-card shadow-sm flex flex-col gap-space-xs">
+<div class="font-label-sm text-label-sm uppercase text-primary font-bold">Lección 01</div>
+<span class="font-title-md text-title-md text-executive-navy">La Ergonomía Táctil manda sobre la Estética Desktop</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Diseñar para una pantalla de 43 pulgadas montada verticalmente requiere zonas de descanso para los brazos, zonas de toque no inferiores a 48x48px y evitar botones en los extremos superiores inalcanzables para personas de baja estatura o en silla de ruedas.
+            </p>
+</div>
+<div class="p-space-lg rounded-2xl bg-surface-card shadow-sm flex flex-col gap-space-xs">
+<div class="font-label-sm text-label-sm uppercase text-secondary font-bold">Lección 02</div>
+<span class="font-title-md text-title-md text-executive-navy">El Asesor de Tienda es el Principal Embajador de Adopción</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Si la interfaz no empodera al asesor en su labor diaria, el kiosco se convierte en un mueble abandonado. Al involucrar a los asesores desde el día 1 en los sprints de testing, el kiosco se vuelve una herramienta útil para cerrar ventas complejas.
+            </p>
+</div>
+<div class="p-space-lg rounded-2xl bg-surface-card shadow-sm flex flex-col gap-space-xs">
+<div class="font-label-sm text-label-sm uppercase text-tertiary font-bold">Lección 03</div>
+<span class="font-title-md text-title-md text-executive-navy">Sinergia con el Design System Omnicanal Global</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Creamos tokens específicos de kiosco (Hitbox-L, Font-Kiosk-Display) que heredan de la biblioteca corporativa de Falabella/Homecenter, facilitando que cualquier cambio de marca se propague automáticamente al software de tienda.
+            </p>
+</div>
+</div>
+</div>
+<!-- Executive Contact Card -->
+<div class="p-space-lg md:p-space-xl rounded-3xl bg-executive-navy text-on-primary shadow-xl flex flex-col lg:flex-row items-center justify-between gap-space-lg relative overflow-hidden">
+<div class="flex flex-col gap-space-sm max-w-2xl z-10">
+<div class="inline-flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-surface-container-high/20 text-secondary-container font-label-sm text-label-sm uppercase">
+            Diseñadora Senior UX/UI • Abierta a nuevas oportunidades
+          </div>
+<h3 class="font-display-lg text-headline-lg md:text-headline-lg font-bold text-on-primary">
+            ¿Interesado en mi experiencia en diseño de producto omnicanal?
+          </h3>
+<p class="font-body-md text-body-md text-primary-fixed-dim">
+            Especialista en articular la visión de negocio con sistemas de diseño escalables e interfaces físicas de alto impacto comercial en retail y fintech.
+          </p>
+</div>
+<div class="flex flex-col sm:flex-row items-center gap-space-sm z-10 shrink-0 w-full lg:w-auto">
+<a class="w-full sm:w-auto px-space-md py-space-sm rounded-xl bg-primary-container text-on-primary hover:bg-secondary transition-all font-title-md text-title-md flex items-center justify-center gap-space-xs shadow-md" href="../index.html#contact" target="_top"><span class="material-symbols-outlined text-[20px]">chat_bubble</span><span>Hablemos</span></a>
+</div>
+</div>
+</div>
+</section>
+</div></main><footer class="w-full bg-surface-container-low py-space-xl shadow-[0_-1px_6px_rgba(0,0,0,0.02)]"><div class="max-w-[1360px] mx-auto px-margin md:px-margin-md lg:px-margin-lg"><div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-space-lg pb-space-lg"><div class="flex flex-col gap-space-xs"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-executive-navy">Homecenter Digital Kiosks</span><span class="font-label-sm text-label-sm px-space-xs py-0.5 rounded-full bg-surface-container text-secondary uppercase font-headline-md">Case Study</span></div><p class="font-body-sm text-body-sm text-on-surface-variant max-w-xl">Rediseño de Experiencia Omnicanal en Retail Físico. Arquitectura de sistemas interactivos, usabilidad táctil de gran formato y conectividad con ecosistema e-commerce.</p></div><div class="flex flex-col sm:flex-row items-start sm:items-center gap-space-md"><div class="flex items-center gap-space-sm"><a class="px-space-sm py-space-xs rounded-lg bg-surface text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-md text-label-md transition-all" href="https://www.linkedin.com/in/uldiskriss" target="_blank" rel="noreferrer">LinkedIn</a><a class="px-space-sm py-space-xs rounded-lg bg-surface text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-md text-label-md transition-all" href="https://www.behance.net/uldisgomez" target="_blank" rel="noreferrer">Behance</a></div></div></div><div class="pt-space-md flex flex-col sm:flex-row items-center justify-between gap-space-sm"><div class="font-body-sm text-body-sm text-text-muted">© Uldis Kriss Gómez R. Todos los derechos reservados.</div><div class="font-label-sm text-label-sm text-text-muted uppercase tracking-wider">Diseño de Sistemas • Touch Ergonomics • Enterprise UX</div></div></div></footer><script>
+/* Opened on its own? Show it inside the portfolio so the site navigation and language switch are available. */
+(function(){try{if(window.top===window.self){location.replace('../index.html#case-pantallas');return}}catch(e){}
+var PAIRS=[["CASE STUDY | DIGITAL RETAIL & OMNICHANNEL", "CASO DE ESTUDIO | RETAIL DIGITAL & OMNICANALIDAD"], ["In-Store Digital Screens: Redesigning the Assisted-Sales and Self-Service Experience at Homecenter", "Pantallas Digitales en Tienda: Rediseño de la Experiencia de Venta Asistida y Autoservicio en Homecenter"], ["End-to-end product design over", "Diseño de producto end-to-end durante"], ["17 months", "17 meses"], ["to transform the interaction on interactive kiosks in physical retail, aligning technology, business, growth and real value for customers and sales advisors.", "para transformar la interacción en kioscos interactivos de retail físico, unificando tecnología, negocio, growth y valor real para clientes y asesores de venta."], ["Strategic Role", "Rol Estratégico"], ["Senior UX/UI Designer", "Senior UX/UI Designer"], ["Experience design and work with multidisciplinary squads.", "Diseño de experiencia y trabajo con squads multidisciplinares."], ["Duration & Scope", "Duración & Alcance"], ["17 Months", "17 Meses"], ["Multiple releases across the store network.", "Múltiples releases en la red de tiendas."], ["Team", "Equipo de Trabajo"], ["Multidisciplinary Squad", "Squad Multidisciplinar"], ["Technology, Growth, Retail Business and Store Advisors.", "Tecnología, Growth, Negocio Retail y Asesores de Tienda."], ["Methodology", "Metodología"], ["Agile Scrum & Lean UX", "Agile Scrum & Lean UX"], ["Two-week sprints under the premise \"Fail fast, learn faster\".", "Sprints quincenales bajo la premisa \"Fail fast, learn faster\"."], ["Platform", "Plataforma"], ["Touchscreen Kiosks", "Kioscos Touchscreen"], ["Large-format touch displays (Full HD / 4K) & Web Kiosk App.", "Displays táctiles gran formato (Full HD / 4K) & Web Kiosk App."], ["In-Situ Testing: the Real Sales Floor", "Testing In-Situ: Piso de Venta Real"], ["Direct feedback from advisors", "Feedback directo con asesores"], ["Field Immersion & Physical Context Validation", "Inmersión en Campo & Validación de Contexto Físico"], ["In-person touch validation with Homecenter sales advisors. We evaluated reach ergonomics, light reflections in the sales hall and response speed at moments of high customer traffic.", "Validación táctil presencial con los asesores comerciales de Homecenter. Evaluamos ergonomía de alcance, reflejos lumínicos de la nave de venta y velocidad de respuesta en momentos de alta afluencia de clientes."], ["Operational Touch Kiosk", "Kiosco Táctil Operativo"], ["1080x1920 hardware with card reader & scanner", "Hardware 1080x1920 con Datáfono & Scanner"], ["Retail Hardware + Software Integration", "Integración Hardware + Software de Retail"], ["Design adapted to integrated physical peripherals: a barcode reader for quick price lookups and a POS terminal for direct payment without going through traditional checkouts.", "Diseño adaptado a periféricos físicos integrados: lector de código de barras para consulta rápida de precios y terminal POS para pago directo sin pasar por cajas tradicionales."], ["Product Leadership & Strategy", "Liderazgo de Producto & Estrategia"], ["Driving the Omnichannel Transformation with a \"Fail Fast, Learn Faster\" Approach", "Impulsando la Transformación Omnicanal con Enfoque \"Fail Fast, Learn Faster\""], ["As a Senior UX/UI Designer, my main mission was not just to draw screens, but to orchestrate the strategic bridge between the commercial priorities of physical retail, the constraints of the technology architecture and the real needs of the customers walking through the store.", "Como diseñadora Senior UX/UI, mi misión principal no fue únicamente trazar pantallas, sino orquestar el puente estratégico entre las prioridades comerciales del retail físico, las restricciones de arquitectura tecnológica y las necesidades reales de los clientes que caminan por la tienda."], ["Multidisciplinary Coordination", "Coordinación Multidisciplinar"], ["Twice-weekly alignment with retail directors, backend/frontend teams and growth specialists. I translated complex sales requirements into scalable design patterns accessible at any level of digital literacy.", "Alineación bisemanal con directores de retail, equipos de backend/frontend y especialistas de growth. Traduje requerimientos de venta compleja en patrones de diseño escalables y accesibles a cualquier nivel de alfabetización digital."], ["Strategic stakeholder alignment", "Alineación estratégica de stakeholders"], ["Agile, Incremental Sprints", "Sprints Ágiles e Incrementales"], ["We adopted 2-week cycles of development and design hypotheses. Instead of speculating for months in front of a monitor, we built rapid-test prototypes: try, fail cheaply in a pilot store, iterate the architecture and deploy the refined version.", "Adoptamos ciclos de 2 semanas de desarrollo e hipótesis de diseño. En lugar de especular meses frente al monitor, creamos prototipos de testeo rápido: probar, fallar barato en tienda piloto, iterar la arquitectura y desplegar la versión refinada."], ["Continuous deliveries every 14 days", "Entregas continuas cada 14 días"], ["Field Observation Culture", "Cultura de Observación en Campo"], ["I established mandatory in-situ research for the whole product team. Measuring ambient noise, visual distance from the aisle and the use of work gloves drastically changed button sizes and touch zones.", "Instauré la práctica de investigación in-situ obligatoria para todo el equipo de producto. Medir el ruido ambiente, la distancia visual desde el pasillo y el uso de guantes de trabajo cambió drásticamente los tamaños de botones y zonas táctiles."], ["Methodological Framework", "Marco Metodológico"], ["Design Thinking & Double Diamond Applied to Physical Retail", "Design Thinking & Doble Diamante Aplicado al Retail Físico"], ["A systematic, rigorous process designed to unpick the logistical complexity of Sodimac Homecenter and turn it into a natural, frictionless self-service experience.", "Un proceso sistemático y riguroso diseñado para desarmar la complejidad logística de Sodimac Homecenter y convertirla en una experiencia de autoservicio natural y sin fricciones."], ["Phase 01", "Fase 01"], ["Empathise", "Empatizar"], ["Physical immersion in Homecenter Calle 80 and Norte stores. Shadowing sessions, interviews with customers carrying materials and recording how advisors speak.", "Inmersión física en tiendas Homecenter Calle 80 y Norte. Sesiones de shadowing, entrevistas a clientes cargando materiales y registro del lenguaje de los asesores."], ["Interviews • Empathy Maps", "Entrevistas • Mapas de Empatía"], ["Phase 02", "Fase 02"], ["Define", "Definir"], ["Synthesis of bottlenecks: critical difficulty calculating tile/building quantities, visual overload in catalogues and abandonment caused by slow forms.", "Síntesis de cuellos de botella: dificultad crítica para calcular cantidades de cerámica/obra, saturación visual de catálogos y abandono por formularios lentos."], ["Problem Framing • Journey Maps", "Problem Framing • Journey Maps"], ["Phase 03", "Fase 03"], ["Ideate", "Idear"], ["Collaborative workshops with engineering and sales. Co-design of the 3-step Floor Calculator, an ergonomic date selector and a multi-brand taxonomy.", "Workshops colaborativos con ingeniería y ventas. Co-diseño de la Calculadora de Pisos en 3 pasos, selector ergonómico de fechas y taxonomía multimarca."], ["Crazy 8's • Touch Architecture", "Crazy 8's • Arquitectura Táctil"], ["Phase 04", "Fase 04"], ["Prototype", "Prototipar"], ["Building high-fidelity interactive components in Figma, connected to a Design System specific to 1080x1920 touchscreens with 48px+ hitboxes.", "Construcción de componentes interactivos de alta fidelidad en Figma conectados a un Design System específico para touchscreens de 1080x1920 con hitboxes de 48px+."], ["Design System • Hi-Fi Flows", "Design System • Hi-Fi Flows"], ["Phase 05", "Fase 05"], ["Test", "Testear"], ["Continuous validation on real terminals with advisors and real shoppers. Measuring task success rate and how easily mixed deliveries can be scheduled.", "Validación continua en terminales reales con asesores y compradores reales. Medición de tasa de éxito de tarea y agilidad del agendamiento de envíos mixtos."], ["Usability Metrics • Pilots", "Métricas de Usabilidad • Pilotos"], ["Component Audit & Heuristics", "Auditoría de Componentes & Heurísticas"], ["Design Decisions: What to Keep, Change or Remove", "Decisiones de Diseño: Qué Mantener, Modificar o Eliminar"], ["Field sessions revealed that applying the traditional web e-commerce experience on touch kiosks caused frustration from buttons that were too small and from non-transactional text overload.", "Las sesiones de campo revelaron que aplicar la experiencia e-commerce web tradicional en kioscos táctiles generaba frustración por botones demasiado pequeños y saturación de texto no transaccional."], ["What to Keep", "Qué Mantener"], ["Specialist Store Shortcuts:", "Atajos de Tiendas Especializadas:"], ["Constructor, Car Center and Pet Center, each with its own visual identity recognised by users.", "Constructor, Car Center y Pet Center con identidad visual propia reconocida por el usuario."], ["Predictive Global Search:", "Buscador Global Predictivo:"], ["With an adapted touch keyboard and suggestions with thumbnail photos.", "Con teclado táctil adaptado y sugerencias con fotos miniatura."], ["CMR Benefits & Specialist Prices:", "Beneficios CMR y Precios Especialistas:"], ["Information on bank promotions and the specialists' circle.", "Información de promociones bancarias y círculo de especialistas."], ["What to Change", "Qué Modificar"], ["Product Card Size:", "Tamaño de Cards de Producto:"], ["Increased to a minimum height of 500px with a larger touch area for fingers.", "Incremento a mínimo 500px de altura con área de toque ampliada para dedos."], ["Touch Promotional Badges:", "Badges Promocionales Táctiles:"], ["A semantic colour system (Save more, New, Exclusive, Free shipping) with typography legible from 1.5 metres.", "Sistema semántico de colores (Ahorra más, Nuevo, Exclusivo, Envío gratis) con tipografía visible a 1.5 metros."], ["Floor and Materials Calculation:", "Cálculo de Pisos y Materiales:"], ["A tedious flow converted into an integrated graphic calculator with automatic waste allowance (+10%).", "Conversión de un flujo tedioso a una calculadora gráfica integrada con desperdicio automático (+10%)."], ["What to Remove", "Qué Eliminar"], ["Forced Login on Start:", "Login Forzoso al Iniciar:"], ["Customers want to check stock or prices instantly without entering credentials first.", "Los clientes quieren consultar inventario o precios al instante sin escribir credenciales de antemano."], ["Long Checkout Forms:", "Formularios Extensos en Checkout:"], ["Replaced by scanning an ID card or a QR code to the customer's personal smartphone.", "Reemplazo por escaneo de cédula o código QR al smartphone personal del cliente."], ["Static Banners with No Action:", "Banners Estáticos sin Acción:"], ["Removal of decorative marquees that distracted from touch shopping.", "Supresión de marquesinas decorativas que distraían la compra táctil."], ["Screen Design System", "Sistema de Diseño en Pantallas"], ["Anatomy of Product Cards, Variants and Transactional Badges", "Anatomía de Cards de Producto, Variantes y Badges Transaccionales"], ["Touch Ergonomics Guidelines", "Touch Ergonomics Guidelines"], ["Dimensional optimisation to a 500px height with an accessible numeric selector for gloved hands or fingers with limited mobility. Standardisation of semantic badges with WCAG AAA colour contrast for immediate reading under the halogen lights of the store.", "Optimización dimensional a 500px de altura con selector numérico accesible para manos enguantadas o dedos con movilidad reducida. Estandarización de badges semánticos con contraste de color WCAG AAA para lectura inmediata bajo luces halógenas de tienda."], ["Screen Architecture", "Arquitectura de Pantallas"], ["The Critical Flows of the Omnichannel Shopping Experience", "Los Flujos Críticos de la Experiencia de Compra Omnicanal"], ["A complete redesign of 8 key points in the customer's interaction with the kiosk: from visual product discovery to split delivery and integration with a personal smartphone.", "Rediseño integral de 8 puntos neurálgicos en la interacción del cliente con el kiosco: desde el descubrimiento visual de productos hasta la entrega dividida y la integración con smartphone personal."], ["01 • Main Portal", "01 • Portal Principal"], ["Home & New Transactional Experience", "Home & Nueva Experiencia Transaccional"], ["Restructuring of the visual space with a focused hierarchy. It features a dynamic transactional banner with seasonal promotions, direct access to building micro-credits (Credicrea), shortcuts to specialist stores and one-touch purchase from the \"Best Sellers\" carousel.", "Reestructuración del espacio visual con jerarquía focalizada. Destaca un banner transaccional dinámico con promociones estacionales, acceso directo a microcréditos de obra (Credicrea), atajos a tiendas especializadas y compra con un solo toque desde el carrusel de \"Más Vendidos\"."], ["Predictive Search", "Buscador Predictivo"], ["Credicrea Financing", "Financiación Credicrea"], ["One-Touch Add to Cart", "One-Touch Add to Cart"], ["02 • Exploration", "02 • Exploración"], ["Categories & Intuitive Visual Taxonomy", "Categorías & Taxonomía Visual Intuitiva"], ["Visual navigation designed for non-technical shoppers and advisors. Large-format photographic spheres make the desired department (Furniture, Lighting, Tools, Storage) instantly recognisable, with smooth transitions.", "Navegación visual pensada para compradores no técnicos y asesores. Agrupación por esferas fotográficas de gran formato que facilitan el reconocimiento inmediato del departamento deseado (Muebles, Iluminación, Herramientas, Organización) con transiciones suaves."], ["Photographic Circles", "Círculos Fotográficos"], ["Recognition > Recall", "Reconocimiento > Memoria"], ["Zero Dead Clicks", "Zero Clics Muertos"], ["03 • Catalogue & Filters", "03 • Catálogo & Filtros"], ["Product List Page (PLP) & Touch Filters", "Product List Page (PLP) & Filtros Táctiles"], ["A high-density product grid structured for vertical and horizontal screens. The side filters use generous touch pills to sort by price, brand, immediate physical availability in the current store and home delivery conditions.", "Parrilla de productos de alta densidad estructurada para pantallas verticales y horizontales. Los filtros laterales utilizan píldoras de toque generosas para ordenar por precio, marca, disponibilidad física inmediata en la tienda actual y condiciones de envío a domicilio."], ["In-Store Stock Filter", "Filtro Stock In-Store"], ["Quick Comparator", "Comparador Rápido"], ["Discount Badges", "Badges de Descuento"], ["04 • Product Page", "04 • Ficha de Producto"], ["Product Detail Page (PDP) & Assisted Sales", "Product Detail Page (PDP) & Venta Asistida"], ["The product sheet was redesigned to work both for the self-service customer and for the advisor guiding a technical sale. It clearly shows physical stock in the current aisle vs. stock in other stores nationwide, 3D models and bookable installation services.", "La ficha técnica fue rediseñada para funcionar tanto para el cliente autónomo como para el asesor guiando una venta técnica. Muestra claramente el stock físico en el pasillo actual vs. stock en otras tiendas del país, modelos 3D y servicios de instalación contratables."], ["3D & AR Viewer", "Visor 3D & RA"], ["Multi-Store Stock", "Stock Multi-Tienda"], ["Home Services Booking", "Contratación Servicios Hogar"], ["High-Impact Feature", "Feature de Alto Impacto"], ["Integrated Floor Calculator in the PDP", "Calculadora de Pisos Integrada en PDP"], ["We solved one of the biggest bottlenecks in buying flooring and tile: the complex calculation of square metres, the 10% waste factor and the cross-sell of Topex adhesives and grout on a single interactive screen.", "Resolvimos uno de los mayores cuellos de botella en la compra de pisos y cerámica: el cálculo complejo de metros cuadrados, el factor de desperdicio del 10% y la venta cruzada de adhesivos Topex y boquillas en una sola pantalla interactiva."], ["Step 1: Entry Point", "Paso 1: Punto de Entrada"], ["Call to Action on the PDP", "Llamado a la Acción en PDP"], ["A primary button visible next to the price per m² that opens the interactive modal without reloading the page.", "Botón primario visible junto al precio por m² que abre el modal interactivo sin recargar la página."], ["Step 2: Touch Measurement", "Paso 2: Medición Táctil"], ["Numeric Keypad & M²", "Teclado Numérico & M²"], ["Touch entry of total area or length x width, automatically adding the recommended 10% waste.", "Ingreso táctil de área total o largo x ancho, sumando automáticamente el 10% de merma recomendado."], ["Step 3: Add-ons", "Paso 3: Complementos"], ["inventory_2", "inventory_2"], ["Bulk Supplies Addition", "Adición Masiva de Insumos"], ["Smart suggestion of boxes of Topex adhesive, skirting boards and grout with an \"Add all to cart\" button.", "Sugerencia inteligente de cajas de pegante Topex, zócalos y boquillas con botón de \"Agregar todo al carro\"."], ["05 • Transaction", "05 • Transacción"], ["Modular Shopping Cart & Summary", "Carrito de Compras Modular & Resumen"], ["A transparent breakdown of the savings obtained from bank promotions and the specialists' circle. It lets customers add professional assembly services with one touch and choose between taking the product right away or scheduling freight for heavy loads.", "Desglose transparente del ahorro obtenido por promociones bancarias y círculo de especialistas. Permite agregar servicios de armado profesional con un toque y elegir entre llevar el producto de inmediato o programar flete para cargas pesadas."], ["Savings Breakdown", "Desglose de Ahorro"], ["Assembly Service", "Servicio de Armado"], ["Order Splitting", "División de Pedido"], ["06 • In-Store Logistics", "06 • Logística In-Store"], ["Checkout, Scheduling & Split Deliveries", "Checkout, Agendamiento & Entregas Divididas"], ["The biggest logistics challenge: when a customer buys products available in store to take away immediately and large furniture that needs a delivery truck. We designed an intuitive 3-step visual stepper with a touch calendar to choose the day and time slot.", "El mayor desafío logístico: cuando un cliente compra productos disponibles en tienda para llevar ya mismo y muebles grandes que requieren camión de reparto. Diseñamos un stepper visual intuitivo de 3 pasos con calendario táctil para elegir día y franja horaria."], ["3-Step Stepper", "Stepper 3 Pasos"], ["Ergonomic Calendar", "Calendario Ergonómico"], ["Pickup + Delivery", "Retiro + Domicilio"], ["07 • Visual Experience", "07 • Experiencia Visual"], ["Inspiration, Rooms & Interactive Digital Catalogues", "Inspiración, Ambientes & Catálogos Digitales Interactivos"], ["We turned the screens into interactive showcases so customers can explore fully decorated rooms (Living Rooms, Dining Rooms, Terraces) and add the individual products seen in the photo straight to the cart.", "Convertimos las pantallas en vitrinas interactivas para que los clientes exploren habitaciones completas decoradas (Salas, Comedores, Terrazas) y añadan los productos individuales vistos en la foto directo al carrito."], ["Real Spaces Gallery", "Galería de Espacios Reales"], ["Lookbooks with interactive touch points on every piece of furniture.", "Lookbooks con puntos táctiles interactivos en cada mueble."], ["Seasonal Themed Catalogues", "Catálogos Temáticos de Temporada"], ["High-resolution digital magazines you can flip through with no loading time.", "Revistas digitales hojeables de alta resolución sin tiempos de carga."], ["08 • Omnichannel Continuity", "08 • Continuidad Omnicanal"], ["Customer Self-Service & Smartphone Handoff with QR", "Autogestión de Clientes & Handoff a Smartphone con QR"], ["Privacy and versatility: if users prefer not to enter their bank card or confidential data on a public screen in the aisle, they generate a QR code to instantly transfer their cart to their personal phone.", "Privacidad y versatilidad: si el usuario prefiere no ingresar su tarjeta bancaria o datos confidenciales en una pantalla pública del pasillo, genera un código QR para transferir instantáneamente su carrito a su celular personal."], ["In-Store Self-Service Portal", "Portal de Autoservicio en Tienda"], ["Warranty lookups, electronic invoicing and dispatch tracking.", "Consulta de garantías, facturación electrónica y seguimiento de despachos."], ["Secure Handoff via QR", "Handoff Seguro mediante QR"], ["Seamless continuation of payment in the private browser of the user's smartphone.", "Continuación fluida del pago en el navegador privado del smartphone del usuario."], ["Multi-Brand Architecture", "Arquitectura Multimarca"], ["Specialist Stores: Contextual Adaptability by Segment", "Tiendas Especializadas: Adaptabilidad Contextual por Segmento"], ["Homecenter brings together completely different audiences: builders, pet owners, mechanics and companies that buy in volume. We developed a modular system where the kiosk adapts its colour palette, taxonomy and services to the physical vertical of the aisle where it is located.", "Homecenter reúne públicos completamente heterogéneos: maestros de obra, dueños de mascotas, mecánicos y empresas que compran por volumen. Desarrollamos un sistema modular donde el kiosco adapta paleta de color, taxonomía y servicios según la vertical física del pasillo donde está ubicado."], ["Constructor World", "Mundo Constructor"], ["Technical Trades", "Oficios Técnicos"], ["Industrial yellow and graphite. A classification aimed at professional trades: Electricians, Plumbers, Carpenters, Painters and Master builders, with access to fast wholesale quotes.", "Amarillo industrial y grafito. Clasificación orientada a gremios profesionales: Electricistas, Plomeros, Carpinteros, Pintores y Maestros de obra, con acceso a cotizaciones mayoristas rápidas."], ["Wholesale", "Al por Mayor"], ["B2B & Businesses", "B2B & Empresas"], ["Institutional red focused on tiered bulk buying for builders, hotels, restaurants and offices. It shows progressive discounts by number of units.", "Rojo institucional con enfoque en compra escalonada por volumen para constructoras, hoteles, restaurantes y oficinas. Muestra descuentos progresivos por cantidad de unidades."], ["Pet Center Petizoos", "Pet Center Petizoos"], ["Pets & Wellbeing", "Mascotas & Bienestar"], ["Friendly cyan focused on affective navigation: Dogs, Cats, Birds and Aquariums. It promotes recurring food subscriptions and veterinary pharmacy with in-store pickup.", "Cyan amigable enfocado en navegación afectiva: Perros, Gatos, Aves y Acuarios. Promueve la suscripción periódica de alimentos y farmacia veterinaria con retiro en tienda."], ["Car Center", "Car Center"], ["Automotive & Workshop", "Automotriz & Taller"], ["A dark technical palette aimed at mechanical parts, tyres, batteries and installation. It includes an interactive booking system for mechanical services at the workshop attached to the physical store.", "Paleta oscura técnica orientada a refacciones mecánicas, llantas, baterías e instalación. Incluye agenda interactiva para servicios mecánicos en el taller anexo de la tienda física."], ["Project Retrospective", "Retrospectiva del Proyecto"], ["Lessons in Leadership, Scalability & Physical-Digital Experience", "Lecciones de Liderazgo, Escalabilidad & Experiencia Física-Digital"], ["Lesson 01", "Lección 01"], ["Touch Ergonomics Beats Desktop Aesthetics", "La Ergonomía Táctil manda sobre la Estética Desktop"], ["Designing for a 43-inch screen mounted vertically requires arm-rest zones, touch targets no smaller than 48x48px and no buttons at the unreachable top edges for shorter people or wheelchair users.", "Diseñar para una pantalla de 43 pulgadas montada verticalmente requiere zonas de descanso para los brazos, zonas de toque no inferiores a 48x48px y evitar botones en los extremos superiores inalcanzables para personas de baja estatura o en silla de ruedas."], ["Lesson 02", "Lección 02"], ["The Store Advisor Is the Main Adoption Ambassador", "El Asesor de Tienda es el Principal Embajador de Adopción"], ["If the interface does not empower the advisor in their daily work, the kiosk becomes abandoned furniture. By involving advisors from day one in the testing sprints, the kiosk becomes a useful tool for closing complex sales.", "Si la interfaz no empodera al asesor en su labor diaria, el kiosco se convierte en un mueble abandonado. Al involucrar a los asesores desde el día 1 en los sprints de testing, el kiosco se vuelve una herramienta útil para cerrar ventas complejas."], ["Lesson 03", "Lección 03"], ["Synergy with the Global Omnichannel Design System", "Sinergia con el Design System Omnicanal Global"], ["We created kiosk-specific tokens (Hitbox-L, Font-Kiosk-Display) that inherit from the Falabella/Homecenter corporate library, so any brand change propagates automatically to the in-store software.", "Creamos tokens específicos de kiosco (Hitbox-L, Font-Kiosk-Display) que heredan de la biblioteca corporativa de Falabella/Homecenter, facilitando que cualquier cambio de marca se propague automáticamente al software de tienda."], ["Senior UX/UI Designer • Open to new opportunities", "Diseñadora Senior UX/UI • Abierta a nuevas oportunidades"], ["Interested in my experience in omnichannel product design?", "¿Interesado en mi experiencia en diseño de producto omnicanal?"], ["A specialist in connecting business vision with scalable design systems and physical interfaces with high commercial impact in retail and fintech.", "Especialista en articular la visión de negocio con sistemas de diseño escalables e interfaces físicas de alto impacto comercial en retail y fintech."], ["Let's talk", "Hablemos"], ["Homecenter Digital Kiosks", "Homecenter Digital Kiosks"], ["Case Study", "Case Study"], ["Redesign of the Omnichannel Experience in Physical Retail. Interactive systems architecture, large-format touch usability and connectivity with the e-commerce ecosystem.", "Rediseño de Experiencia Omnicanal en Retail Físico. Arquitectura de sistemas interactivos, usabilidad táctil de gran formato y conectividad con ecosistema e-commerce."], ["LinkedIn", "LinkedIn"], ["Behance", "Behance"], ["© Uldis Kriss Gómez R. All rights reserved.", "© Uldis Kriss Gómez R. Todos los derechos reservados."], ["Systems Design • Touch Ergonomics • Enterprise UX", "Diseño de Sistemas • Touch Ergonomics • Enterprise UX"], ["Design team and Homecenter advisors testing a touch kiosk in store", "Equipo de diseño y asesores de Homecenter probando un kiosco táctil en tienda"], ["Physical interactive kiosk unit in the furniture department", "Módulo de kiosco interactivo físico en el departamento de muebles"], ["UI component design system for the touchscreens", "Sistema de diseño de componentes UI para las pantallas táctiles"], ["Main (Home) screen of the in-store digital screens", "Pantalla principal (Home) de las pantallas digitales en tienda"], ["Categories screen with visual navigation", "Pantalla de categorías con navegación visual"], ["Product list (PLP) with touch filters", "Listado de productos (PLP) con filtros táctiles"], ["Product page (PDP) for a ceramic floor tile", "Ficha de producto (PDP) de un piso cerámico"], ["Product page with the button to calculate how many boxes you need", "Ficha de producto con el botón para calcular cuántas cajas necesitas"], ["Floor calculator: touch measurement of the area", "Calculadora de pisos: medición táctil del área"], ["Floor calculator: add-ons and add everything to the cart", "Calculadora de pisos: complementos y agregar todo al carro"], ["Modular shopping cart with savings summary", "Carrito de compras modular con resumen de ahorro"], ["Checkout and delivery scheduling with a touch calendar", "Checkout y agendamiento de entrega con calendario táctil"], ["Gallery of inspiration rooms", "Galería de ambientes de inspiración"], ["Digital inspiration catalogues", "Catálogos digitales de inspiración"], ["Customer self-service portal in store", "Portal de autogestión de clientes en tienda"], ["Cart handoff to the smartphone with a QR code", "Traspaso del carrito al smartphone con código QR"], ["Specialist Constructor store: home screen", "Tienda especializada Constructor: pantalla de inicio"], ["Wholesale store: home screen", "Tienda Al por Mayor: pantalla de inicio"], ["Pet Center Petizoos: home screen", "Pet Center Petizoos: pantalla de inicio"], ["Car Center: home screen", "Car Center: pantalla de inicio"]];
+var EN2ES=new Map(),ES2EN=new Map();
+function NORM(t){return t.replace(/\s+/g,' ').trim()}
+PAIRS.forEach(function(p){var en=NORM(p[0]),es=NORM(p[1]);if(en!==es){EN2ES.set(en,es);ES2EN.set(es,en)}});
+var ORIG=new WeakMap(),ATTRS=['alt','title','aria-label','placeholder'];
+function resolve(t,lang){var k=NORM(t);if(!k)return null;if(ES2EN.has(k))return lang==='en'?ES2EN.get(k):k;if(EN2ES.has(k))return lang==='es'?EN2ES.get(k):k;return null}
+function apply(lang){
+  var w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,{acceptNode:function(n){var p=n.parentElement;return(!p||p.closest('script,style'))?NodeFilter.FILTER_REJECT:NodeFilter.FILTER_ACCEPT}});
+  var nodes=[],n;while(n=w.nextNode())nodes.push(n);
+  nodes.forEach(function(node){
+    if(!ORIG.has(node)){if(resolve(node.data,'es')===null)return;ORIG.set(node,node.data)}
+    var base=ORIG.get(node),r=resolve(base,lang);if(r===null)return;
+    var m=base.match(/^(\s*)[\s\S]*?(\s*)$/);var next=m[1]+r+m[2];if(next!==node.data)node.data=next});
+  document.querySelectorAll('[alt],[title],[aria-label]').forEach(function(el){
+    var o=ORIG.get(el)||{};
+    ATTRS.forEach(function(a){if(!el.hasAttribute(a))return;if(!(a in o)){if(resolve(el.getAttribute(a),'es')===null)return;o[a]=el.getAttribute(a)}var r=resolve(o[a],lang);if(r!==null)el.setAttribute(a,r)});
+    ORIG.set(el,o)});
+  document.documentElement.lang=lang;
+}
+window.addEventListener('message',function(e){if(e.data&&e.data.type==='ukg-lang')apply(e.data.lang==='en'?'en':'es')});
+var saved=null;try{saved=localStorage.getItem('ukg-lang')}catch(_){}
+if(saved==='en')apply('en');
+try{window.parent.postMessage({type:'ukg-ready'},'*')}catch(_){}
+})();
+</script><script>(()=>{if(window.parent===window)return;const d=document,root=d.documentElement;root.classList.add('ukg-embedded');
+const st=d.createElement('style');st.textContent='html.ukg-embedded,html.ukg-embedded body{height:auto!important;min-height:0!important;scrollbar-width:none;overscroll-behavior:auto}html.ukg-embedded::-webkit-scrollbar,html.ukg-embedded body::-webkit-scrollbar{display:none;width:0;height:0}html.ukg-embedded body{display:flow-root}html.ukg-embedded main{min-height:0!important}';d.head.appendChild(st);
+let last=0;const send=()=>{const b=d.body;if(!b)return;const cs=getComputedStyle(b);let h=Math.ceil(b.getBoundingClientRect().height+parseFloat(cs.marginTop)+parseFloat(cs.marginBottom));if(root.scrollHeight>root.clientHeight+1)h=Math.max(h,root.scrollHeight);if(h>0&&Math.abs(h-last)>1){last=h;parent.postMessage({type:'ukg-height',h},'*')}};
+if('ResizeObserver' in window)new ResizeObserver(send).observe(d.body);addEventListener('load',send);d.querySelectorAll('img').forEach(i=>i.complete||i.addEventListener('load',send));setTimeout(send,300);
+addEventListener('message',e=>{if(e.data&&e.data.type==='ukg-measure'){last=0;send()}});
+d.addEventListener('click',e=>{const a=e.target.closest&&e.target.closest('a[href^="#"]');if(!a)return;const id=decodeURIComponent(a.getAttribute('href').slice(1));e.preventDefault();const t=id&&d.getElementById(id);parent.postMessage({type:'ukg-scroll',id:t?id:'',y:t?t.getBoundingClientRect().top:0},'*')});d.querySelectorAll('img[loading="lazy"]').forEach(i=>{i.loading='eager'});addEventListener('message',e=>{if(e.data&&e.data.type==='ukg-goto'){const t=d.getElementById(e.data.id);if(t)parent.postMessage({type:'ukg-scroll',id:e.data.id,fix:!!e.data.fix,y:Math.round(t.getBoundingClientRect().top)},'*')}});})();</script>
+</body></html>
