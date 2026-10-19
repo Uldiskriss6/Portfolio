@@ -75,8 +75,8 @@ d grid-cols-1 lg:grid-cols-12 gap-space-lg items-center">
 <div class="lg:col-span-12 max-w-3xl flex flex-col gap-space-sm"><span class="font-label-md text-label-md uppercase tracking-wider text-primary font-bold">Flujo inicial de ideación</span>
 <h3 class="font-headline-sm text-headline-sm text-on-surface">De la notificación a la aprobación</h3>
 <p class="font-body-md text-body-md text-on-surface-variant">El cliente recibe un mensaje push, solicita el crédito y completa un formulario. Se evalúa al cliente y, si está preaprobado, se ejecuta el motor de riesgo; después ve los bancos y sus posibles cupos, continúa el proceso de solicitud con el banco y recibe el mensaje de aprobación.</p></div></div></div></section><section class="w-full py-space-xl bg-surface-container-lowest" id="styleguide"><div class="max-w-7xl mx-auto px-margin lg:px-margin-md flex flex-col gap-space-xl"><div class="flex flex-col max-w-3xl gap-space-xs"><div class="flex items-center gap-space-xs text-primary font-label-md text-label-md uppercase tracking-widest font-bold"><span class="material-symbols-outlined text-[16px]">palette</span><span>Capítulo 04 · Prototipado & Style Guide</span></div><h2 class="font-headline-lg text-headline-lg text-on-surface">Style Guide: dos identidades, un mismo sistema</h2><p class="font-body-lg text-body-lg text-on-surface-variant">Con todos los objetivos establecidos y los wireframes en baja fidelidad, desarrollé la Style Guide: una paleta azul para el cliente Hogar, una paleta amarilla y negra para el cliente Constructor y una escala de grises compartida.</p></div><style>
-.sg{--navy:#001a42;--frame:#003f8b;background:linear-gradient(180deg,var(--frame) 0%,var(--frame) 35%,rgba(0,63,139,0) 100%);border-radius:24px;padding:8px;font-family:'Saira Condensed','Lato',sans-serif;color:var(--navy);overflow:hidden}
-.sg-panel{position:relative;background:#fff;border-radius:16px;padding:clamp(22px,4vw,56px);overflow:hidden}
+.sg{--navy:#001a42;--frame:#003f8b;background:none;border-radius:16px;padding:0;font-family:'Saira Condensed','Lato',sans-serif;color:var(--navy);overflow:hidden}
+.sg-panel{position:relative;background:#fff;border-radius:16px;box-shadow:0 4px 24px rgba(13,43,94,.08);padding:clamp(22px,4vw,56px);overflow:hidden}
 .sg-dots{position:absolute;top:0;right:0;width:clamp(120px,24%,300px);height:clamp(120px,24%,300px);pointer-events:none}
 .sg-dots i{position:absolute;background:var(--frame);border-radius:22%}
 .sg h4,.sg .sg-h{font-family:'Saira Condensed',sans-serif;font-weight:800;text-transform:uppercase;letter-spacing:.01em;color:var(--navy);display:inline-block;border-bottom:3px solid var(--navy);line-height:1.05;margin:0}
@@ -98,11 +98,11 @@ d grid-cols-1 lg:grid-cols-12 gap-space-lg items-center">
 .sg-scale i+i::before{content:"";position:absolute;right:100%;top:50%;width:clamp(7px,1.6vw,20px);height:2px;background:#000;transform:translateY(-50%)}
 .sg-arrow{display:flex;align-items:center;gap:16px;font-size:clamp(16px,1.9vw,22px)}
 .sg-arrow svg{width:clamp(44px,6vw,70px);height:20px}
-.sg-type{margin-top:clamp(28px,5vw,64px);margin-left:clamp(0px,10vw,150px);margin-right:calc(-1*clamp(22px,4vw,56px));border:4px solid var(--navy);border-right:0;border-radius:36px 0 0 36px;padding:clamp(18px,3vw,40px);background:#fff;font-family:'Lato',sans-serif}
-.sg-type-top{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
-.sg-type-top .sg-lato{background:#f0f0f0;padding:8px 34px;font-size:clamp(24px,3vw,34px);color:#333}
+.sg-type{margin-top:clamp(28px,5vw,64px);margin-left:0;margin-right:0;border:0;border-radius:16px;padding:clamp(18px,3vw,40px);background:#f1f3f7;font-family:'Lato',sans-serif}
+.sg-type-top{display:flex;justify-content:center;align-items:center;gap:clamp(20px,5vw,64px);flex-wrap:wrap}
+.sg-type-top .sg-lato{background:#fff;padding:8px 34px;font-size:clamp(24px,3vw,34px);color:#333}
 .sg-type-top a{font-size:13px;color:#111;text-decoration:none}
-.sg-table{display:grid;grid-template-columns:1fr 1.1fr 1fr;gap:18px clamp(12px,3vw,40px);margin-top:clamp(18px,3vw,40px);font-size:clamp(12px,1.5vw,15px);color:#111;padding-right:clamp(14px,3vw,40px)}
+.sg-table{display:grid;grid-template-columns:1fr 1.1fr 1fr;gap:18px clamp(12px,3vw,40px);margin-top:clamp(18px,3vw,40px);font-size:clamp(12px,1.5vw,15px);color:#111;max-width:860px;margin-left:auto;margin-right:auto}
 .sg-table>div{min-width:0;overflow-wrap:anywhere}.sg-table .th{font-weight:700}
 .sg-head{position:relative;z-index:1}@media(max-width:600px){.sg-dots{width:84px;height:84px}.sg-head{padding-top:30px}.sg-type{margin-left:0}}
 </style>
