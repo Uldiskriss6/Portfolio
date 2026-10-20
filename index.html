@@ -754,6 +754,24 @@ body.in-case .sn-brand-group{display:none!important}
 .ticker:hover .ticker-track{animation-play-state:paused}
 @media(max-width:760px){.hero h1{margin:36px 0 28px!important}.fw-pills li{font-size:14px!important;padding:10px 16px!important}}
 </style>
+<style id="hero-orbit">
+@property --t{syntax:'<angle>';inherits:true;initial-value:0deg}
+@keyframes fwspin{to{--t:360deg}}
+.fw-pills li,.fw-pills li.base,.fw-pills li:nth-child(n){background:transparent!important;border:1.5px solid #111!important;color:#111!important;padding:10px 20px!important}
+.fw-pills li small{opacity:.6}
+.hero .hero-bottom{grid-template-columns:1fr!important;align-items:start!important;gap:26px!important}
+.hero .hero-actions{flex-direction:row!important;flex-wrap:wrap!important;align-items:center!important;justify-self:start!important;justify-content:flex-start!important}
+.hero .hero-actions .button{width:auto!important;min-width:0!important}
+@media(min-width:1101px){
+.fw-wrap{position:absolute!important;left:var(--ox,78%);top:var(--oy,300px);width:0;height:0;margin:0!important;padding:0!important;z-index:3;--t:0deg;animation:fwspin 90s linear infinite}
+.fw-wrap:hover{animation-play-state:paused}
+.fw-label{position:absolute;left:0;top:236px;transform:translateX(-50%);white-space:nowrap;margin:0!important;animation:none}
+.fw-pills{display:block!important}
+.fw-pills li{position:absolute;left:0;top:0;transform-origin:0 0;white-space:nowrap;background:rgba(255,255,255,.55)!important;backdrop-filter:blur(2px);--a:0deg;transform:rotate(calc(var(--a) + var(--t))) translateX(165px) rotate(calc(-1 * (var(--a) + var(--t)))) translate(-50%,-50%)}
+.fw-pills li:nth-child(1){--a:-70deg}.fw-pills li:nth-child(2){--a:20deg}.fw-pills li:nth-child(3){--a:110deg}.fw-pills li:nth-child(4){--a:200deg}
+}
+@media(prefers-reduced-motion:reduce){.fw-wrap{animation:none!important}}
+</style>
 </head>
 <body data-lang="en"><div id="scroll-progress" aria-hidden="true"></div><dialog id="photo-dialog" class="photo-dialog" aria-label="Uldis Kriss Gómez R."><img src="assets/uldis-full.jpg" width="1086" height="1448" alt="Uldis Kriss Gómez R."><button type="button" class="photo-close" data-close-photo><span class="sr-only"><span class="en">Close</span><span class="es">Cerrar</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button></dialog><nav id="case-float-nav" aria-label="Section shortcuts / Atajos de sección" hidden></nav><button type="button" id="to-top" aria-label="Volver arriba / Back to top" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5.5 11.5 12 5l6.5 6.5"/></svg></button>
 <header id="site-nav" class="site-nav"><div class="sn-inner">
@@ -1033,4 +1051,5 @@ const render=()=>{nav.innerHTML='';data.items.forEach(it=>{const b=document.crea
 const update=()=>{if(!data||!frame)return;const r=frame.getBoundingClientRect();const visible=r.height>0&&!frame.closest('[hidden]');const show=visible&&r.top+data.showAfter<navH()&&r.bottom>innerHeight*.6;nav.classList.toggle('show',show);if(!show)return;const line=navH()+innerHeight*.35;let cur=-1,best=-Infinity;data.items.forEach((it,i)=>{if(!it.ext&&r.top+it.y<=line&&it.y>best){best=it.y;cur=i}});[...nav.children].forEach((b,i)=>b.setAttribute('aria-current',i===cur?'true':'false'))};
 addEventListener('message',e=>{const d=e.data;if(!d||d.type!=='ukg-floatnav')return;const f=[...document.querySelectorAll('#case-shell iframe')].find(x=>x.contentWindow===e.source);if(!f)return;frame=f;const same=data&&JSON.stringify(data.items.map(i=>i.label))===JSON.stringify(d.items.map(i=>i.label));data=d;if(same){[...nav.children].forEach((b,i)=>b.dataset.y=d.items[i].y);update()}else render()});
 addEventListener('scroll',update,{passive:true});addEventListener('resize',update);addEventListener('popstate',()=>setTimeout(update,50));document.addEventListener('click',()=>setTimeout(update,60));})();</script>
+<script>(function(){function p(){var h=document.querySelector('.hero'),o=document.querySelector('.hero .orbit'),w=document.querySelector('.hero .fw-wrap');if(!h||!o||!w)return;w.style.setProperty('--ox',(o.offsetLeft+o.offsetWidth/2)+'px');w.style.setProperty('--oy',(o.offsetTop+o.offsetHeight/2)+'px')}addEventListener('resize',p);addEventListener('load',p);p();setTimeout(p,300)})();</script>
 </body></html>
