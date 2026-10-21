@@ -3,10 +3,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap">
 <style>
 *{box-sizing:border-box}html,body{margin:0;padding:0}
-:root{--ink:#202b2b;--muted:#4b5655;--line:#dfe3e1;--lil:#4a3a8a;--grad:linear-gradient(120deg,#c5dff0 0%,#cfc5ed 34%,#f1d2c2 67%,#c4e0d7 100%)}
-body{font-family:'DM Sans',system-ui,-apple-system,'Segoe UI',sans-serif;background:#fffefa;color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
+:root{--ink:#1b2a3a;--muted:#4b5655;--line:#dbe4ee;--lil:#1d4f91;--grad:linear-gradient(120deg,#d4e8f8 0%,#b5d2f0 45%,#9fc0ea 100%)}
+body{font-family:'DM Sans',system-ui,-apple-system,'Segoe UI',sans-serif;background:#fafcff;color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
 .wrap{max-width:1180px;margin:0 auto;padding:0 24px}
-.sec{padding:72px 0}.sec.alt{background:#f5f4ef}
+.sec{padding:72px 0}.sec.alt{background:#edf3fb}
 .kick{display:block;margin:0 0 12px;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--lil)}
 h1,h2,h3{font-family:'Manrope','DM Sans',system-ui,sans-serif;letter-spacing:-.02em}
 h1{font-size:clamp(36px,5.6vw,64px);line-height:1.05;letter-spacing:-.035em;margin:20px 0 20px;max-width:16ch}
@@ -23,12 +23,12 @@ h2{font-size:clamp(26px,3.2vw,38px);line-height:1.12;margin:0 0 14px;max-width:2
 /* timeline */
 .tl{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:24px;position:relative}
 .tl:before{content:"";position:absolute;left:20px;right:0;top:19px;height:2px;background:var(--grad)}
-.dot{position:relative;z-index:1;display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:var(--grad);border:3px solid #fffefa;font:800 15px/1 'Manrope',sans-serif;color:var(--lil)}
-.alt .dot{border-color:#f5f4ef}
+.dot{position:relative;z-index:1;display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:var(--grad);border:3px solid #fafcff;font:800 15px/1 'Manrope',sans-serif;color:var(--lil)}
+.alt .dot{border-color:#edf3fb}
 .tg{display:block;margin:16px 0 8px;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--lil)}
 .tl p{margin:0;font-size:15.5px;color:#364241;max-width:290px}
 .tl li a{display:block;color:inherit;text-decoration:none;border-radius:16px;padding:0 10px 14px;margin:0 -10px;transition:background .2s}
-.tl li a:hover,.tl li a:focus-visible{background:#fff;outline:none;box-shadow:0 0 0 2px #cfc5ed}
+.tl li a:hover,.tl li a:focus-visible{background:#fff;outline:none;box-shadow:0 0 0 2px #b5d2f0}
 .go{display:inline-block;margin-top:10px;font-weight:800;color:var(--lil);transition:transform .2s}.tl li a:hover .go{transform:translateY(3px)}
 .tl:before{left:30px}
 html{scroll-behavior:smooth}.sec{scroll-margin-top:16px}
@@ -54,7 +54,7 @@ html{scroll-behavior:smooth}.sec{scroll-margin-top:16px}
 .bars{flex:1;display:flex;gap:4px;align-items:flex-end;padding-top:22px}
 .b{flex:1;position:relative;border-radius:6px 6px 0 0;min-height:3px}
 .b i{position:absolute;left:50%;bottom:100%;transform:translateX(-50%);margin-bottom:3px;font:600 10.5px/1 'DM Sans',sans-serif;font-style:normal;white-space:nowrap;color:#33403f}
-.mob{background:var(--lil)}.dsk{background:#cbd2cf}
+.mob{background:var(--lil)}.dsk{background:#c9d3de}
 .mob i{color:var(--lil);font-weight:800}
 .y{display:block;text-align:center;font-size:12px;color:var(--muted);padding-top:6px;border-top:1px solid var(--line);margin-top:0}
 .ins3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
@@ -66,7 +66,7 @@ html{scroll-behavior:smooth}.sec{scroll-margin-top:16px}
 .crit{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:8px 18px}
 .crit li{display:flex;gap:10px;align-items:flex-start;font-size:14.5px;line-height:1.4;padding:8px 0;border-bottom:1px solid var(--line)}
 .crit i{flex:none;display:grid;place-items:center;width:24px;height:24px;border-radius:50%;background:var(--grad);font:800 11px/1 'Manrope',sans-serif;font-style:normal;color:var(--lil)}
-.crit li.extra{grid-column:1/-1;background:#fff;border:1px dashed #b9aee0;border-radius:12px;padding:10px 12px}
+.crit li.extra{grid-column:1/-1;background:#fff;border:1px dashed #9fc0ea;border-radius:12px;padding:10px 12px}
 .crit li.extra:after{content:"+";display:none}
 .scale{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 0}
 .scale span{padding:7px 14px;border-radius:999px;font-size:13px;font-weight:700}
@@ -119,7 +119,7 @@ html{scroll-behavior:smooth}.sec{scroll-margin-top:16px}
 <p class="quote">La conversión de Colombia es baja frente a otros países, y la mayor oportunidad está en el evento de agregar al carro y en el canal web mobile.</p>
 <div class="stats"><div class="stat"><b>≈0.66% <em>vs</em> ≈1.00%</b><span>Tasa de conversión: Colombia frente a Chile</span></div><div class="stat"><b>≈6% <em>vs</em> 13%</b><span>Tasa del evento “Agregar al carro”: Colombia frente a Chile</span></div></div>
 <h3 class="subh">Tasa de agregar al carro por tipo de página, 2023 a 2025</h3>
-<div class="legend"><span><i style="background:var(--lil)"></i>Web mobile</span><span><i style="background:#cbd2cf"></i>Desktop</span></div>
+<div class="legend"><span><i style="background:var(--lil)"></i>Web mobile</span><span><i style="background:#c9d3de"></i>Desktop</span></div>
 <div class="chs"><figure class="ch"><figcaption><b>SLP</b><span>Resultados de búsqueda</span></figcaption><div class="plot"><div class="yr"><div class="bars"><div class="b mob" style="height:52.4%"><i>6.29%</i></div><div class="b dsk" style="height:96.3%"><i>11.56%</i></div></div><span class="y">2023</span></div><div class="yr"><div class="bars"><div class="b mob" style="height:44.3%"><i>5.32%</i></div><div class="b dsk" style="height:91.0%"><i>10.92%</i></div></div><span class="y">2024</span></div><div class="yr"><div class="bars"><div class="b mob" style="height:57.8%"><i>6.94%</i></div><div class="b dsk" style="height:95.4%"><i>11.45%</i></div></div><span class="y">2025</span></div></div></figure><figure class="ch"><figcaption><b>PLP</b><span>Lista de productos</span></figcaption><div class="plot"><div class="yr"><div class="bars"><div class="b mob" style="height:13.3%"><i>1.60%</i></div><div class="b dsk" style="height:26.0%"><i>3.12%</i></div></div><span class="y">2023</span></div><div class="yr"><div class="bars"><div class="b mob" style="height:7.6%"><i>0.91%</i></div><div class="b dsk" style="height:17.8%"><i>2.14%</i></div></div><span class="y">2024</span></div><div class="yr"><div class="bars"><div class="b mob" style="height:8.6%"><i>1.03%</i></div><div class="b dsk" style="height:17.6%"><i>2.11%</i></div></div><span class="y">2025</span></div></div></figure><figure class="ch"><figcaption><b>PDP</b><span>Página de producto</span></figcaption><div class="plot"><div class="yr"><div class="bars"><div class="b mob" style="height:33.8%"><i>4.06%</i></div><div class="b dsk" style="height:65.3%"><i>7.84%</i></div></div><span class="y">2023</span></div><div class="yr"><div class="bars"><div class="b mob" style="height:26.2%"><i>3.14%</i></div><div class="b dsk" style="height:61.5%"><i>7.38%</i></div></div><span class="y">2024</span></div><div class="yr"><div class="bars"><div class="b mob" style="height:24.8%"><i>2.97%</i></div><div class="b dsk" style="height:83.7%"><i>10.04%</i></div></div><span class="y">2025</span></div></div></figure></div>
 <div class="ins3"><div class="ins"><b>Brecha en las tres páginas</b><p>En 2025, web mobile logra entre 30% y 61% de la tasa de desktop.</p></div><div class="ins"><b>La brecha crece en PDP</b><p>Mobile bajó de 4.06% a 2.97% mientras desktop subió de 7.84% a 10.04%.</p></div><div class="ins"><b>“Comprar ahora” casi no se usa en mobile</b><p>En PDP, 0.05% en mobile frente a 0.54% en desktop (2025).</p></div></div>
 <p class="note">SLP: resultados de búsqueda · PLP: lista de productos · PDP: página de producto. Datos de homecenter.co.</p></div></section>
@@ -186,4 +186,4 @@ const st=d.createElement('style');st.textContent='html.ukg-embedded,html.ukg-emb
 let last=0;const send=()=>{const b=d.body;if(!b)return;const cs=getComputedStyle(b);let h=Math.ceil(b.getBoundingClientRect().height+parseFloat(cs.marginTop)+parseFloat(cs.marginBottom));if(root.scrollHeight>root.clientHeight+1)h=Math.max(h,root.scrollHeight);if(h>0&&Math.abs(h-last)>1){last=h;parent.postMessage({type:'ukg-height',h},'*')}};
 if('ResizeObserver' in window)new ResizeObserver(send).observe(d.body);addEventListener('load',send);setTimeout(send,300);
 addEventListener('message',e=>{if(e.data&&e.data.type==='ukg-measure'){last=0;send()}});})();</script>
-<script>document.addEventListener("click",function(e){var a=e.target.closest&&e.target.closest("a[href^='#']");if(!a)return;var id=decodeURIComponent(a.getAttribute("href").slice(1)),t=id&&document.getElementById(id);if(window.parent===window)return;e.preventDefault();parent.postMessage({type:"ukg-scroll",id:t?id:"",y:t?t.getBoundingClientRect().top:0},"*")});</script><script>document.addEventListener("click",function(e){var a=e.target.closest&&e.target.closest("a[href^='#']");if(!a)return;var id=decodeURIComponent(a.getAttribute("href").slice(1)),t=id&&document.getElementById(id);if(window.parent===window)return;e.preventDefault();parent.postMessage({type:"ukg-scroll",id:t?id:"",y:t?t.getBoundingClientRect().top:0},"*")});</script></body></html>
+<script>document.addEventListener("click",function(e){var a=e.target.closest&&e.target.closest("a[href^='#']");if(!a)return;var id=decodeURIComponent(a.getAttribute("href").slice(1)),t=id&&document.getElementById(id);if(window.parent===window)return;e.preventDefault();parent.postMessage({type:"ukg-scroll",id:t?id:"",y:t?t.getBoundingClientRect().top:0},"*")});</script><script>document.addEventListener("click",function(e){var a=e.target.closest&&e.target.closest("a[href^='#']");if(!a)return;var id=decodeURIComponent(a.getAttribute("href").slice(1)),t=id&&document.getElementById(id);if(window.parent===window)return;e.preventDefault();parent.postMessage({type:"ukg-scroll",id:t?id:"",y:t?t.getBoundingClientRect().top:0},"*")});</script><script>document.addEventListener("click",function(e){var a=e.target.closest&&e.target.closest("a[href^='#']");if(!a)return;var id=decodeURIComponent(a.getAttribute("href").slice(1)),t=id&&document.getElementById(id);if(window.parent===window)return;e.preventDefault();parent.postMessage({type:"ukg-scroll",id:t?id:"",y:t?t.getBoundingClientRect().top:0},"*")});</script></body></html>
