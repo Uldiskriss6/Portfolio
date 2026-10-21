@@ -538,4 +538,12 @@ let last=0;const send=()=>{const b=d.body;if(!b)return;const cs=getComputedStyle
 if('ResizeObserver' in window)new ResizeObserver(send).observe(d.body);addEventListener('load',send);d.querySelectorAll('img').forEach(i=>i.complete||i.addEventListener('load',send));setTimeout(send,300);
 addEventListener('message',e=>{if(e.data&&e.data.type==='ukg-measure'){last=0;send()}});
 d.addEventListener('click',e=>{const a=e.target.closest&&e.target.closest('a[href^="#"]');if(!a)return;const id=decodeURIComponent(a.getAttribute('href').slice(1));e.preventDefault();const t=id&&d.getElementById(id);parent.postMessage({type:'ukg-scroll',id:t?id:'',y:t?t.getBoundingClientRect().top:0},'*')});d.querySelectorAll('img[loading="lazy"]').forEach(i=>{i.loading='eager'});addEventListener('message',e=>{if(e.data&&e.data.type==='ukg-goto'){const t=d.getElementById(e.data.id);if(t)parent.postMessage({type:'ukg-scroll',id:e.data.id,fix:!!e.data.fix,y:Math.round(t.getBoundingClientRect().top)},'*')}});})();</script>
-</body></html>
+<script id="min-font-12">(function(){var MIN=12,BP=720,flag='data-fs12',busy=false,t=null;
+function restore(){document.querySelectorAll('['+flag+']').forEach(function(e){e.style.removeProperty('font-size');if(e.getAttribute(flag))e.style.fontSize=e.getAttribute(flag);e.removeAttribute(flag)})}
+function run(){if(busy||!document.body)return;busy=true;try{if(window.innerWidth>BP){restore();return}
+var w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,{acceptNode:function(n){if(!n.data.trim())return NodeFilter.FILTER_REJECT;var p=n.parentElement;return(!p||p.closest('script,style,noscript'))?NodeFilter.FILTER_REJECT:NodeFilter.FILTER_ACCEPT}}),n,seen=new Set();
+while(n=w.nextNode()){var e=n.parentElement;if(seen.has(e))continue;seen.add(e);var f=parseFloat(getComputedStyle(e).fontSize);if(f&&f<MIN){if(!e.hasAttribute(flag))e.setAttribute(flag,e.style.fontSize||'');e.style.setProperty('font-size',MIN+'px','important')}}}finally{busy=false}}
+function sched(){clearTimeout(t);t=setTimeout(run,120)}
+document.addEventListener('DOMContentLoaded',run);window.addEventListener('load',function(){run();setTimeout(run,600)});window.addEventListener('resize',sched);window.addEventListener('message',function(e){if(e.data&&(e.data.type==='ukg-lang'||e.data.type==='ukg-measure'))sched()});
+if('MutationObserver' in window)new MutationObserver(sched).observe(document.documentElement,{childList:true,subtree:true,characterData:true,attributeFilter:['hidden','class']});
+if(document.readyState!=='loading')run()})();</script></body></html>
