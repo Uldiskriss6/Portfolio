@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Flick Cinema App — caso de estudio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap">
+<style>
+*{box-sizing:border-box}html,body{margin:0;padding:0}
+:root{--navy:#0b1a4f;--navy2:#13286f;--blue:#0a8bd0;--yel:#ffd100;--yel2:#d4ac00;--pale:#fff3a8;--ink:#101a3a;--muted:#4a5470;--line:#dde2ee;--bg:#f6f7fb}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',system-ui,-apple-system,'Segoe UI',sans-serif;background:#fff;color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+.sec{padding:72px 0;scroll-margin-top:16px}.sec.alt{background:var(--bg)}
+.kick{display:block;margin:0 0 12px;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--navy2)}
+h1,h2,h3{font-family:'Manrope','DM Sans',system-ui,sans-serif;letter-spacing:-.02em}
+h1{font-size:clamp(36px,5.6vw,64px);line-height:1.05;letter-spacing:-.035em;margin:20px 0 20px;max-width:16ch}
+h2{font-size:clamp(26px,3.2vw,38px);line-height:1.12;margin:0 0 16px;max-width:26ch}
+.sub{font-size:17px;color:var(--muted);max-width:64ch;margin:0 0 36px}
+.pill{display:inline-flex;align-items:center;padding:8px 16px;border-radius:999px;background:var(--yel);font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--navy)}
+.hero{background:var(--navy);color:#fff;padding:64px 0 56px;position:relative;overflow:hidden}
+.hero h1{color:#fff}.hero h1 em{font-style:normal;color:var(--yel)}
+.hero:after{content:"";position:absolute;left:0;right:0;bottom:0;height:8px;background:var(--yel)}
+.hero-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:48px;align-items:center;margin:0 0 40px}
+.lead{font-size:20px;color:#d9def0;max-width:56ch;margin:0}
+.hero-img{margin:0;border-radius:20px;overflow:hidden;box-shadow:0 24px 60px rgba(0,0,0,.35)}.hero-img img{display:block;width:100%;height:auto}
+.fich{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:0}
+.fich div{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);border-radius:16px;padding:16px 20px}
+.fich dt{font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--yel);margin:0 0 4px}
+.fich dd{margin:0;font-weight:600;font-size:15px;line-height:1.45;color:#fff}
+.tl{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:24px;position:relative}
+.tl:before{content:"";position:absolute;left:30px;right:0;top:19px;height:2px;background:linear-gradient(90deg,var(--yel),var(--blue))}
+.dot{position:relative;z-index:1;display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:var(--yel);border:3px solid var(--bg);font:800 15px/1 'Manrope',sans-serif;color:var(--navy)}
+.tg{display:block;margin:16px 0 8px;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--navy2)}
+.tl p{margin:0;font-size:15.5px;color:#2f3956;max-width:290px}
+.tl li a{display:block;color:inherit;text-decoration:none;border-radius:16px;padding:0 12px 16px;margin:0 -10px;transition:background .2s}
+.tl li a:hover,.tl li a:focus-visible{background:#fff;outline:none;box-shadow:0 0 0 2px var(--yel)}
+.go{display:inline-block;margin-top:12px;font-weight:800;color:var(--navy2);transition:transform .2s}.tl li a:hover .go{transform:translateY(4px)}
+.quote{font-size:clamp(20px,2.4vw,27px);line-height:1.4;font-family:'Manrope',sans-serif;letter-spacing:-.015em;max-width:44ch;margin:0 0 36px}
+.two{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:start}
+.shot{margin:0;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#fff}.shot img{display:block;width:100%;height:auto}
+.shot figcaption{padding:12px 16px;font-size:13px;color:var(--muted);border-top:1px solid var(--line)}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:#fff;border:1px solid var(--line);border-top:4px solid var(--yel);border-radius:16px;padding:24px 28px}
+.card h3{margin:0 0 8px;font-size:19px;line-height:1.3;color:var(--navy)}
+.card p{margin:0;font-size:15px;color:#2f3956}
+.num{display:inline-grid;place-items:center;width:28px;height:28px;border-radius:50%;background:var(--navy);color:var(--yel);font:800 13px/1 'Manrope',sans-serif;margin:0 0 12px}
+.flow{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.flow li{background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px;font-size:14px;line-height:1.4;color:#2f3956}
+.flow b{display:block;font:800 12px/1 'Manrope',sans-serif;letter-spacing:.1em;text-transform:uppercase;color:var(--navy2);margin:0 0 8px}
+.sw{display:flex;flex-wrap:wrap;gap:12px;margin:0 0 24px}
+.sw span{display:flex;flex-direction:column;gap:4px;font-size:12px;color:var(--muted)}
+.sw i{display:block;width:64px;height:40px;border-radius:8px;border:1px solid rgba(0,0,0,.08)}
+.type{display:grid;grid-template-columns:1fr 1fr;gap:12px 24px;margin:0;padding:0;list-style:none}
+.type li{display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid var(--line);padding:8px 0;font-size:14px}
+.type b{font-weight:700;color:var(--navy)}
+.screens{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;align-items:start}
+.screens figure{margin:0}.screens img{display:block;width:100%;height:auto;border-radius:12px;box-shadow:0 12px 32px rgba(11,26,79,.18)}
+.screens figcaption{margin:12px 0 0;font-size:13px;line-height:1.4;color:var(--muted)}.screens figcaption b{display:block;color:var(--navy);font-size:14px;margin:0 0 4px}
+.cta{display:inline-block;margin-top:24px;padding:12px 24px;border-radius:999px;background:var(--navy);color:#fff;font-weight:700;text-decoration:none}.cta:hover{background:var(--navy2)}
+.back{margin:56px 0 0;display:block;background:none;border:0;color:var(--navy2);font:inherit;font-weight:700;cursor:pointer;padding:0}
+@media(max-width:900px){.hero-grid,.two{grid-template-columns:1fr}.fich,.grid3{grid-template-columns:1fr 1fr}.tl{grid-template-columns:1fr 1fr}.tl:before{display:none}.flow{grid-template-columns:1fr 1fr}.screens{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:600px){.sec{padding:52px 0}.fich,.grid3,.tl,.flow,.type{grid-template-columns:1fr}.hero{padding:44px 0}.screens{grid-template-columns:1fr 1fr}}
+</style></head><body>
+<header class="hero"><div class="wrap"><span class="pill">Concepto · App móvil · Diseño de producto</span>
+<div class="hero-grid"><div><h1>Flick <em>Cinema App</em></h1>
+<p class="lead">Un concepto de app de cine para explorar la cartelera, elegir qué ver y calificar películas, diseñado desde la arquitectura de información hasta un sistema de diseño y un prototipo.</p></div>
+<figure class="hero-img"><img src="../assets/flick/flick-hero.webp" width="1376" height="806" alt="Flick Cinema App: pantallas de inicio, calificación y detalle de película en tema claro y oscuro"></figure></div>
+<dl class="fich"><div><dt>Rol</dt><dd>Diseño de producto e interacción: arquitectura de información, sistema de diseño y prototipo</dd></div><div><dt>Fecha</dt><dd>Mayo 2023</dd></div><div><dt>Herramienta</dt><dd>Adobe XD</dd></div><div><dt>Plataforma</dt><dd>App móvil</dd></div><div><dt>Proceso</dt><dd>Bocetos, wireframes y prototipo</dd></div><div><dt>Tipografía</dt><dd>Proxima Nova</dd></div></dl></div></header>
+
+<section class="sec alt"><div class="wrap"><span class="kick">Resumen estratégico</span><ol class="tl">
+<li><a href="#enfoque"><span class="dot">1</span><span class="tg">Objetivo</span><p>Una interfaz simple, amable y fácil de usar, que muestre la información de forma ordenada y centrada en las preferencias del usuario.</p><span class="go" aria-hidden="true">↓</span></a></li>
+<li><a href="#wireframes"><span class="dot">2</span><span class="tg">Estructura</span><p>Cartelera, populares, mi lista y perfil, con una barra inferior fija de cuatro destinos.</p><span class="go" aria-hidden="true">↓</span></a></li>
+<li><a href="#sistema"><span class="dot">3</span><span class="tg">Sistema</span><p>Una paleta azul marino y amarillo, tipografía y librería de iconos para mantener todo consistente.</p><span class="go" aria-hidden="true">↓</span></a></li>
+<li><a href="#prototipo"><span class="dot">4</span><span class="tg">Prototipo</span><p>Una app fluida: explorar, ver el detalle, calificar con una opinión y volver a mi lista.</p><span class="go" aria-hidden="true">↓</span></a></li>
+</ol></div></section>
+
+<section class="sec" id="enfoque"><div class="wrap"><span class="kick">01 · Enfoque</span>
+<h2>Empecé por la estructura, no por la interfaz</h2>
+<p class="quote">Antes de elegir colores, bosquejé a mano las dos pantallas que sostienen la experiencia: la cartelera y el detalle de la película.</p>
+<div class="two"><figure class="shot"><img src="../assets/flick/flick-sketches.webp" width="1310" height="570" alt="Bocetos a mano de la cartelera y del detalle de película de Flick"><figcaption>Bocetos iniciales: cartelera y populares a la izquierda; detalle, calificaciones y botón Calificar a la derecha.</figcaption></figure>
+<div class="grid3" style="grid-template-columns:1fr">
+<div class="card"><h3>Cartelera y populares</h3><p>La pantalla principal separa lo que está en cartelera de lo más popular, con tarjetas que muestran la calificación de un vistazo.</p></div>
+<div class="card"><h3>Detalle de la película</h3><p>Sinopsis, calificaciones y comentarios en un solo recorrido, con el botón Calificar siempre a mano.</p></div>
+<div class="card"><h3>Navegación inferior</h3><p>Home, actividad, lista y perfil: cuatro destinos para moverse sin perderse.</p></div></div></div></div></section>
+
+<section class="sec alt" id="wireframes"><div class="wrap"><span class="kick">02 · Wireframes</span>
+<h2>Información ordenada y fácil de recorrer</h2>
+<p class="sub">Cada elemento se pensó a partir de las interacciones que tendría el usuario, con el objetivo de lograr una interfaz dinámica y entretenida.</p>
+<figure class="shot" style="max-width:760px;margin:0 auto 40px"><img src="../assets/flick/flick-wireframes.webp" width="1095" height="1340" alt="Wireframes de Flick: cartelera, mi lista, detalle, calificar y resultado"></figure>
+<h3 class="kick" style="margin:0 0 16px">El flujo de calificar</h3>
+<ol class="flow"><li><b>1</b>Detalle de la película con sinopsis y botón Calificar.</li><li><b>2</b>Elegir de una a cinco estrellas.</li><li><b>3</b>Responder: ¿cuál es tu opinión sobre esta película?</li><li><b>4</b>Enviar y ver el resultado: “¡Muy bien!” con la calificación promedio.</li><li><b>5</b>Compartir la película o volver a mi lista.</li></ol></div></section>
+
+<section class="sec" id="sistema"><div class="wrap"><span class="kick">03 · Sistema de diseño</span>
+<h2>Un sistema para que todo se vea de la misma marca</h2>
+<p class="sub">Definí colores que reflejan la marca, una familia tipográfica con jerarquía clara y una librería de iconos, y los usé en todas las pantallas.</p>
+<div class="two"><figure class="shot"><img src="../assets/flick/flick-system.webp" width="1300" height="715" alt="Sistema de diseño de Flick: paleta de color, tipografía Proxima Nova e iconos"></figure>
+<div><h3 class="kick" style="margin:0 0 12px">Color</h3>
+<div class="sw"><span><i style="background:#031638"></i>Primario</span><span><i style="background:#0b1a6f"></i>Primario</span><span><i style="background:#0a8bd0"></i>Primario</span><span><i style="background:#ffd100"></i>Secundario</span><span><i style="background:#d4ac00"></i>Secundario</span><span><i style="background:#fff08c"></i>Secundario</span></div>
+<h3 class="kick" style="margin:0 0 12px">Tipografía · Proxima Nova</h3>
+<ul class="type"><li><b>H3</b><span>Bold · 24px</span></li><li><b>H4</b><span>Regular · 18px</span></li><li><b>H5</b><span>Regular · 14px</span></li><li><b>Body 1</b><span>Regular · 16px</span></li><li><b>Body 2</b><span>Regular · 14px</span></li><li><b>Botón</b><span>Bold · 14px</span></li></ul>
+<p class="sub" style="margin:24px 0 0;font-size:15px">También incluye una escala de grises, degradados, transparencias y un set de iconos para acciones, estados y calificación.</p></div></div></div></section>
+
+<section class="sec alt" id="prototipo"><div class="wrap"><span class="kick">04 · Prototipo</span>
+<h2>El resultado: una app fluida y centrada en las preferencias</h2>
+<p class="sub">Con la estructura y los componentes definidos, llevé la interfaz a la vida con el sistema de diseño. El resultado muestra la información de forma organizada y enfocada en lo que le gusta a cada persona.</p>
+<div class="screens">
+<figure><img src="../assets/flick/flick-screen-home.webp" width="344" height="555" alt="Pantalla de inicio de Flick con cartelera y populares"><figcaption><b>Inicio</b>Cartelera y populares con calificación.</figcaption></figure>
+<figure><img src="../assets/flick/flick-screen-detail.webp" width="344" height="815" alt="Detalle de película de Flick con sinopsis, calificación y comentarios"><figcaption><b>Detalle</b>Sinopsis, estrellas, botón Calificar y comentarios.</figcaption></figure>
+<figure><img src="../assets/flick/flick-screen-rate.webp" width="342" height="554" alt="Pantalla para calificar una película en Flick"><figcaption><b>Calificar</b>Estrellas y una pregunta abierta de opinión.</figcaption></figure>
+<figure><img src="../assets/flick/flick-screen-result.webp" width="342" height="558" alt="Pantalla de resultado de la calificación en Flick"><figcaption><b>Resultado</b>Calificación promedio y opción de compartir.</figcaption></figure>
+<figure><img src="../assets/flick/flick-screen-list.webp" width="344" height="556" alt="Pantalla Mi lista de Flick con películas guardadas"><figcaption><b>Mi lista</b>Las películas guardadas, en cuadrícula.</figcaption></figure></div>
+<div class="grid3" style="margin-top:48px">
+<div class="card"><span class="num">1</span><h3>Consistencia</h3><p>La misma barra inferior, el mismo encabezado y los mismos componentes se repiten en todas las pantallas.</p></div>
+<div class="card"><span class="num">2</span><h3>Contraste de marca</h3><p>El amarillo guía la atención hacia las acciones y la navegación sobre el azul marino.</p></div>
+<div class="card"><span class="num">3</span><h3>Dos temas</h3><p>Las pantallas funcionan en una versión clara y en una oscura, pensada para ver cine.</p></div></div>
+<a class="cta" href="https://www.behance.net/gallery/170243479/Flick-Cinema-App" target="_blank" rel="noopener">Ver el proyecto original en Behance ↗</a>
+<button class="back" data-back type="button">← Volver al portafolio</button></div></section>
+<script>
+(function(){try{if(window.top===window.self){location.replace('../index.html#case-flick');return}}catch(e){}
+var PAIRS=[["Concept · Mobile app · Product design", "Concepto · App móvil · Diseño de producto"], ["Cinema App", "Cinema App"], ["A cinema app concept to browse what is showing, choose what to watch and rate movies, designed from information architecture through a design system and a prototype.", "Un concepto de app de cine para explorar la cartelera, elegir qué ver y calificar películas, diseñado desde la arquitectura de información hasta un sistema de diseño y un prototipo."], ["Role", "Rol"], ["Product and interaction design: information architecture, design system and prototype", "Diseño de producto e interacción: arquitectura de información, sistema de diseño y prototipo"], ["Date", "Fecha"], ["May 2023", "Mayo 2023"], ["Tool", "Herramienta"], ["Platform", "Plataforma"], ["Mobile app", "App móvil"], ["Process", "Proceso"], ["Sketches, wireframes and prototype", "Bocetos, wireframes y prototipo"], ["Typeface", "Tipografía"], ["Strategic summary", "Resumen estratégico"], ["Goal", "Objetivo"], ["A simple, friendly and easy-to-use interface that shows information in an organized way, focused on the user’s preferences.", "Una interfaz simple, amable y fácil de usar, que muestre la información de forma ordenada y centrada en las preferencias del usuario."], ["Structure", "Estructura"], ["Now showing, popular, my list and profile, with a fixed bottom bar of four destinations.", "Cartelera, populares, mi lista y perfil, con una barra inferior fija de cuatro destinos."], ["System", "Sistema"], ["A navy and yellow palette, typography and an icon set to keep everything consistent.", "Una paleta azul marino y amarillo, tipografía y librería de iconos para mantener todo consistente."], ["Prototype", "Prototipo"], ["A fluid app: browse, open the detail, rate with an opinion and return to my list.", "Una app fluida: explorar, ver el detalle, calificar con una opinión y volver a mi lista."], ["01 · Approach", "01 · Enfoque"], ["I started with structure, not the interface", "Empecé por la estructura, no por la interfaz"], ["Before choosing colors, I sketched by hand the two screens that carry the experience: the movie listing and the movie detail.", "Antes de elegir colores, bosquejé a mano las dos pantallas que sostienen la experiencia: la cartelera y el detalle de la película."], ["Early sketches: now showing and popular on the left; detail, ratings and the Rate button on the right.", "Bocetos iniciales: cartelera y populares a la izquierda; detalle, calificaciones y botón Calificar a la derecha."], ["Now showing and popular", "Cartelera y populares"], ["The main screen separates what is showing from what is popular, with cards that show the rating at a glance.", "La pantalla principal separa lo que está en cartelera de lo más popular, con tarjetas que muestran la calificación de un vistazo."], ["Movie detail", "Detalle de la película"], ["Synopsis, ratings and comments in one pass, with the Rate button always within reach.", "Sinopsis, calificaciones y comentarios en un solo recorrido, con el botón Calificar siempre a mano."], ["Bottom navigation", "Navegación inferior"], ["Home, activity, list and profile: four destinations to move around without getting lost.", "Home, actividad, lista y perfil: cuatro destinos para moverse sin perderse."], ["02 · Wireframes", "02 · Wireframes"], ["Information that is organized and easy to scan", "Información ordenada y fácil de recorrer"], ["Each element was designed around the interactions the user would have, aiming for a dynamic and entertaining interface.", "Cada elemento se pensó a partir de las interacciones que tendría el usuario, con el objetivo de lograr una interfaz dinámica y entretenida."], ["The rating flow", "El flujo de calificar"], ["Movie detail with synopsis and the Rate button.", "Detalle de la película con sinopsis y botón Calificar."], ["Choose from one to five stars.", "Elegir de una a cinco estrellas."], ["Answer: what is your opinion of this movie?", "Responder: ¿cuál es tu opinión sobre esta película?"], ["Send and see the result: “Great!” with the average rating.", "Enviar y ver el resultado: “¡Muy bien!” con la calificación promedio."], ["Share the movie or go back to my list.", "Compartir la película o volver a mi lista."], ["03 · Design system", "03 · Sistema de diseño"], ["A system so everything feels like one brand", "Un sistema para que todo se vea de la misma marca"], ["I defined colors that reflect the brand, a type family with a clear hierarchy and an icon set, and used them on every screen.", "Definí colores que reflejan la marca, una familia tipográfica con jerarquía clara y una librería de iconos, y los usé en todas las pantallas."], ["Color", "Color"], ["Primary", "Primario"], ["Secondary", "Secundario"], ["Typography · Proxima Nova", "Tipografía · Proxima Nova"], ["Button", "Botón"], ["It also includes a gray scale, gradients, opacities and an icon set for actions, states and rating.", "También incluye una escala de grises, degradados, transparencias y un set de iconos para acciones, estados y calificación."], ["04 · Prototype", "04 · Prototipo"], ["The result: a fluid app focused on preferences", "El resultado: una app fluida y centrada en las preferencias"], ["With the structure and components defined, I brought the interface to life with the design system. The result shows information in an organized way, focused on what each person likes.", "Con la estructura y los componentes definidos, llevé la interfaz a la vida con el sistema de diseño. El resultado muestra la información de forma organizada y enfocada en lo que le gusta a cada persona."], ["Home", "Inicio"], ["Now showing and popular, with ratings.", "Cartelera y populares con calificación."], ["Detail", "Detalle"], ["Synopsis, stars, Rate button and comments.", "Sinopsis, estrellas, botón Calificar y comentarios."], ["Rate", "Calificar"], ["Stars and an open opinion question.", "Estrellas y una pregunta abierta de opinión."], ["Result", "Resultado"], ["Average rating and a share option.", "Calificación promedio y opción de compartir."], ["My list", "Mi lista"], ["Saved movies, in a grid.", "Las películas guardadas, en cuadrícula."], ["Consistency", "Consistencia"], ["The same bottom bar, the same header and the same components repeat on every screen.", "La misma barra inferior, el mismo encabezado y los mismos componentes se repiten en todas las pantallas."], ["Brand contrast", "Contraste de marca"], ["Yellow guides attention to actions and navigation against the navy blue.", "El amarillo guía la atención hacia las acciones y la navegación sobre el azul marino."], ["Two themes", "Dos temas"], ["The screens work in a light version and a dark one, made for watching movies.", "Las pantallas funcionan en una versión clara y en una oscura, pensada para ver cine."], ["View the original project on Behance ↗", "Ver el proyecto original en Behance ↗"], ["← Back to portfolio", "← Volver al portafolio"]];
+var EN2ES=new Map(),ES2EN=new Map();
+function NORM(t){return t.replace(/\s+/g,' ').trim()}
+PAIRS.forEach(function(p){var en=NORM(p[0]),es=NORM(p[1]);if(en!==es){EN2ES.set(en,es);ES2EN.set(es,en)}});
+var ORIG=new WeakMap();
+function resolve(t,lang){var k=NORM(t);if(!k)return null;if(ES2EN.has(k))return lang==='en'?ES2EN.get(k):k;if(EN2ES.has(k))return lang==='es'?EN2ES.get(k):k;return null}
+function apply(lang){
+  var w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,{acceptNode:function(n){var p=n.parentElement;return(!p||p.closest('script,style'))?NodeFilter.FILTER_REJECT:NodeFilter.FILTER_ACCEPT}});
+  var nodes=[],n;while(n=w.nextNode())nodes.push(n);
+  nodes.forEach(function(node){
+    if(!ORIG.has(node)){if(resolve(node.data,'es')===null)return;ORIG.set(node,node.data)}
+    var base=ORIG.get(node),r=resolve(base,lang);if(r===null)return;
+    var m=base.match(/^(\s*)[\s\S]*?(\s*)$/);var next=m[1]+r+m[2];if(next!==node.data)node.data=next});
+  document.documentElement.lang=lang;
+}
+window.addEventListener('message',function(e){if(e.data&&e.data.type==='ukg-lang')apply(e.data.lang==='en'?'en':'es')});
+var saved=null;try{saved=localStorage.getItem('ukg-lang')}catch(_){}
+if(saved==='en')apply('en');
+document.querySelector('[data-back]').addEventListener('click',function(){parent.postMessage({type:'ukg-back'},'*')});
+try{window.parent.postMessage({type:'ukg-ready'},'*')}catch(_){}
+})();
+</script>
+<script>(()=>{if(window.parent===window)return;const d=document,root=d.documentElement;root.classList.add('ukg-embedded');
+const st=d.createElement('style');st.textContent='html.ukg-embedded,html.ukg-embedded body{height:auto!important;min-height:0!important;scrollbar-width:none}html.ukg-embedded body{display:flow-root}';d.head.appendChild(st);
+let last=0;const send=()=>{const b=d.body;if(!b)return;const cs=getComputedStyle(b);let h=Math.ceil(b.getBoundingClientRect().height+parseFloat(cs.marginTop)+parseFloat(cs.marginBottom));if(root.scrollHeight>root.clientHeight+1)h=Math.max(h,root.scrollHeight);if(h>0&&Math.abs(h-last)>1){last=h;parent.postMessage({type:'ukg-height',h},'*')}};
+if('ResizeObserver' in window)new ResizeObserver(send).observe(d.body);addEventListener('load',send);setTimeout(send,300);
+addEventListener('message',e=>{if(e.data&&e.data.type==='ukg-measure'){last=0;send()}});})();</script>
+<script>document.addEventListener("click",function(e){var a=e.target.closest&&e.target.closest("a[href^='#']");if(!a)return;var id=decodeURIComponent(a.getAttribute("href").slice(1)),t=id&&document.getElementById(id);if(window.parent===window)return;e.preventDefault();parent.postMessage({type:"ukg-scroll",id:t?id:"",y:t?t.getBoundingClientRect().top:0},"*")});</script><script>document.addEventListener("click",function(e){var a=e.target.closest&&e.target.closest("a[href^='#']");if(!a)return;var id=decodeURIComponent(a.getAttribute("href").slice(1)),t=id&&document.getElementById(id);if(window.parent===window)return;e.preventDefault();parent.postMessage({type:"ukg-scroll",id:t?id:"",y:t?t.getBoundingClientRect().top:0},"*")});</script><script>document.addEventListener("click",function(e){var a=e.target.closest&&e.target.closest("a[href^='#']");if(!a)return;var id=decodeURIComponent(a.getAttribute("href").slice(1)),t=id&&document.getElementById(id);if(window.parent===window)return;e.preventDefault();parent.postMessage({type:"ukg-scroll",id:t?id:"",y:t?t.getBoundingClientRect().top:0},"*")});</script><script id="min-font-12">(function(){var MIN=12,BP=720,flag='data-fs12',busy=false,t=null;
+function restore(){document.querySelectorAll('['+flag+']').forEach(function(e){e.style.removeProperty('font-size');if(e.getAttribute(flag))e.style.fontSize=e.getAttribute(flag);e.removeAttribute(flag)})}
+function run(){if(busy||!document.body)return;busy=true;try{if(window.innerWidth>BP){restore();return}
+var w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,{acceptNode:function(n){if(!n.data.trim())return NodeFilter.FILTER_REJECT;var p=n.parentElement;return(!p||p.closest('script,style,noscript'))?NodeFilter.FILTER_REJECT:NodeFilter.FILTER_ACCEPT}}),n,seen=new Set();
+while(n=w.nextNode()){var e=n.parentElement;if(seen.has(e))continue;seen.add(e);var f=parseFloat(getComputedStyle(e).fontSize);if(f&&f<MIN){if(!e.hasAttribute(flag))e.setAttribute(flag,e.style.fontSize||'');e.style.setProperty('font-size',MIN+'px','important')}}}finally{busy=false}}
+function sched(){clearTimeout(t);t=setTimeout(run,120)}
+document.addEventListener('DOMContentLoaded',run);window.addEventListener('load',function(){run();setTimeout(run,600)});window.addEventListener('resize',sched);window.addEventListener('message',function(e){if(e.data&&(e.data.type==='ukg-lang'||e.data.type==='ukg-measure'))sched()});
+if('MutationObserver' in window)new MutationObserver(sched).observe(document.documentElement,{childList:true,subtree:true,characterData:true,attributeFilter:['hidden','class']});
+if(document.readyState!=='loading')run()})();</script></body></html>
